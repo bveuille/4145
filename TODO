@@ -1,4 +1,7 @@
 Todo:
+Stian: Input
+Baptiste:Bandpass Modulation
+Børge: Pulse Modulation
 
 
 *Link budget
@@ -15,14 +18,24 @@ Todo:
 
 *Specifications:
 -Range: 10m ca
+-bitdepth: 8bit
+-sample rate: 10kHz
 -Bitrate: 64kbits
 -Frequency: 2,45GHz (needs more checking out of spectrum)
 -Sound quality: Poor-ok
 -Delay: 5ms
 -Bandwitdh: 20MHz 2,44-2,46
 -Complexity: Low
--Power: Low
+-Power: Low(from formula to 10m transmitting range)
 -Interference: None
 
 *Design motivation
+-Data rate: bit rate
+-Bandwidth: 20MHz
+-Source	coding: 
+-Channel	coding:
+-Interleaver: Error correction
+-Modulation PSK
+-Demodulation PSK
+-Synchronization
 Freq choosen, in the middle of ism-band to avoid interference. Bandwith for the same reason, small enough, and large enough for data transfer
