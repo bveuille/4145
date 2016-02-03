@@ -1,17 +1,28 @@
 Todo:
 
 
-Link budget
-Latex project overview
+*Link budget
+-Loss and gain for transmitted and recieved signal
+-Noises
+-Verifications in the design, to link with theory
+-Frii's formula
+
+*Error correction coding
 
 
-Specifications:
-Range: 10m ca
-Bitrate: 64kbits
-Frequency: 2,45GHz (needs more checking out of spectrum)
-Sound quality: Poor-ok
-Delay: 5ms
-Bandwitdh: 20MHz 2,44-2,46
-Complexity: Low
-Power: Low
-Interference: None
+*Latex project overview
+
+
+*Specifications:
+-Range: 10m ca
+-Bitrate: 64kbits
+-Frequency: 2,45GHz (needs more checking out of spectrum)
+-Sound quality: Poor-ok
+-Delay: 5ms
+-Bandwitdh: 20MHz 2,44-2,46
+-Complexity: Low
+-Power: Low
+-Interference: None
+
+*Design motivation
+Freq choosen, in the middle of ism-band to avoid interference. Bandwith for the same reason, small enough, and large enough for data transfer
