@@ -18,14 +18,14 @@ Børge: Pulse Modulation
 
 *Specifications:
 -Range: 10m ca
--bitdepth: 8bit
--sample rate: 10kHz
--Bitrate: 64kbits
+-bitdepth: 16bit
+-sample rate: 8kHz
+-Bitrate: 128kbits
 -Frequency: 2,45GHz (needs more checking out of spectrum)
 -Sound quality: Poor-ok
 -Delay: 5ms
 -Bandwitdh: 20MHz 2,44-2,46
--Complexity: Low
+-Complexity: Medium (compression, turbo code)
 -Power: Low(from formula to 10m transmitting range)
 -Interference: None
 
