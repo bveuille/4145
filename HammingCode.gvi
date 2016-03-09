@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile xmlns="http://www.ni.com/PlatformFramework">
+    <SourceModelFeatureSet>
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="3.0.0.49154" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="Editor" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/PlatformFramework" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="MathScript" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/MScript" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="Text Based Nodes" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/TextCode.Editor" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="Common Language Components" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/MocCommon" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="3.0.0.49152" />
+    </SourceModelFeatureSet>
+    <VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+        <Icon Id="2" ListViewIconCrop="0 0 30 30" xmlns="http://www.ni.com/PlatformFramework">
+            <IconPanel Height="[float]30" Id="3" Width="[float]30">
+                <IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="4" TemplateName="Gray">
+                    <Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" />
+                    <Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" />
+                    <FileNameText FileNameText="[bool]True" Font="[SMFont]0,6," HorizontalAlignment="[HorizontalAlignment]Left" Id="7" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]HammingCode" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" VerticalAlignment="[VerticalAlignment]Top" />
+                </IconTemplate>
+                <Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Id="8" Margin="[SMThickness]3,3,3,3" />
+            </IconPanel>
+        </Icon>
+        <ConnectorPane Height="30" Id="9" ListViewHeight="60" ListViewWidth="150" Width="30" xmlns="http://www.ni.com/PlatformFramework">
+            <ConnectorPaneTerminal />
+            <ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 35" Parameter="26" />
+            <ConnectorPaneTerminal Hotspot="0 25" />
+            <ConnectorPaneTerminal Hotspot="15 0" />
+            <ConnectorPaneTerminal Hotspot="30 5" />
+            <ConnectorPaneTerminal Hotspot="30 15" ListViewHotspot="150 50" Parameter="17" />
+            <ConnectorPaneTerminal Hotspot="30 25" />
+            <ConnectorPaneTerminal Hotspot="15 30" />
+        </ConnectorPane>
+        <MethodDocumentation xmlns="http://www.ni.com/PlatformFramework" />
+        <DiagramUnplacedItems Id="10" />
+        <FrontPanelUnplacedItems Id="11" />
+        <BlockDiagram Id="12">
+            <MathNode Bounds="380 395 420 220" DocumentText="&quot;out=zeros(1,7);\r\n\r\n    for i=0:3\r\n        out(i+1) = in(i+1);\r\n    end\r\n    \r\n    out(5) = mod ( in(1) + in(2) + in(4 ) , 2 );\r\n    out(6) = mod ( in(1) + in(3) + in(4) , 2 );\r\n    out(7) = mod ( in(2) + in(3) + in(4) , 2 );\r\n    \r\n\r\n&quot;" Id="14" xmlns="http://www.ni.com/MScript">
+                <MVariable Bounds="-25 40 45 15" DataType="Double[]" Direction="Input" Facade="" Hotspot="-25 45" Id="1" Name="in" Usage="Required" />
+                <MVariable Bounds="400 40 50 15" DataType="Double[]" Direction="Output" Facade="" Hotspot="450 45" Id="2" Name="out" Usage="Optional" />
+            </MathNode>
+            <Comment Bounds="495 315 143 55" Id="16" xmlns="http://www.ni.com/MocCommon">
+                <p.Text>"Hamming (7,4) coding\r\nIn is a 4 bits array\r\nOut is a 7 bits array"</p.Text>
+            </Comment>
+            <DataAccessor Bounds="895 435 40 15" DataItem="17" Id="22" Label="24">
+                <Terminal DataType="Double[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="22" Bounds="940 435 67 16" Id="24" Text="Variable: out" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="25" Joints="N(14:2) N(22:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+            <DataAccessor Bounds="255 435 40 15" DataItem="26" Id="31" Label="33">
+                <Terminal DataType="Double[]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="31" Bounds="191 435 59 16" Id="33" Text="Variable: in" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="34" Joints="N(31:Value) N(14:1)" xmlns="http://www.ni.com/PlatformFramework" />
+        </BlockDiagram>
+        <CPFrontPanel Height="[float]1600" Id="13" Width="[float]2000">
+            <ArrayViewer ArrayElement="[UIModel]20" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="23" Label="[UIModel]35" Left="[float]599" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]143" Value="{DataItemBinding Id=17}" Width="[float]114" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                <p.DefaultElementValue>0x0</p.DefaultElementValue>
+                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="20" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Name="[string]Child" RadixVisibility="[SMVisibility]Collapsed" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]54" />
+            </ArrayViewer>
+            <Label Id="35" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]23" Left="[float]599" Locked="[bool]True" Text="[string]Variable: out" Top="[float]120" />
+            <ArrayViewer ArrayElement="[UIModel]29" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="32" Label="[UIModel]36" Left="[float]599" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]337" Value="{DataItemBinding Id=26}" Width="[float]129" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                <p.DefaultElementValue>0x0</p.DefaultElementValue>
+                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="29" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Name="[string]Child" RadixVisibility="[SMVisibility]Collapsed" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]69" />
+            </ArrayViewer>
+            <Label Id="36" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]32" Left="[float]599" Locked="[bool]True" Text="[string]Variable: in" Top="[float]314" />
+        </CPFrontPanel>
+        <DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="0" DataType="Double[]" Id="17" Name="Variable: out" />
+        <DataItem CallDirection="Input" CallIndex="0" DataType="Double[]" Id="26" Name="Variable: in" />
+    </VirtualInstrument>
+</SourceFile>
