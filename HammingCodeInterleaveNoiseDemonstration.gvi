@@ -12,7 +12,7 @@
                 <IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="4" TemplateName="Gray">
                     <Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" />
                     <Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" />
-                    <FileNameText FileNameText="[bool]True" Font="[SMFont]0,6," HorizontalAlignment="[HorizontalAlignment]Left" Id="7" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]HamCodeInterleav" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" VerticalAlignment="[VerticalAlignment]Top" />
+                    <FileNameText FileNameText="[bool]True" Font="[SMFont]0,6," HorizontalAlignment="[HorizontalAlignment]Left" Id="7" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]HammingCodeInterleaveNoiseDemonstration" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" VerticalAlignment="[VerticalAlignment]Top" />
                 </IconTemplate>
                 <Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Id="8" Margin="[SMThickness]3,3,3,3" />
             </IconPanel>
@@ -134,15 +134,15 @@
                     <NumericBehavior Interpretation="Exact" ValueFormatter="LV:" />
                 </Literal>
                 <TextNode AttachedTo="253" Bounds="610 970 0 0" Id="254" Text="Variable: l" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
-                <Wire Id="366" Joints="N(656:R2) h(230) v(-20) h(70) v(-60) N(373:368)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="366" Joints="N(661:R2) h(230) v(-20) h(70) v(-60) N(373:368)" xmlns="http://www.ni.com/PlatformFramework" />
                 <ForLoop Bounds="1923 678 640 593" DiagramId="369" Id="368">
                     <ForLoop.Iteration Bounds="65 220 15 15" Id="371" />
                     <ArrayIndex Bounds="110 200 40 40" Id="367" Rank="2" Terminals="array=374, c0t0v=516, c0t1v, c0t2v=377" />
                     <Wire Id="374" Joints="N(373:369) N(367:array)" xmlns="http://www.ni.com/PlatformFramework" />
-                    <Wire Id="377" Joints="N(367:c0t2v) N(646:L1)" xmlns="http://www.ni.com/PlatformFramework" />
+                    <Wire Id="377" Joints="N(367:c0t2v) N(673:L1)" xmlns="http://www.ni.com/PlatformFramework" />
                     <Wire Id="516" Joints="N(371:Output) N(367:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-                    <Wire Id="518" Joints="N(646:R1) N(519:369)" xmlns="http://www.ni.com/PlatformFramework" />
-                    <MethodCall Bounds="435 210 30 30" Id="646" Target="HammingDecde\.gvi">
+                    <Wire Id="518" Joints="N(673:R1) N(519:369)" xmlns="http://www.ni.com/PlatformFramework" />
+                    <MethodCall Bounds="435 210 30 30" Id="673" Target="HammingDecode\.gvi">
                         <p.MethodDeclaration>
                             <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
                                 <Parameter Id="L1" Desc="Variable: in" />
@@ -224,7 +224,7 @@
                 </Literal>
                 <Wire Id="498" Joints="N(496:Out) N(495:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
                 <TextNode AttachedTo="496" Bounds="390 865 0 0" Id="497" Text="dimension size" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
-                <Wire Id="499" Joints="N(651:R2) h(200) v(190) h(-710) v(-30) N(495:inArray)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="499" Joints="N(676:R2) h(195) v(190) h(-710) v(-30) N(495:inArray)" xmlns="http://www.ni.com/PlatformFramework" />
                 <Wire Id="500" Joints="N(495:outArray) h(5) v(175) N(473:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
                 <Wire Id="520" Joints="N(519:368) h(178) v(-160) B(2) N(400:Value) B(2) v(-165) N(532:y)" xmlns="http://www.ni.com/PlatformFramework" />
                 <DataAccessor Bounds="2850 570 40 15" DataItem="523" Id="528" Label="530">
@@ -249,8 +249,8 @@
                 <QuotientAndRemainder Bounds="540 1030 30 30" Id="550" />
                 <Wire Id="551" Joints="N(473:o) N(550:x)" xmlns="http://www.ni.com/PlatformFramework" />
                 <Wire Id="552" Joints="N(542:outArray) h(15) v(-45) N(550:y)" xmlns="http://www.ni.com/PlatformFramework" />
-                <Wire Id="554" Joints="N(550:x-y*floor(x/y\)) h(10) v(-90) N(656:L0)" xmlns="http://www.ni.com/PlatformFramework" />
-                <Wire Id="556" Joints="N(488:425) h(15) v(405) B(2) h(-141) v(240) N(660:L0) B(2) N(473:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="554" Joints="N(550:x-y*floor(x/y\)) h(10) v(-90) N(661:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="556" Joints="N(488:425) h(15) v(405) B(2) h(-141) v(240) N(668:L0) B(2) N(473:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
                 <Literal Bounds="275 1305 40 15" DataType="Double" Facade="NationalInstruments.MocCommon.Modeling.INumericBehavior" Id="558" Label="560" xmlns="http://www.ni.com/MocCommon">
                     <p.Data>0x4020000000000000</p.Data>
                     <NumericBehavior Interpretation="Exact" ValueFormatter="LV:" />
@@ -261,15 +261,15 @@
                 </Literal>
                 <TextNode AttachedTo="558" Bounds="275 1305 0 0" Id="560" Text="Variable: n" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
                 <TextNode AttachedTo="559" Bounds="175 1315 0 0" Id="561" Text="Variable: l" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
-                <Wire Id="562" Joints="N(559:Out) N(660:L4)" xmlns="http://www.ni.com/PlatformFramework" />
-                <Wire Id="563" Joints="N(558:Out) N(660:L3)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="562" Joints="N(559:Out) N(668:L4)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="563" Joints="N(558:Out) N(668:L3)" xmlns="http://www.ni.com/PlatformFramework" />
                 <Comment Bounds="205 495 106 28" Id="574" xmlns="http://www.ni.com/MocCommon">
                     <p.Text>Noise generator</p.Text>
                 </Comment>
-                <Comment Bounds="610 725 85 28" Id="575" xmlns="http://www.ni.com/MocCommon">
+                <Comment Bounds="850 735 85 28" Id="575" xmlns="http://www.ni.com/MocCommon">
                     <p.Text>Interleaving</p.Text>
                 </Comment>
-                <Comment Bounds="885 1010 98 28" Id="576" xmlns="http://www.ni.com/MocCommon">
+                <Comment Bounds="845 1010 98 28" Id="576" xmlns="http://www.ni.com/MocCommon">
                     <p.Text>Deinterleaving</p.Text>
                 </Comment>
                 <Comment Bounds="550 1070 97 42" Id="577" xmlns="http://www.ni.com/MocCommon">
@@ -299,7 +299,7 @@
                 </Literal>
                 <Wire Id="623" Joints="N(621:Out) N(620:y)" xmlns="http://www.ni.com/PlatformFramework" />
                 <TextNode AttachedTo="621" Bounds="695 1310 0 0" Id="622" Text="y" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
-                <Wire Id="624" Joints="N(660:R2) N(620:x)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="624" Joints="N(668:R2) N(620:x)" xmlns="http://www.ni.com/PlatformFramework" />
                 <DataAccessor Bounds="845 1305 40 15" DataItem="626" Id="631" Label="633">
                     <Terminal DataType="Boolean[,]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
                 </DataAccessor>
@@ -309,7 +309,40 @@
                 <Comment Bounds="640 1365 91 28" Id="645" xmlns="http://www.ni.com/MocCommon">
                     <p.Text>Noise display</p.Text>
                 </Comment>
-                <MethodCall Bounds="895 665 50 50" Id="651" Target="Interleaving1\.gvi">
+                <Wire Id="653" Joints="N(514:191) h(7) v(450) h(-1153) v(30) N(676:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="654" Joints="N(234:Out) N(676:L2)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="655" Joints="N(237:Out) N(676:L3)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="657" Joints="N(250:Out) h(183) v(15) N(661:L3)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="658" Joints="N(253:Out) h(5) v(10) N(661:L4)" xmlns="http://www.ni.com/PlatformFramework" />
+                <MethodCall Bounds="840 940 50 50" Id="661" Target="Deinterleaving\.gvi">
+                    <p.MethodDeclaration>
+                        <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                            <Parameter Id="L0" Desc="Variable: in" />
+                            <Parameter Id="L3" Desc="Variable: n" />
+                            <Parameter Id="L4" Desc="Variable: l" />
+                            <Parameter Id="R2" Desc="Variable: out" />
+                        </MethodDeclaration>
+                    </p.MethodDeclaration>
+                    <Terminal DataType="Double[]" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+                    <Terminal DataType="Double" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+                    <Terminal DataType="Double" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
+                    <Terminal DataType="Double[,]" Direction="Output" Hotspot="50 25" Id="R2" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                </MethodCall>
+                <MethodCall Bounds="415 1275 50 50" Id="668" Target="Deinterleaving\.gvi">
+                    <p.MethodDeclaration>
+                        <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                            <Parameter Id="L0" Desc="Variable: in" />
+                            <Parameter Id="L3" Desc="Variable: n" />
+                            <Parameter Id="L4" Desc="Variable: l" />
+                            <Parameter Id="R2" Desc="Variable: out" />
+                        </MethodDeclaration>
+                    </p.MethodDeclaration>
+                    <Terminal DataType="Double[]" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+                    <Terminal DataType="Double" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+                    <Terminal DataType="Double" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
+                    <Terminal DataType="Double[,]" Direction="Output" Hotspot="50 25" Id="R2" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                </MethodCall>
+                <MethodCall Bounds="900 665 50 50" Id="676" Target="Interleaving\.gvi">
                     <p.MethodDeclaration>
                         <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
                             <Parameter Id="L0" Desc="Variable: in" />
@@ -321,39 +354,6 @@
                     <Terminal DataType="Double[,]" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
                     <Terminal DataType="Double" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
                     <Terminal DataType="Double" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
-                    <Terminal DataType="Double[,]" Direction="Output" Hotspot="50 25" Id="R2" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
-                </MethodCall>
-                <Wire Id="653" Joints="N(514:191) h(7) v(450) h(-1153) v(30) N(651:L0)" xmlns="http://www.ni.com/PlatformFramework" />
-                <Wire Id="654" Joints="N(234:Out) N(651:L2)" xmlns="http://www.ni.com/PlatformFramework" />
-                <Wire Id="655" Joints="N(237:Out) N(651:L3)" xmlns="http://www.ni.com/PlatformFramework" />
-                <MethodCall Bounds="840 940 50 50" Id="656" Target="Deinterleaving_2\.gvi">
-                    <p.MethodDeclaration>
-                        <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
-                            <Parameter Id="L0" Desc="Variable: in" />
-                            <Parameter Id="L3" Desc="Variable: n" />
-                            <Parameter Id="L4" Desc="Variable: l" />
-                            <Parameter Id="R2" Desc="Variable: out" />
-                        </MethodDeclaration>
-                    </p.MethodDeclaration>
-                    <Terminal DataType="Double[]" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
-                    <Terminal DataType="Double" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
-                    <Terminal DataType="Double" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
-                    <Terminal DataType="Double[,]" Direction="Output" Hotspot="50 25" Id="R2" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
-                </MethodCall>
-                <Wire Id="657" Joints="N(250:Out) h(183) v(15) N(656:L3)" xmlns="http://www.ni.com/PlatformFramework" />
-                <Wire Id="658" Joints="N(253:Out) h(5) v(10) N(656:L4)" xmlns="http://www.ni.com/PlatformFramework" />
-                <MethodCall Bounds="410 1275 50 50" Id="660" Target="Deinterleaving_2\.gvi">
-                    <p.MethodDeclaration>
-                        <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
-                            <Parameter Id="L0" Desc="Variable: in" />
-                            <Parameter Id="L3" Desc="Variable: n" />
-                            <Parameter Id="L4" Desc="Variable: l" />
-                            <Parameter Id="R2" Desc="Variable: out" />
-                        </MethodDeclaration>
-                    </p.MethodDeclaration>
-                    <Terminal DataType="Double[]" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
-                    <Terminal DataType="Double" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
-                    <Terminal DataType="Double" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
                     <Terminal DataType="Double[,]" Direction="Output" Hotspot="50 25" Id="R2" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
                 </MethodCall>
             </WhileLoop>
@@ -369,7 +369,7 @@
             <Label Id="406" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]401" Left="[float]392" Locked="[bool]True" Text="[string]8 sample Hamming Decoded" Top="[float]423" />
             <ArrayViewer ArrayElement="[UIModel]526" BaseName="[string]Array" Columns="[int]5" Dimensions="[int]2" Height="[float]174" Id="529" Label="[UIModel]533" Left="[float]727" Orientation="[SMOrientation]Horizontal" Rows="[int]9" Top="[float]213" Value="{DataItemBinding Id=523}" Width="[float]148" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
                 <p.DefaultElementValue>False</p.DefaultElementValue>
-                <LED BaseName="[string]Square LED" FalseContent="[string]Off" Font="[SMFont]0,3," Height="[float]16" Id="526" IsReadOnly="[bool]True" Left="[float]71" Name="[string]Child" Shape="[LEDShape]Square" Top="[float]43" TrueContent="[string]On" Value="[bool]False" Width="[float]16" />
+                <LED BaseName="[string]Square LED" FalseContent="[string]Off" Font="[SMFont]0,3," Height="[float]16" Id="526" IsReadOnly="[bool]True" Left="[float]107" Name="[string]Child" Shape="[LEDShape]Square" Top="[float]43" TrueContent="[string]On" Value="[bool]False" Width="[float]16" />
             </ArrayViewer>
             <Label Id="533" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]529" Left="[float]727" Locked="[bool]True" Text="[string]Transmission error" Top="[float]190" />
             <NumericText BaseName="[string]Numeric" Height="[float]22" Id="591" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]594" Left="[float]932" RadixVisibility="[SMVisibility]Collapsed" Top="[float]588" Value="{DataItemBinding Id=588}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
@@ -383,9 +383,10 @@
             <Label Id="610" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]608" Left="[float]417" Locked="[bool]True" Text="[string]8 sample" Top="[float]190" />
             <ArrayViewer ArrayElement="[UIModel]629" BaseName="[string]Array" Columns="[int]8" Dimensions="[int]2" Height="[float]174" Id="632" Label="[UIModel]635" Left="[float]904" Orientation="[SMOrientation]Horizontal" Rows="[int]9" Top="[float]213" Value="{DataItemBinding Id=626}" Width="[float]202" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
                 <p.DefaultElementValue>False</p.DefaultElementValue>
-                <LED BaseName="[string]Square LED" FalseContent="[string]Off" Font="[SMFont]0,3," Height="[float]16" Id="629" IsReadOnly="[bool]True" Left="[float]71" Name="[string]Child" Shape="[LEDShape]Square" Top="[float]61" TrueContent="[string]On" Value="[bool]True" Width="[float]16" />
+                <LED BaseName="[string]Square LED" FalseContent="[string]Off" Font="[SMFont]0,3," Height="[float]16" Id="629" IsReadOnly="[bool]True" Left="[float]71" Name="[string]Child" Shape="[LEDShape]Square" Top="[float]7" TrueContent="[string]On" Value="[bool]False" Width="[float]16" />
             </ArrayViewer>
             <Label Id="635" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]632" Left="[float]904" Locked="[bool]True" Text="[string]Noise deinterleaved" Top="[float]190" />
+            <Text Id="680" Left="[float]1174" Text="[string]Notice how noise (bit flip) does not always create a transmission error&#xD;&#xA;Two bit flip on the sam row are necessary to create a transmission error" TextWrapping="[TextWrapping]NoWrap" Top="[float]198" xmlns="http://www.ni.com/PlatformFramework" />
         </CPFrontPanel>
         <DataItem DataType="Boolean" Id="75" IsLatched="True" Name="stop">
             <p.DefaultValue>False</p.DefaultValue>
@@ -393,10 +394,10 @@
         <DataItem AdaptToDiagramType="True" DataType="Double[,]" Id="395" Name="8 sample Hamming Decoded" />
         <DataItem AdaptToDiagramType="True" DataType="Boolean[,]" Id="523" Name="Transmission error" />
         <DataItem DataType="Double" Id="588" Name="Noise probability %">
-            <p.DefaultValue>0x0</p.DefaultValue>
+            <p.DefaultValue>0x4014000000000000</p.DefaultValue>
         </DataItem>
         <DataItem DataType="UInt32" Id="595" Name="milliseconds to wait">
-            <p.DefaultValue>0</p.DefaultValue>
+            <p.DefaultValue>500</p.DefaultValue>
         </DataItem>
         <DataItem AdaptToDiagramType="True" DataType="Double[,]" Id="602" Name="8 sample" />
         <DataItem AdaptToDiagramType="True" DataType="Boolean[,]" Id="626" Name="Noise deinterleaved" />
