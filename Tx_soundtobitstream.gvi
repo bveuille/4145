@@ -7,8 +7,8 @@
         <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="Common Language Components" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/MocCommon" Version="3.0.0.49152" />
     </SourceModelFeatureSet>
     <VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
-        <Icon Id="2" ListViewIconCrop="0 0 50 50" xmlns="http://www.ni.com/PlatformFramework">
-            <IconPanel Height="[float]50" Id="3" Width="[float]50">
+        <Icon Id="2" ListViewIconCrop="0 0 20 10" xmlns="http://www.ni.com/PlatformFramework">
+            <IconPanel Height="[float]10" Id="3" Width="[float]20">
                 <IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="4" TemplateName="Gray">
                     <Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" />
                     <Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" />
@@ -17,30 +17,16 @@
                 <Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Id="8" Margin="[SMThickness]3,3,3,3" />
             </IconPanel>
         </Icon>
-        <ConnectorPane Height="50" Id="9" ListViewHeight="30" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/PlatformFramework">
+        <ConnectorPane Height="10" Id="9" ListViewHeight="30" ListViewWidth="150" Width="20" xmlns="http://www.ni.com/PlatformFramework">
             <ConnectorPaneTerminal />
-            <ConnectorPaneTerminal Hotspot="0 15" />
-            <ConnectorPaneTerminal Hotspot="0 25" />
-            <ConnectorPaneTerminal Hotspot="0 35" />
-            <ConnectorPaneTerminal Hotspot="0 45" />
-            <ConnectorPaneTerminal Hotspot="15 0" />
-            <ConnectorPaneTerminal Hotspot="25 0" />
-            <ConnectorPaneTerminal Hotspot="35 0" />
-            <ConnectorPaneTerminal Hotspot="50 5" />
-            <ConnectorPaneTerminal Hotspot="50 15" />
-            <ConnectorPaneTerminal Hotspot="50 25" />
-            <ConnectorPaneTerminal Hotspot="50 35" />
-            <ConnectorPaneTerminal Hotspot="50 45" />
-            <ConnectorPaneTerminal Hotspot="15 50" />
-            <ConnectorPaneTerminal Hotspot="25 50" />
-            <ConnectorPaneTerminal Hotspot="35 50" />
+            <ConnectorPaneTerminal Hotspot="20 5" />
         </ConnectorPane>
         <MethodDocumentation xmlns="http://www.ni.com/PlatformFramework" />
         <DiagramUnplacedItems Id="10" />
         <FrontPanelUnplacedItems Id="11">
             <ArrayViewer ArrayElement="[UIModel]654" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" ElementType="[Type]Double" Id="653" IsFixedSize="[bool]False" Name="[string]queue_type" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Value="{DataItemBinding Id=651}" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
                 <p.DefaultElementValue>0</p.DefaultElementValue>
-                <NumericText Height="[float]25" Id="654" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" ValueType="[Type]Int16" Width="[float]60" />
+                <NumericText Height="[float]25" Id="654" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" ValueType="[Type]Int8" Width="[float]60" />
             </ArrayViewer>
         </FrontPanelUnplacedItems>
         <BlockDiagram Id="12">
@@ -188,7 +174,7 @@
                 <Wire Id="436" Joints="N(434:Out) h(5) N(14:T0)" xmlns="http://www.ni.com/PlatformFramework" />
                 <TextNode AttachedTo="434" Bounds="36 10 0 0" Id="435" Text="number of samples per channel" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
                 <EnqueueElement Bounds="95 490 40 40" Id="502" />
-                <Wire Id="504" Joints="N(446:351) N(502:queue)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="504" Joints="N(446:351) h(41) B(1) N(502:queue) B(1) v(-105) N(733:queue)" xmlns="http://www.ni.com/PlatformFramework" />
                 <Add Bounds="335 95 30 30" Id="536" Terminals="o=577, c0t0v=702, c1t0v=543" />
                 <Wire Facade="WireInvisibleFacade" Id="543" Joints="N(729:Out) N(536:c1t0v)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
                 <DataAccessor Bounds="630 305 40 15" DataItem="565" Id="570" Label="572">
@@ -221,6 +207,12 @@
                     <DockedConstantFacade UndockedBounds="624 205 51 15" />
                 </Literal>
                 <TextNode AttachedTo="731" Bounds="363 90 0 0" Id="732" Text="mult" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+                <GetQueueStatus Bounds="60 385 40 40" Id="733" />
+                <DataAccessor Bounds="160 425 40 15" DataItem="735" Id="737" Label="739">
+                    <Terminal DataType="Int32" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+                </DataAccessor>
+                <Wire Id="740" Joints="N(733:# elements in queue) v(10) h(70) v(-5) N(737:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+                <TextNode AttachedTo="737" Bounds="205 425 143 16" Id="739" Text="number elements in queue" xmlns="http://www.ni.com/PlatformFramework" />
                 <WhileLoop.Tunnel Bounds="-4 60 13 10" Docking="Left" Id="355" Terminals="350=407, 351=354" />
                 <WhileLoop.Tunnel Bounds="-4 90 13 10" Docking="Left" Id="358" Terminals="350=410, 351=357" />
                 <WhileLoop.Tunnel Bounds="760 180 13 10" Docking="Right" Id="412" Terminals="350=413, 351=411" />
@@ -321,7 +313,7 @@
             <Wire Id="597" Joints="N(589:Out) N(15:L2)" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="621" Joints="N(652:Value) N(437:element data type)" xmlns="http://www.ni.com/PlatformFramework" />
             <DataAccessor Bounds="230 615 40 15" DataItem="651" Id="652" Label="655">
-                <Terminal DataType="Int16[]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Int8[]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
             </DataAccessor>
             <TextNode AttachedTo="652" Bounds="163 615 62 16" Id="655" Text="queue_type" xmlns="http://www.ni.com/PlatformFramework" />
             <Literal Bounds="204 125 51 15" DataType="Int32" Facade="NationalInstruments.MocCommon.Modeling.INumericBehavior" Id="723" Label="724" xmlns="http://www.ni.com/MocCommon">
@@ -348,6 +340,8 @@
             <Label Id="320" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]319" Left="[float]438" Locked="[bool]True" Text="[string]Number of Packets" Top="[float]600" />
             <NumericText Height="[float]22" Id="315" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]316" Left="[float]765" Top="[float]611" Value="{DataItemBinding Id=306}" ValueType="[Type]Int32" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
             <Label Id="316" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]315" Left="[float]765" Locked="[bool]True" Text="[string]File Length (bits)" Top="[float]588" />
+            <NumericText BaseName="[string]Numeric" Height="[float]22" Id="738" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]741" Left="[float]665" Top="[float]294" Value="{DataItemBinding Id=735}" ValueType="[Type]Int32" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Label Id="741" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]738" Left="[float]665" Locked="[bool]True" Text="[string]number elements in queue" Top="[float]271" />
         </CPFrontPanel>
         <DataItem DataType="Int32" Id="306" Name="File Length (bits)">
             <p.DefaultValue>0</p.DefaultValue>
@@ -368,7 +362,10 @@
         <DataItem AdaptToDiagramType="True" DataType="Int32" Id="598" Name="32-bit integer">
             <p.DefaultValue>0</p.DefaultValue>
         </DataItem>
-        <DataItem DataType="Int16[]" Id="651" Name="queue_type" />
+        <DataItem DataType="Int8[]" Id="651" Name="queue_type" />
+        <DataItem AdaptToDiagramType="True" DataType="Int32" Id="735" Name="number elements in queue">
+            <p.DefaultValue>0</p.DefaultValue>
+        </DataItem>
         <DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
             <p.TypeReference TypeId="1515455000_0">
                 <Class Id="1" Name="" Cluster="">
