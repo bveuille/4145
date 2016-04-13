@@ -7,8 +7,8 @@
         <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="Common Language Components" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/MocCommon" Version="3.0.0.49152" />
     </SourceModelFeatureSet>
     <VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
-        <Icon Id="2" ListViewIconCrop="0 0 50 50" xmlns="http://www.ni.com/PlatformFramework">
-            <IconPanel Height="[float]50" Id="3" Width="[float]50">
+        <Icon Id="2" ListViewIconCrop="0 0 20 10" xmlns="http://www.ni.com/PlatformFramework">
+            <IconPanel Height="[float]10" Id="3" Width="[float]20">
                 <IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="4" TemplateName="Gray">
                     <Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" />
                     <Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" />
@@ -17,23 +17,9 @@
                 <Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Id="8" Margin="[SMThickness]3,3,3,3" />
             </IconPanel>
         </Icon>
-        <ConnectorPane Height="50" Id="9" ListViewHeight="60" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/PlatformFramework">
+        <ConnectorPane Height="10" Id="9" ListViewHeight="60" ListViewWidth="150" Width="20" xmlns="http://www.ni.com/PlatformFramework">
             <ConnectorPaneTerminal ListViewHotspot="0 50" Parameter="227" />
-            <ConnectorPaneTerminal Hotspot="0 15" />
-            <ConnectorPaneTerminal Hotspot="0 25" />
-            <ConnectorPaneTerminal Hotspot="0 35" />
-            <ConnectorPaneTerminal Hotspot="0 45" />
-            <ConnectorPaneTerminal Hotspot="15 0" />
-            <ConnectorPaneTerminal Hotspot="25 0" />
-            <ConnectorPaneTerminal Hotspot="35 0" />
-            <ConnectorPaneTerminal Hotspot="50 5" ListViewHotspot="150 35" Parameter="448" />
-            <ConnectorPaneTerminal Hotspot="50 15" />
-            <ConnectorPaneTerminal Hotspot="50 25" />
-            <ConnectorPaneTerminal Hotspot="50 35" />
-            <ConnectorPaneTerminal Hotspot="50 45" />
-            <ConnectorPaneTerminal Hotspot="15 50" />
-            <ConnectorPaneTerminal Hotspot="25 50" />
-            <ConnectorPaneTerminal Hotspot="35 50" />
+            <ConnectorPaneTerminal Hotspot="20 5" ListViewHotspot="150 35" Parameter="448" />
         </ConnectorPane>
         <MethodDocumentation xmlns="http://www.ni.com/PlatformFramework" />
         <DiagramUnplacedItems Id="10" />
