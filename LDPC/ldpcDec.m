@@ -1,8 +1,9 @@
-function [ out ] = ldpcDec( in, H, countM)
+function [ out ] = ldpcDec( in, H, countM, debug)
 %UNTITLED2 Summary of this function goes here
 %   Detailed explanation goes here
 
-debug=1;
+
+verbose=1;
 
 count=0;
 
@@ -21,7 +22,7 @@ while and( sum(ldpcSyndrom(in,H)) >0 , count<countM )
     syndrom=ldpcSyndrom(in, H);
 
     
-    if(debug)
+    if debug
         count
         syndrom
         sumSyndrom=sum(syndrom)
@@ -47,7 +48,7 @@ while and( sum(ldpcSyndrom(in,H)) >0 , count<countM )
     for bit=1:n
         if notRes(bit)>res(bit)
             in(bit)=mod(in(bit)+1,2);
-            if debug
+            if and( debug,verbose )
                 BIT=bit
                 notRespected=notRes(bit)
                 respected=res(bit)

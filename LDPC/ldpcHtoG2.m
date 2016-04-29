@@ -2,6 +2,10 @@ function [H, Hr , Hrr, G ] = ldpcHtoG2( in )
 %UNTITLED4 Summary of this function goes here
 %   Detailed explanation goes here
 
+
+debug=0;
+
+
 [rowM, colM] = size(in);
 n=colM;
 k=n-rowM;
@@ -42,8 +46,10 @@ for diag1=1:rowM
            return;
         end
         
-        fprintf('diag1 : %d\n rang : %d\n determinant mod 2 :%d\n',diag1, rank(in(:,1:rowM)), det(in(:,1:rowM)));
-        in
+        if debug
+            fprintf('diag1 : %d\n rang : %d\n determinant mod 2 :%d\n',diag1, rank(in(:,1:rowM)), det(in(:,1:rowM)));
+            in
+        end
 end
 
 Hr=in;
