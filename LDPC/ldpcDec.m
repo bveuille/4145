@@ -24,7 +24,7 @@ while and( sum(ldpcSyndrom(in,H)) >0 , count<countM )
     
     if debug
         count
-        syndrom
+        Syndrome=syndrom.'
         sumSyndrom=sum(syndrom)
     end
     
@@ -49,9 +49,7 @@ while and( sum(ldpcSyndrom(in,H)) >0 , count<countM )
         if notRes(bit)>res(bit)
             in(bit)=mod(in(bit)+1,2);
             if and( debug,verbose )
-                BIT=bit
-                notRespected=notRes(bit)
-                respected=res(bit)
+                fprintf('bit: %d notRespected: %d respected: %d\n',bit,notRes(bit),res(bit));
             end
         end
     end
