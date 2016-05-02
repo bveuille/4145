@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile xmlns="http://www.ni.com/PlatformFramework">
+    <SourceModelFeatureSet>
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="3.0.0.49154" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="Editor" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/PlatformFramework" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="3.0.0.49152" />
+    </SourceModelFeatureSet>
+    <VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+        <Icon Id="2" ListViewIconCrop="0 0 50 50" xmlns="http://www.ni.com/PlatformFramework">
+            <IconPanel Height="[float]50" Id="3" Width="[float]50">
+                <IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="4" TemplateName="Gray">
+                    <Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" />
+                    <Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" />
+                    <FileNameText FileNameText="[bool]True" Font="[SMFont]0,7.5," HorizontalAlignment="[HorizontalAlignment]Left" Id="7" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]soundtest" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" VerticalAlignment="[VerticalAlignment]Top" />
+                </IconTemplate>
+                <Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Id="8" Margin="[SMThickness]3,3,3,3" />
+            </IconPanel>
+        </Icon>
+        <ConnectorPane Height="50" Id="9" ListViewHeight="30" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/PlatformFramework">
+            <ConnectorPaneTerminal />
+            <ConnectorPaneTerminal Hotspot="0 15" />
+            <ConnectorPaneTerminal Hotspot="0 25" />
+            <ConnectorPaneTerminal Hotspot="0 35" />
+            <ConnectorPaneTerminal Hotspot="0 45" />
+            <ConnectorPaneTerminal Hotspot="15 0" />
+            <ConnectorPaneTerminal Hotspot="25 0" />
+            <ConnectorPaneTerminal Hotspot="35 0" />
+            <ConnectorPaneTerminal Hotspot="50 5" />
+            <ConnectorPaneTerminal Hotspot="50 15" />
+            <ConnectorPaneTerminal Hotspot="50 25" />
+            <ConnectorPaneTerminal Hotspot="50 35" />
+            <ConnectorPaneTerminal Hotspot="50 45" />
+            <ConnectorPaneTerminal Hotspot="15 50" />
+            <ConnectorPaneTerminal Hotspot="25 50" />
+            <ConnectorPaneTerminal Hotspot="35 50" />
+        </ConnectorPane>
+        <MethodDocumentation xmlns="http://www.ni.com/PlatformFramework" />
+        <DiagramUnplacedItems Id="10" />
+        <FrontPanelUnplacedItems Id="11" />
+        <BlockDiagram Id="12">
+            <MethodCall Bounds="520 225 50 50" Id="14" Target="Tx_soundtobitstream\.gvi">
+                <p.MethodDeclaration>
+                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                        <Parameter Id="L0" Desc="Positive_value_correct" />
+                        <Parameter Id="L1" Desc="Packet&#xA;Message Length (bits)" />
+                        <Parameter Id="L2" Desc="mult" />
+                        <Parameter Id="L3" Desc="samp_pr_chan" />
+                    </MethodDeclaration>
+                </p.MethodDeclaration>
+                <Terminal DataType="Double" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Int32" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Double" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Int32" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+            </MethodCall>
+            <MethodCall Bounds="790 220 50 50" Id="15" Target="Rx_bitstreamtosound\.gvi">
+                <p.MethodDeclaration>
+                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                        <Parameter Id="L2" Desc="mult" />
+                        <Parameter Id="L1" Desc="volume" />
+                        <Parameter Id="L0" Desc="positive_value_corr" />
+                        <Parameter Id="L3" Desc="samp_pr_chan" />
+                    </MethodDeclaration>
+                </p.MethodDeclaration>
+                <Terminal DataType="Double" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Double" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Double" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Int32" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+            </MethodCall>
+            <DataAccessor Bounds="670 320 40 15" DataItem="38" Id="40" Label="42">
+                <Terminal DataType="Double" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="40" Bounds="625 320 40 16" Id="42" Text="volume" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="43" Joints="N(40:Value) h(60) v(-90) N(15:L1)" xmlns="http://www.ni.com/PlatformFramework" />
+            <DataAccessor Bounds="330 245 40 15" DataItem="106" Id="108" Label="110">
+                <Terminal DataType="Double" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="108" Bounds="300 245 25 16" Id="110" Text="mult" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="111" Joints="N(108:Value) h(80) B(1) N(14:L2) B(1) v(30) h(335) v(-35) N(15:L2)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="114" Joints="N(117:Value) h(215) v(-20) B(2) h(-137) v(-145) N(14:L3) B(2) h(132) v(-150) N(15:L3)" xmlns="http://www.ni.com/PlatformFramework" />
+            <DataAccessor Bounds="395 420 40 15" DataItem="115" Id="117" Label="119">
+                <Terminal DataType="Int32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="117" Bounds="314 420 76 16" Id="119" Text="samp_pr_chan" xmlns="http://www.ni.com/PlatformFramework" />
+            <DataAccessor Bounds="395 115 40 15" DataItem="123" Id="121" Label="122">
+                <Terminal DataType="Double" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="121" Bounds="278 115 112 16" Id="122" Text="positive_value_corr_2" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="127" Joints="N(121:Value) h(215) v(45) h(-5) B(3) h(-132) v(65) N(14:L0) B(3) v(60) N(15:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+        </BlockDiagram>
+        <CPFrontPanel Height="[float]1600" Id="13" Width="[float]2000">
+            <Label Id="44" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]45" Left="[float]113" Locked="[bool]True" Text="[string]volume" Top="[float]366" />
+            <Knob BaseName="[string]Numeric" Height="[float]100" Id="45" InteractionMode="[NumericPointerInteractionModes]ArrowKeys, Drag, ScrollWheel, EditRange" Label="[UIModel]44" Left="[float]113" MechanicalAction="[MechanicalAction]SwitchWhenReleased" Top="[float]389" Value="{DataItemBinding Id=38}" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <NumericText BaseName="[string]Numeric" Height="[float]22" Id="109" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]113" Left="[float]381" RadixVisibility="[SMVisibility]Collapsed" Top="[float]279" Value="{DataItemBinding Id=106}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Label Id="113" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]109" Left="[float]381" Locked="[bool]True" Text="[string]mult" Top="[float]256" />
+            <NumericText BaseName="[string]Numeric" Height="[float]22" Id="118" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]120" Left="[float]554" Top="[float]356" Value="{DataItemBinding Id=115}" ValueType="[Type]Int32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Label Id="120" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]118" Left="[float]554" Locked="[bool]True" Text="[string]samp_pr_chan" Top="[float]333" />
+            <NumericText BaseName="[string]Numeric" Height="[float]22" Id="124" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]125" Left="[float]315" RadixVisibility="[SMVisibility]Collapsed" Top="[float]121" Value="{DataItemBinding Id=123}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Label Id="125" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]124" Left="[float]315" Locked="[bool]True" Text="[string]positive_value_corr_2" Top="[float]98" />
+        </CPFrontPanel>
+        <DataItem DataType="Double" Id="38" Name="volume">
+            <p.DefaultValue>0x4059000000000000</p.DefaultValue>
+        </DataItem>
+        <DataItem DataType="Double" Id="106" Name="mult">
+            <p.DefaultValue>0x40F86A0000000000</p.DefaultValue>
+        </DataItem>
+        <DataItem DataType="Int32" Id="115" Name="samp_pr_chan">
+            <p.DefaultValue>100000</p.DefaultValue>
+        </DataItem>
+        <DataItem DataType="Double" Id="123" Name="positive_value_corr_2">
+            <p.DefaultValue>0x40F86A0000000000</p.DefaultValue>
+        </DataItem>
+    </VirtualInstrument>
+</SourceFile>

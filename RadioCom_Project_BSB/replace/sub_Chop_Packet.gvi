@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile xmlns="http://www.ni.com/PlatformFramework">
+    <SourceModelFeatureSet>
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="3.0.0.49154" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="Editor" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/PlatformFramework" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="3.0.0.49152" />
+    </SourceModelFeatureSet>
+    <VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+        <Icon Id="90" ListViewIconCrop="2 2 27 27" xmlns="http://www.ni.com/PlatformFramework">
+            <IconPanel Height="[float]50" Id="91" Width="[float]50">
+                <Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Id="92" />
+                <IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="93" TemplateName="Gray">
+                    <Rectangle Fill="[SMSolidColorBrush]#ff999999" Id="94" IsHitTestVisible="[bool]False" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" />
+                    <Rectangle Fill="[SMSolidColorBrush]#ffe6e6e6" Id="95" IsHitTestVisible="[bool]False" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#ffffffff" />
+                    <Rectangle Fill="[SMLinearGradientBrush]{Start: 0.5 0}, {End: 0.5 1}, {Stops: {Stop: #ffe6e6e6 0}, {Stop: #ffd9d9d9 1}}" Height="[float]6" Id="96" IsHitTestVisible="[bool]False" Margin="[SMThickness]2,0,2,2" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2" RadiusY="[float]2" VerticalAlignment="[VerticalAlignment]Bottom" />
+                    <Rectangle Fill="[SMLinearGradientBrush]{Start: 0.5 0}, {End: 0.5 1}, {Stops: {Stop: #fffafafa 0}, {Stop: #ffe6e6e6 1}}" Height="[float]6" Id="97" IsHitTestVisible="[bool]False" Margin="[SMThickness]2,2,2,0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2" RadiusY="[float]2" VerticalAlignment="[VerticalAlignment]Top" />
+                </IconTemplate>
+                <Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Id="99">
+                    <LVImage Height="[float]30" Id="98" Left="[float]10" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABgSURBVEhL7YxBCsAwEALz/09vTVyCtaXQQ27OwcxKcNQxMm1k2si0kWmjp8eCstPkw4H1oCsegP4rKdr0qQeYHxd0TcrTKUB74L81XwWYE/rOKXxOkGkj00amjUzfqLoAXh7mmFKMP34AAAAASUVORK5CYII=" Top="[float]10" Width="[float]30" />
+                </Canvas>
+            </IconPanel>
+        </Icon>
+        <ConnectorPane Height="50" Id="11" ListViewHeight="105" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/PlatformFramework">
+            <ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="19" />
+            <ConnectorPaneTerminal Hotspot="0 15" />
+            <ConnectorPaneTerminal Hotspot="0 25" />
+            <ConnectorPaneTerminal Hotspot="0 35" ListViewHotspot="0 50" Parameter="22" />
+            <ConnectorPaneTerminal Hotspot="0 45" />
+            <ConnectorPaneTerminal Hotspot="15 0" />
+            <ConnectorPaneTerminal Hotspot="25 0" />
+            <ConnectorPaneTerminal Hotspot="35 0" />
+            <ConnectorPaneTerminal Hotspot="50 5" ListViewHotspot="150 65" Parameter="28" />
+            <ConnectorPaneTerminal Hotspot="50 15" ListViewHotspot="150 80" Parameter="31" />
+            <ConnectorPaneTerminal Hotspot="50 25" />
+            <ConnectorPaneTerminal Hotspot="50 35" />
+            <ConnectorPaneTerminal Hotspot="50 45" />
+            <ConnectorPaneTerminal Hotspot="15 50" ListViewHotspot="0 95" Parameter="34" />
+            <ConnectorPaneTerminal Hotspot="25 50" />
+            <ConnectorPaneTerminal Hotspot="35 50" />
+        </ConnectorPane>
+        <MethodDocumentation xmlns="http://www.ni.com/PlatformFramework" />
+        <DiagramUnplacedItems Id="12" />
+        <FrontPanelUnplacedItems Id="13" />
+        <BlockDiagram Id="14">
+            <DataAccessor Bounds="-125 -350 40 15" DataItem="19" Id="20" Label="42">
+                <Terminal DataType="ComplexDouble[]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <DataAccessor Bounds="-125 -240 40 15" DataItem="22" Id="23" Label="43">
+                <Terminal DataType="Double" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <DataAccessor Bounds="750 -290 40 15" DataItem="28" Id="29" Label="44">
+                <Terminal DataType="ComplexDouble[,]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <DataAccessor Bounds="-125 -280 40 15" DataItem="34" Id="35" Label="46">
+                <Terminal DataType="Int32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <DataAccessor Bounds="365 -350 40 15" DataItem="50" Id="51" Label="73">
+                <Terminal DataType="Double[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <DataAccessor Bounds="370 -330 40 15" DataItem="56" Id="57" Label="74">
+                <Terminal DataType="Boolean[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <DataAccessor Bounds="395 -220 40 15" DataItem="31" Id="32" Label="45">
+                <Terminal DataType="Boolean" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <MethodCall Bounds="220 -350 50 50" Id="66" Label="100" Target="sub_Ave_Power_And_Thresholding\.gvi">
+                <p.MethodDeclaration>
+                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                        <Parameter Id="L0" Desc="Input Complex Samples" />
+                        <Parameter Id="L2" Desc="bin_size" />
+                        <Parameter Id="L4" Desc="threshold" />
+                        <Parameter Id="R0" Desc="Averaged Power Signal" />
+                        <Parameter Id="R2" Desc="Thresholded Signal" />
+                    </MethodDeclaration>
+                </p.MethodDeclaration>
+                <Terminal DataType="ComplexDouble[]" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Int32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Double" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Double[]" Direction="Output" Hotspot="50 5" Id="R0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Boolean[]" Direction="Output" Hotspot="50 25" Id="R2" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+            </MethodCall>
+            <MethodCall Bounds="365 -295 50 50" Id="67" Label="101" Target="sub_Extract_Packet_Boundaries\ \-\ G\.gvi">
+                <p.MethodDeclaration>
+                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                        <Parameter Id="L2" Desc="Thresholded Signal" />
+                        <Parameter Id="R0" Desc="packet_start_loc" />
+                        <Parameter Id="R4" Desc="packet_end_loc" />
+                        <Parameter Id="B1" Desc="Packet Detection Error?" />
+                    </MethodDeclaration>
+                </p.MethodDeclaration>
+                <Terminal DataType="Boolean[]" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Int32[]" Direction="Output" Hotspot="50 5" Id="R0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Int32[]" Direction="Output" Hotspot="50 45" Id="R4" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Boolean" Direction="Output" Hotspot="25 50" Id="B1" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+            </MethodCall>
+            <MethodCall Bounds="590 -290 50 50" Id="68" Label="102" Target="sub_Extract_Packets\.gvi">
+                <p.MethodDeclaration>
+                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                        <Parameter Id="L0" Desc="packet_start_loc" />
+                        <Parameter Id="L3" Desc="packet_end_loc" />
+                        <Parameter Id="T0" Desc="Input Complex Samples" />
+                        <Parameter Id="B0" Desc="Enable?" />
+                        <Parameter Id="R0" Desc="packet_arr" />
+                    </MethodDeclaration>
+                </p.MethodDeclaration>
+                <Terminal DataType="Int32[]" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Int32[]" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="ComplexDouble[]" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Boolean" Direction="Input" Hotspot="15 50" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="ComplexDouble[,]" Direction="Output" Hotspot="50 5" Id="R0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+            </MethodCall>
+            <Not Bounds="470 -245 25 20" Id="69" />
+            <TextNode AttachedTo="20" Bounds="-125 -368.96 126 16" Id="42" Text="Input Complex Samples" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="23" Bounds="-125 -258.96 92 16" Id="43" Text="Energy Threshold" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="29" Bounds="750 -308.96 55 16" Id="44" Text="packet_arr" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="35" Bounds="-125 -298.96 42 16" Id="46" Text="bin_size" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="32" Bounds="440 -220 124 16" Id="45" Text="Packet Detection Error?" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="51" Bounds="410 -350 123 16" Id="73" Text="Averaged Power Signal" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="57" Bounds="415 -330 102 16" Id="74" Text="Thresholded Signal" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="76" Joints="N(67:R4) h(9) v(-5) N(68:L3)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="77" Joints="N(66:R2) h(30) B(1) N(57:Value) B(1) v(55) N(67:L2)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="79" Joints="N(69:.not. x?) h(110) N(68:B0)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="80" Joints="N(67:B1) v(10) B(1) N(69:x) B(1) v(20) N(32:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="82" Joints="N(68:R0) N(29:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="83" Joints="N(20:Value) h(297) B(1) N(66:L0) B(1) v(-30) h(393) N(68:T0)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="84" Joints="N(67:R0) h(9) v(5) h(51) B(3) N(68:L0) B(3) v(-175) N(108:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="85" Joints="N(23:Value) h(300) v(-70) N(66:L4)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="86" Joints="N(66:R0) N(51:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="87" Joints="N(35:Value) h(277.43335) v(-50) N(66:L2)" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="66" Bounds="220 -368 183 16" Id="100" IsReadOnly="True" Text="sub_Ave_Power_And_Thresholding" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="67" Bounds="365 -314 183 16" Id="101" IsReadOnly="True" Text="sub_Extract_Packet_Boundaries - G" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="68" Bounds="590 -309 105 16" Id="102" IsReadOnly="True" Text="sub_Extract_Packets" xmlns="http://www.ni.com/PlatformFramework" />
+            <DataAccessor Bounds="480 -465 40 15" DataItem="103" Id="108" Label="110">
+                <Terminal DataType="Int32[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="108" Bounds="525 -465 84 16" Id="110" Text="packet_start_loc" xmlns="http://www.ni.com/PlatformFramework" />
+        </BlockDiagram>
+        <CPFrontPanel Height="[float]1600" Id="15" Width="[float]2000">
+            <ArrayViewer ArrayElement="[UIModel]18" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="21" IncludeInCapture="[bool]True" Label="[UIModel]37" Left="[float]266" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]36" Value="{DataItemBinding Id=19}" Width="[float]129" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                <p.DefaultElementValue>0x0;0x0</p.DefaultElementValue>
+                <NumericText Height="[float]22" Id="18" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Left="[float]53" Name="[string]Child" Top="[float]7" Value="[ComplexDouble]0 + 0i" ValueType="[Type]ComplexDouble" Width="[float]69" />
+            </ArrayViewer>
+            <NumericText Height="[float]22" Id="24" IncludeInCapture="[bool]True" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]38" Left="[float]316" Top="[float]114" Value="{DataItemBinding Id=22}" ValueType="[Type]Double" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <ArrayViewer ArrayElement="[UIModel]27" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]2" Height="[float]53" Id="30" IncludeInCapture="[bool]True" Label="[UIModel]39" Left="[float]415" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]36" Value="{DataItemBinding Id=28}" Width="[float]114" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                <p.DefaultElementValue>0x0;0x0</p.DefaultElementValue>
+                <NumericText Height="[float]22" Id="27" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]53" Name="[string]Child" Top="[float]7" Value="[ComplexDouble]0 + 0i" ValueType="[Type]ComplexDouble" Width="[float]54" />
+            </ArrayViewer>
+            <LED ContentVisibility="[Visibility]Collapsed" FalseContent="[string]Off" Height="[float]28" Id="33" IncludeInCapture="[bool]True" IsReadOnly="[bool]True" Label="[UIModel]40" Left="[float]415" MinHeight="[float]16" MinWidth="[float]16" Shape="[LEDShape]Square" Top="[float]114" TrueContent="[string]On" Value="{DataItemBinding Id=31}" Width="[float]28" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <NumericText Height="[float]22" Id="36" IncludeInCapture="[bool]True" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]41" Left="[float]316" Top="[float]172" Value="{DataItemBinding Id=34}" ValueType="[Type]Int32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Label Id="37" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]21" Left="[float]266" Locked="[bool]True" Text="[string]Input Complex Samples" Top="[float]13" />
+            <Label Id="38" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]24" Left="[float]316" Locked="[bool]True" Text="[string]Energy Threshold" Top="[float]94" />
+            <Label Id="39" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]30" Left="[float]415" Locked="[bool]True" Text="[string]packet_arr" Top="[float]13" />
+            <Label Id="40" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]33" Left="[float]415" Locked="[bool]True" Text="[string]Packet Detection Error?" Top="[float]94" />
+            <Label Id="41" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]36" Left="[float]316" Locked="[bool]True" Text="[string]bin_size" Top="[float]152" />
+            <ArrayViewer ArrayElement="[UIModel]49" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="52" IncludeInCapture="[bool]True" Label="[UIModel]70" Left="[float]415" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]178" Value="{DataItemBinding Id=50}" Width="[float]114" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                <p.DefaultElementValue>0x0</p.DefaultElementValue>
+                <NumericText Height="[float]22" Id="49" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Name="[string]Child" ValueType="[Type]Double" Width="[float]54" />
+            </ArrayViewer>
+            <ArrayViewer ArrayElement="[UIModel]55" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]42" Id="58" IncludeInCapture="[bool]True" Label="[UIModel]71" Left="[float]415" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]256" Value="{DataItemBinding Id=56}" Width="[float]88" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                <p.DefaultElementValue>False</p.DefaultElementValue>
+                <LED ContentVisibility="[Visibility]Collapsed" FalseContent="[string]Off" Height="[float]28" Id="55" IsReadOnly="[bool]True" MinHeight="[float]16" MinWidth="[float]16" Name="[string]Child" Shape="[LEDShape]Square" TrueContent="[string]On" Width="[float]28" />
+            </ArrayViewer>
+            <Label Id="70" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]52" Left="[float]415" Locked="[bool]True" Text="[string]Averaged Power Signal" Top="[float]155" />
+            <Label Id="71" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]58" Left="[float]415" Locked="[bool]True" Text="[string]Thresholded Signal" Top="[float]233" />
+            <ArrayViewer ArrayElement="[UIModel]106" BaseName="[string]Array" Columns="[int]8" Dimensions="[int]1" Height="[float]36" Id="109" Label="[UIModel]111" Left="[float]635" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]172" Value="{DataItemBinding Id=103}" Width="[float]506" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                <p.DefaultElementValue>0</p.DefaultElementValue>
+                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="106" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Name="[string]Child" ValueType="[Type]Int32" Width="[float]54" />
+            </ArrayViewer>
+            <Label Id="111" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]109" Left="[float]635" Locked="[bool]True" Text="[string]packet_start_loc" Top="[float]149" />
+        </CPFrontPanel>
+        <DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="0" DataType="ComplexDouble[]" Id="19" Name="Input Complex Samples">
+            <p.DefaultValue>
+                <Array Lengths="0" />
+            </p.DefaultValue>
+        </DataItem>
+        <DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="1" DataType="Double" Id="22" Name="Energy Threshold">
+            <p.DefaultValue>0x3EE4F8B588E368F1</p.DefaultValue>
+        </DataItem>
+        <DataItem CallDirection="Output" CallIndex="0" DataType="ComplexDouble[,]" Id="28" Name="packet_arr">
+            <p.DefaultValue>
+                <Array Lengths="0,0" />
+            </p.DefaultValue>
+        </DataItem>
+        <DataItem CallDirection="Output" CallIndex="1" DataType="Boolean" Id="31" Name="Packet Detection Error?">
+            <p.DefaultValue>False</p.DefaultValue>
+        </DataItem>
+        <DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="2" DataType="Int32" Id="34" Name="bin_size">
+            <p.DefaultValue>16</p.DefaultValue>
+        </DataItem>
+        <DataItem DataType="Double[]" Id="50" Name="Averaged Power Signal">
+            <p.DefaultValue>
+                <Array Lengths="0" />
+            </p.DefaultValue>
+        </DataItem>
+        <DataItem DataType="Boolean[]" Id="56" Name="Thresholded Signal">
+            <p.DefaultValue>
+                <Array Lengths="0" />
+            </p.DefaultValue>
+        </DataItem>
+        <DataItem AdaptToDiagramType="True" DataType="Int32[]" Id="103" Name="packet_start_loc">
+            <p.DefaultValue>
+                <Array Lengths="0" />
+            </p.DefaultValue>
+        </DataItem>
+    </VirtualInstrument>
+</SourceFile>

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile xmlns="http://www.ni.com/PlatformFramework">
+    <SourceModelFeatureSet>
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="3.0.0.49154" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="Editor" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/PlatformFramework" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="3.0.0.49152" />
+    </SourceModelFeatureSet>
+    <VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+        <Icon Id="2" ListViewIconCrop="0 0 30 30" xmlns="http://www.ni.com/PlatformFramework">
+            <IconPanel Height="[float]30" Id="3" Width="[float]30">
+                <IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="4" TemplateName="Gray">
+                    <Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" />
+                    <Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" />
+                    <FileNameText FileNameText="[bool]True" Font="[SMFont]0,8.25," HorizontalAlignment="[HorizontalAlignment]Left" Id="7" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]uLaw" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" VerticalAlignment="[VerticalAlignment]Top" />
+                </IconTemplate>
+                <Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Id="8" Margin="[SMThickness]3,3,3,3" />
+            </IconPanel>
+        </Icon>
+        <ConnectorPane Height="30" Id="9" ListViewHeight="75" ListViewWidth="150" Width="30" xmlns="http://www.ni.com/PlatformFramework">
+            <ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="16" />
+            <ConnectorPaneTerminal Hotspot="0 15" />
+            <ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 50" Parameter="26" />
+            <ConnectorPaneTerminal Hotspot="15 0" />
+            <ConnectorPaneTerminal Hotspot="30 5" ListViewHotspot="150 65" Parameter="36" />
+            <ConnectorPaneTerminal Hotspot="30 15" />
+            <ConnectorPaneTerminal Hotspot="30 25" />
+            <ConnectorPaneTerminal Hotspot="15 30" />
+        </ConnectorPane>
+        <MethodDocumentation xmlns="http://www.ni.com/PlatformFramework" />
+        <DiagramUnplacedItems Id="10" />
+        <FrontPanelUnplacedItems Id="11" />
+        <BlockDiagram Id="12">
+            <NaturalLogarithm2 Bounds="570 210 30 30" Id="14" />
+            <NaturalLogarithm2 Bounds="570 260 30 30" Id="15" />
+            <DataAccessor Bounds="330 200 40 15" DataItem="16" Id="18" Label="20">
+                <Terminal DataType="Double" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="18" Bounds="319 200 6 16" Id="20" Text="x" xmlns="http://www.ni.com/PlatformFramework" />
+            <Multiply Bounds="510 200 30 30" Id="22" Terminals="o=32, c0t0v=25, c1t0v=31" />
+            <AbsoluteValue Bounds="395 190 30 30" Id="23" />
+            <Wire Id="24" Joints="N(18:Value) h(15) B(1) N(23:x) B(1) v(-35) N(45:number)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="25" Joints="N(23:abs(x\)) N(22:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <DataAccessor Bounds="460 215 40 15" DataItem="26" Id="28" Label="30">
+                <Terminal DataType="Double" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="28" Bounds="437 215 18 16" Id="30" Text="mu" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="31" Joints="N(28:Value) h(5) B(1) N(22:c1t0v) B(1) v(45) N(15:x)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="32" Joints="N(22:o) N(14:x)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Divide Bounds="640 210 30 30" Id="33" />
+            <Wire Id="34" Joints="N(14:ln(x+1\)) N(33:x)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="35" Joints="N(15:ln(x+1\)) h(35) v(-35) N(33:y)" xmlns="http://www.ni.com/PlatformFramework" />
+            <DataAccessor Bounds="760 215 40 15" DataItem="36" Id="38" Label="40">
+                <Terminal DataType="Double" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="38" Bounds="805 215 6 16" Id="40" Text="y" xmlns="http://www.ni.com/PlatformFramework" />
+            <Sign Bounds="535 155 30 30" Id="45" />
+            <Multiply Bounds="700 205 30 30" Id="46" Terminals="o=49, c0t0v=48, c1t0v=47" />
+            <Wire Id="47" Joints="N(33:x/y) N(46:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="48" Joints="N(45:-1, 0, 1) h(125) v(40) N(46:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="49" Joints="N(46:o) N(38:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+        </BlockDiagram>
+        <CPFrontPanel Height="[float]1600" Id="13" Width="[float]2000">
+            <NumericText BaseName="[string]Numeric" Height="[float]22" Id="19" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]42" Left="[float]435" RadixVisibility="[SMVisibility]Collapsed" Top="[float]205" Value="{DataItemBinding Id=16}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Label Id="42" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]19" Left="[float]435" Locked="[bool]True" Text="[string]x" Top="[float]182" />
+            <NumericText BaseName="[string]Numeric" Height="[float]22" Id="29" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]43" Left="[float]435" RadixVisibility="[SMVisibility]Collapsed" Top="[float]286" Value="{DataItemBinding Id=26}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Label Id="43" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]29" Left="[float]435" Locked="[bool]True" Text="[string]mu" Top="[float]263" />
+            <NumericText BaseName="[string]Numeric" Height="[float]22" Id="39" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]44" Left="[float]603" RadixVisibility="[SMVisibility]Collapsed" Top="[float]286" Value="{DataItemBinding Id=36}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Label Id="44" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]39" Left="[float]603" Locked="[bool]True" Text="[string]y" Top="[float]263" />
+        </CPFrontPanel>
+        <DataItem CallDirection="Input" CallIndex="0" DataType="Double" Id="16" Name="x">
+            <p.DefaultValue>0x0</p.DefaultValue>
+        </DataItem>
+        <DataItem CallDirection="Input" CallIndex="1" DataType="Double" Id="26" Name="mu">
+            <p.DefaultValue>0x0</p.DefaultValue>
+        </DataItem>
+        <DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="0" DataType="Double" Id="36" Name="y">
+            <p.DefaultValue>0x0</p.DefaultValue>
+        </DataItem>
+    </VirtualInstrument>
+</SourceFile>

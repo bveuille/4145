@@ -1,0 +1,46 @@
+Todo:
+Stian: Input
+Baptiste:Bandpass Modulation
+Børge: Pulse Modulation
+
+
+*Link budget
+-Loss and gain for transmitted and recieved signal
+-Noises
+-Verifications in the design, to link with theory
+-Frii's formula
+
+*Error correction coding
+
+
+*Latex project overview
+
+*packetsize
+Total size pr packet: 1024
+20 guard bits in each end
+24sync bits
+960 message bits
+
+*Specifications:
+-Range: 10m ca
+-bitdepth: 16bit
+-sample rate: 8kHz
+-Bitrate: 128kbits
+-Frequency: 2,45GHz (needs more checking out of spectrum)
+-Sound quality: Poor-ok
+-Delay: 5ms
+-Bandwitdh: 20MHz 2,44-2,46
+-Complexity: Medium (compression, turbo code)
+-Power: Low(from formula to 10m transmitting range)
+-Interference: None
+
+*Design motivation
+-Data rate: bit rate
+-Bandwidth: 20MHz
+-Source	coding: 
+-Channel	coding:
+-Interleaver: Error correction
+-Modulation PSK
+-Demodulation PSK
+-Synchronization
+Freq choosen, in the middle of ism-band to avoid interference. Bandwith for the same reason, small enough, and large enough for data transfer

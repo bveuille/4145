@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile xmlns="http://www.ni.com/PlatformFramework">
+    <SourceModelFeatureSet>
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="3.0.0.49154" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="Editor" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/PlatformFramework" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="3.0.0.49152" />
+    </SourceModelFeatureSet>
+    <VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+        <Icon Id="2" ListViewIconCrop="0 0 50 50" xmlns="http://www.ni.com/PlatformFramework">
+            <IconPanel Height="[float]50" Id="3" Width="[float]50">
+                <IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="4" TemplateName="Gray">
+                    <Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" />
+                    <Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" />
+                    <FileNameText FileNameText="[bool]True" Font="[SMFont]0,6," HorizontalAlignment="[HorizontalAlignment]Left" Id="7" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]data(e07dfbd9-e284-42d2-8cd8-7bbf37fbce58)" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" VerticalAlignment="[VerticalAlignment]Top" />
+                </IconTemplate>
+                <Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Id="8" Margin="[SMThickness]3,3,3,3" />
+            </IconPanel>
+        </Icon>
+        <ConnectorPane Height="50" Id="9" ListViewHeight="30" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/PlatformFramework">
+            <ConnectorPaneTerminal />
+            <ConnectorPaneTerminal Hotspot="0 15" />
+            <ConnectorPaneTerminal Hotspot="0 25" />
+            <ConnectorPaneTerminal Hotspot="0 35" />
+            <ConnectorPaneTerminal Hotspot="0 45" />
+            <ConnectorPaneTerminal Hotspot="15 0" />
+            <ConnectorPaneTerminal Hotspot="25 0" />
+            <ConnectorPaneTerminal Hotspot="35 0" />
+            <ConnectorPaneTerminal Hotspot="50 5" />
+            <ConnectorPaneTerminal Hotspot="50 15" />
+            <ConnectorPaneTerminal Hotspot="50 25" />
+            <ConnectorPaneTerminal Hotspot="50 35" />
+            <ConnectorPaneTerminal Hotspot="50 45" />
+            <ConnectorPaneTerminal Hotspot="15 50" />
+            <ConnectorPaneTerminal Hotspot="25 50" />
+            <ConnectorPaneTerminal Hotspot="35 50" />
+        </ConnectorPane>
+        <MethodDocumentation xmlns="http://www.ni.com/PlatformFramework" />
+        <DiagramUnplacedItems Id="10">
+            <DataAccessor Bounds="117 225 40 15" DataItem="2296" Id="2297" Label="2298">
+                <Terminal DataType="Wfm(Double)[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="2297" Bounds="162 225 24 16" Id="2298" Text="data" xmlns="http://www.ni.com/PlatformFramework" />
+        </DiagramUnplacedItems>
+        <FrontPanelUnplacedItems Id="11" />
+        <BlockDiagram Id="12" />
+        <CPFrontPanel Height="[float]1600" Id="13" Width="[float]2000">
+            <Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=2296}" Height="[float]400" Id="2287" Label="[UIModel]2295" Left="[float]287" PreferIndexData="[bool]False" RenderMode="[RenderMode]Hardware" SuppressScaleLayout="[bool]False" Top="[float]229" Width="[float]600" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                <Axis Adjuster="[RangeAdjuster]FitLoosely" Id="2288" Label="[string]Time" MajorDivisions="[UIModel]2291" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 0.015, System.Double" ValueType="[Type]Double">
+                    <RangeLabeledDivisions Id="2291" LabelPresenter="[string]LVRelativeSeconds:&gt;&gt;0.0#E+0" />
+                </Axis>
+                <Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="2289" Label="[string]Amplitude" Orientation="[SMOrientation]Vertical" Range="[IRange]-0.0090000000000000011, 0.006, System.Double" ValueType="[Type]Double" />
+                <Plot HorizontalScale="[UIModel]2288" Id="2290" Label="[string]Plot" VerticalScale="[UIModel]2289" />
+            </Graph>
+            <PlotLegend Graph="[UIModel]2287" Height="[float]28" Id="2292" Left="[float]894" Top="[float]229" Visible="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <CursorLegend DefaultCursorForeground="[SMSolidColorBrush]#ff000000" Graph="[UIModel]2287" Height="[float]102" Id="2293" Left="[float]292" Top="[float]658" Visible="[bool]False" Width="[float]251" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <GraphTools Graph="[UIModel]2287" Id="2294" Left="[float]292" Top="[float]636" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Label Id="2295" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]2287" Left="[float]287" Locked="[bool]True" Text="[string]data" Top="[float]206" />
+        </CPFrontPanel>
+        <DataItem DataType="Wfm(Double)[]" Id="2283" Name="Data">
+            <p.DefaultValue>
+                <Array Lengths="1">
+                    <Rank1>
+                        <Elem>
+                            <Waveform>
+                                <Timestamp>63597647125;9733367047376349440;Utc</Timestamp>
+                                <Interval>0x3F20624DD2F1A9FC</Interval>
+                                <Data>
+                                    <Array Lengths="120">
+                                        <Elements>0xBF707E9100000000,0xBF741709A0000000,0xBF7489ECE0000000,0xBF6375F600000000,0xBF51204500000000,0xBF6156CEC0000000,0xBF56321E80000000,0xBF6B492240000000,0xBF6BBB14C0000000,0xBF60141700000000,0xBF66E03240000000,0xBF75A86580000000,0xBF74949D80000000,0xBF610BD6C0000000,0xBF70E34E40000000,0xBF7B762AA0000000,0xBF68707440000000,0xBF629B1500000000,0xBF75519520000000,0xBF769E3CA0000000,0xBF74B0ABE0000000,0xBF7A519AC0000000,0xBF799460E0000000,0xBF64F54680000000,0xBF764BE240000000,0xBF8004BC00000000,0xBF807E8C20000000,0xBF750CB340000000,0xBF76B6AF80000000,0xBF791C08E0000000,0xBF7893F680000000,0xBF7B357D00000000,0xBF747BF580000000,0xBF7CE18000000000,0xBF7321F180000000,0xBF68725C40000000,0xBF60DCBD40000000,0xBF470E7B00000000,0x3F4E314500000000,0x3F5A7EDC80000000,0xBF43572F00000000,0xBF620D5A80000000,0xBF6C9D55C0000000,0xBF71DE9B00000000,0xBF7490C900000000,0xBF741A9580000000,0xBF710E7000000000,0xBF659A7E00000000,0xBF72577A60000000,0xBF62149680000000,0xBF487DAD00000000,0xBF52991080000000,0x3F41AE1900000000,0xBF4A233E00000000,0xBF5492AA80000000,0xBF4B4B1C00000000,0xBF64B24700000000,0xBF35E63400000000,0xBF57D7DF00000000,0xBF69908200000000,0xBF27919400000000,0xBF38732400000000,0xBF5BE49300000000,0xBF4629FA00000000,0xBF5FF38E00000000,0xBF52A1EF00000000,0x3F299FF000000000,0x3F56384380000000,0x3F37ECC000000000,0x3F424F8100000000,0x3F6395DE00000000,0x3F56970900000000,0x3F56F29500000000,0x3F476BBC00000000,0x3F5732C900000000,0x3F4F977300000000,0xBF619A7580000000,0x3F2F841C00000000,0xBF09CE6000000000,0x3F50125400000000,0xBF222C9C00000000,0x3F2271A000000000,0x3F2E1E1000000000,0x3F476FD100000000,0x3F7749C420000000,0x3F5603F580000000,0x3F4DF1FD00000000,0x3F4BC6A700000000,0x3F65FC6480000000,0x3F4EA00F00000000,0xBF1A829800000000,0x3F50718580000000,0xBF38706C00000000,0xBF26408000000000,0x3F56581300000000,0xBF1EFF1800000000,0x3F5B604F00000000,0x3F4C165F00000000,0x3F58195E80000000,0x3F5303B000000000,0x3F38524E00000000,0x3F4D932E00000000,0x3F573B9080000000,0xBF49A8A900000000,0x3F58816400000000,0x3F5A6FE000000000,0x3F69584C40000000,0x3F6C463F80000000,0x3F695A9DC0000000,0x3F4AC53000000000,0x3F52D54B00000000,0x3F6DB9FD80000000,0x3F49FEA400000000,0x3F4C034200000000,0x3F0FCC2000000000,0xBF40C92200000000,0xBF48C27300000000,0x3F3146EC00000000,0x3F44AA5600000000,0x3F5DD5DF00000000</Elements>
+                                    </Array>
+                                </Data>
+                                <Attributes>
+                                    <Attribute Name="NI_UnitDescription" DataType="String">""</Attribute>
+                                    <Attribute Name="NI_ChannelName" DataType="String">""</Attribute>
+                                </Attributes>
+                            </Waveform>
+                        </Elem>
+                    </Rank1>
+                </Array>
+            </p.DefaultValue>
+        </DataItem>
+        <DataItem DataType="String" Id="2284" Name="DisplayName">
+            <p.DefaultValue>data</p.DefaultValue>
+        </DataItem>
+        <DataItem DataType="String" Id="2285" Name="Source">
+            <p.DefaultValue>SoundTestbench.gvi</p.DefaultValue>
+        </DataItem>
+        <DataItem DataType="Timestamp" Id="2286" Name="Timestamp">
+            <p.DefaultValue>63597647206;16257097105416154129;Utc</p.DefaultValue>
+        </DataItem>
+        <DataItem AdaptToDiagramType="True" DataType="Wfm(Double)[]" Id="2296" Name="ControlSettings" />
+        <DataItem DataType="String" Id="2299" Name="ControlName">
+            <p.DefaultValue>data</p.DefaultValue>
+        </DataItem>
+    </VirtualInstrument>
+</SourceFile>
