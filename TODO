@@ -1,4 +1,10 @@
 Todo:
+Report:
+Let us keep the report as short as possible, 4-6pages would be more than enough.
+
+Stian: link budget, choice of soundsampling, packetsize, decoding of bitstream
+
+
 Stian: Input
 Baptiste:Bandpass Modulation
 Børge: Pulse Modulation
@@ -46,5 +52,4 @@ Total size pr packet: 1072 (1104)
 -Synchronization
 Freq choosen, in the middle of ism-band to avoid interference. Bandwith for the same reason, small enough, and large enough for data transfer
 
-Report:
-Stian: link budget, choice of soundsampling, packetsize, decoding of bitstream
+
