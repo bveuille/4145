@@ -44,3 +44,6 @@ Total size pr packet: 1024
 -Demodulation PSK
 -Synchronization
 Freq choosen, in the middle of ism-band to avoid interference. Bandwith for the same reason, small enough, and large enough for data transfer
+
+Report:
+Stian: link budget, choice of soundsampling, packetsize, decoding of bitstream
