@@ -16,10 +16,11 @@ Børge: Pulse Modulation
 *Latex project overview
 
 *packetsize
-Total size pr packet: 1024
-20 guard bits in each end
-24sync bits
+Total size pr packet: 1072 (1104)
+40 guard bits in each end
+32sync bits
 960 message bits
+(32 packetnumber bits)
 
 *Specifications:
 -Range: 10m ca
