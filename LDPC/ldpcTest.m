@@ -8,7 +8,7 @@ n=m+k;
 
 
 % double square
-k=80;
+k=800;
 n=2*k;
 m=k;
 
@@ -18,7 +18,7 @@ m=k;
 %H=ldpcCheckMatrix2(k,wc,wr);
 
 
-HGfound=1;
+HGfound=0;
 if not(HGfound)
     for i=0:100000
     

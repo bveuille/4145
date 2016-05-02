@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile xmlns="http://www.ni.com/PlatformFramework">
+    <SourceModelFeatureSet>
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="3.0.0.49154" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="Editor" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/PlatformFramework" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="3.0.0.49152" />
+    </SourceModelFeatureSet>
+    <VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+        <Icon Id="2" ListViewIconCrop="0 0 50 50" xmlns="http://www.ni.com/PlatformFramework">
+            <IconPanel Height="[float]50" Id="3" Width="[float]50">
+                <IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="4" TemplateName="Gray">
+                    <Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" />
+                    <Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" />
+                    <FileNameText FileNameText="[bool]True" Font="[SMFont]0,6," HorizontalAlignment="[HorizontalAlignment]Left" Id="7" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]integer_array(0b24198f-1eb5-48c2-9108-529f543af71a)" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" VerticalAlignment="[VerticalAlignment]Top" />
+                </IconTemplate>
+                <Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Id="8" Margin="[SMThickness]3,3,3,3" />
+            </IconPanel>
+        </Icon>
+        <ConnectorPane Height="50" Id="9" ListViewHeight="30" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/PlatformFramework">
+            <ConnectorPaneTerminal />
+            <ConnectorPaneTerminal Hotspot="0 15" />
+            <ConnectorPaneTerminal Hotspot="0 25" />
+            <ConnectorPaneTerminal Hotspot="0 35" />
+            <ConnectorPaneTerminal Hotspot="0 45" />
+            <ConnectorPaneTerminal Hotspot="15 0" />
+            <ConnectorPaneTerminal Hotspot="25 0" />
+            <ConnectorPaneTerminal Hotspot="35 0" />
+            <ConnectorPaneTerminal Hotspot="50 5" />
+            <ConnectorPaneTerminal Hotspot="50 15" />
+            <ConnectorPaneTerminal Hotspot="50 25" />
+            <ConnectorPaneTerminal Hotspot="50 35" />
+            <ConnectorPaneTerminal Hotspot="50 45" />
+            <ConnectorPaneTerminal Hotspot="15 50" />
+            <ConnectorPaneTerminal Hotspot="25 50" />
+            <ConnectorPaneTerminal Hotspot="35 50" />
+        </ConnectorPane>
+        <MethodDocumentation xmlns="http://www.ni.com/PlatformFramework" />
+        <DiagramUnplacedItems Id="10">
+            <DataAccessor Bounds="757 265 40 15" DataItem="2778" Id="2779" Label="2780">
+                <Terminal DataType="UInt8[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="2779" Bounds="802 265 69 16" Id="2780" Text="integer_array" xmlns="http://www.ni.com/PlatformFramework" />
+        </DiagramUnplacedItems>
+        <FrontPanelUnplacedItems Id="11" />
+        <BlockDiagram Id="12" />
+        <CPFrontPanel Height="[float]1600" Id="13" Width="[float]2000">
+            <ArrayViewer ArrayElement="[UIModel]2776" BaseName="[string]Array" Columns="[int]16" Dimensions="[int]1" Height="[float]36" Id="2775" IsFixedSize="[bool]False" Label="[UIModel]2777" Left="[float]143" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]1147" Value="{DataItemBinding Id=2778}" Width="[float]954" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                <p.DefaultElementValue>0</p.DefaultElementValue>
+                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="2776" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]389" Name="[string]Child" Top="[float]7" Value="[byte]141" ValueType="[Type]UInt8" Width="[float]54" />
+            </ArrayViewer>
+            <Label Id="2777" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]2775" Left="[float]143" Locked="[bool]True" Text="[string]integer_array" Top="[float]1124" />
+        </CPFrontPanel>
+        <DataItem DataType="UInt8[]" Id="2771" Name="Data">
+            <p.DefaultValue>
+                <Array Lengths="120">
+                    <Elements>160,151,150,176,190,179,186,167,166,180,172,147,150,179,159,133,170,177,148,145,149,136,138,174,146,122,119,149,145,139,140,134,150,129,153,170,179,193,209,216,194,178,165,156,150,151,158,174,155,178,193,189,205,192,187,192,175,197,185,169,198,196,183,193,180,189,202,214,204,206,224,214,214,207,214,210,179,202,200,210,199,201,202,207,255,213,209,208,227,209,199,210,196,198,214,199,217,209,215,212,204,209,214,192,215,216,231,235,231,208,211,236,208,209,201,195,192,203,206,218</Elements>
+                </Array>
+            </p.DefaultValue>
+        </DataItem>
+        <DataItem DataType="String" Id="2772" Name="DisplayName">
+            <p.DefaultValue>integer_array</p.DefaultValue>
+        </DataItem>
+        <DataItem DataType="String" Id="2773" Name="Source">
+            <p.DefaultValue>SoundTestbench.gvi</p.DefaultValue>
+        </DataItem>
+        <DataItem DataType="Timestamp" Id="2774" Name="Timestamp">
+            <p.DefaultValue>63597647206;16257097105416154129;Utc</p.DefaultValue>
+        </DataItem>
+        <DataItem AdaptToDiagramType="True" DataType="UInt8[]" Id="2778" Name="ControlSettings" />
+        <DataItem DataType="String" Id="2781" Name="ControlName">
+            <p.DefaultValue>integer_array</p.DefaultValue>
+        </DataItem>
+    </VirtualInstrument>
+</SourceFile>

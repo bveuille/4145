@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile xmlns="http://www.ni.com/PlatformFramework">
+    <SourceModelFeatureSet>
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="3.0.0.49154" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="Editor" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/PlatformFramework" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="3.0.0.49152" />
+    </SourceModelFeatureSet>
+    <VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+        <Icon Id="2" ListViewIconCrop="0 0 50 50" xmlns="http://www.ni.com/PlatformFramework">
+            <IconPanel Height="[float]50" Id="3" Width="[float]50">
+                <IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="4" TemplateName="Gray">
+                    <Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" />
+                    <Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" />
+                    <FileNameText FileNameText="[bool]True" Font="[SMFont]0,6," HorizontalAlignment="[HorizontalAlignment]Left" Id="7" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Y_intoSoundOutput(7c666892-e39b-4e5d-bcf3-266c6b2a3e34)" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" VerticalAlignment="[VerticalAlignment]Top" />
+                </IconTemplate>
+                <Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Id="8" Margin="[SMThickness]3,3,3,3" />
+            </IconPanel>
+        </Icon>
+        <ConnectorPane Height="50" Id="9" ListViewHeight="30" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/PlatformFramework">
+            <ConnectorPaneTerminal />
+            <ConnectorPaneTerminal Hotspot="0 15" />
+            <ConnectorPaneTerminal Hotspot="0 25" />
+            <ConnectorPaneTerminal Hotspot="0 35" />
+            <ConnectorPaneTerminal Hotspot="0 45" />
+            <ConnectorPaneTerminal Hotspot="15 0" />
+            <ConnectorPaneTerminal Hotspot="25 0" />
+            <ConnectorPaneTerminal Hotspot="35 0" />
+            <ConnectorPaneTerminal Hotspot="50 5" />
+            <ConnectorPaneTerminal Hotspot="50 15" />
+            <ConnectorPaneTerminal Hotspot="50 25" />
+            <ConnectorPaneTerminal Hotspot="50 35" />
+            <ConnectorPaneTerminal Hotspot="50 45" />
+            <ConnectorPaneTerminal Hotspot="15 50" />
+            <ConnectorPaneTerminal Hotspot="25 50" />
+            <ConnectorPaneTerminal Hotspot="35 50" />
+        </ConnectorPane>
+        <MethodDocumentation xmlns="http://www.ni.com/PlatformFramework" />
+        <DiagramUnplacedItems Id="10">
+            <DataAccessor Bounds="850 215 40 15" DataItem="2841" Id="2842" Label="2843">
+                <Terminal DataType="Double[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="2842" Bounds="895 215 105 16" Id="2843" Text="Y_intoSoundOutput" xmlns="http://www.ni.com/PlatformFramework" />
+        </DiagramUnplacedItems>
+        <FrontPanelUnplacedItems Id="11" />
+        <BlockDiagram Id="12" />
+        <CPFrontPanel Height="[float]1600" Id="13" Width="[float]2000">
+            <ArrayViewer ArrayElement="[UIModel]2839" BaseName="[string]Array" Columns="[int]18" Dimensions="[int]1" Height="[float]36" Id="2838" Label="[UIModel]2840" Left="[float]143" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]1218" Value="{DataItemBinding Id=2841}" Width="[float]1066" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                <p.DefaultElementValue>0x0</p.DefaultElementValue>
+                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="2839" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]725" Name="[string]Child" RadixVisibility="[SMVisibility]Collapsed" Top="[float]7" Value="[double]-0.0047000000000000011" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]54" />
+            </ArrayViewer>
+            <Label Id="2840" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]2838" Left="[float]143" Locked="[bool]True" Text="[string]Y_intoSoundOutput" Top="[float]1195" />
+        </CPFrontPanel>
+        <DataItem DataType="Double[]" Id="2834" Name="Data">
+            <p.DefaultValue>
+                <Array Lengths="120">
+                    <Elements>0xBF70624DD2F1A9FC,0xBF741205BC01A36E,0xBF747AE147AE147C,0xBF63A92A30553260,0xBF50624DD2F1AA00,0xBF613404EA4A8C18,0xBF56F0068DB8BAD0,0xBF6B089A02752548,0xBF6BDA5119CE0760,0xBF60624DD2F1AA00,0xBF66F0068DB8BAC8,0xBF75B573EAB367A2,0xBF747AE147AE147C,0xBF613404EA4A8C18,0xBF70CB295E9E1B08,0xBF7B71758E219654,0xBF689374BC6A7EF8,0xBF62D77318FC5048,0xBF754C985F06F694,0xBF76872B020C49BA,0xBF74E3BCD35A8588,0xBF7A36E2EB1C432E,0xBF79652BD3C36114,0xBF654C985F06F698,0xBF761E4F765FD8AE,0xBF7FF2E48E8A71DE,0xBF8096BB98C7E282,0xBF74E3BCD35A8588,0xBF76872B020C49BA,0xBF78FC504816F008,0xBF789374BC6A7EFA,0xBF7B089A02752546,0xBF747AE147AE147C,0xBF7D14E3BCD35A86,0xBF73404EA4A8C156,0xBF689374BC6A7EF8,0xBF613404EA4A8C18,0xBF46F0068DB8BAC0,0x3F4D7DBF487FCB80,0x3F5A36E2EB1C4330,0xBF43A92A30553260,0xBF6205BC01A36E30,0xBF6CAC083126E978,0xBF7205BC01A36E30,0xBF747AE147AE147C,0xBF741205BC01A36E,0xBF713404EA4A8C14,0xBF654C985F06F698,0xBF726E978D4FDF3C,0xBF6205BC01A36E30,0xBF46F0068DB8BAC0,0xBF5205BC01A36E30,0x3F40624DD2F1AA00,0xBF4A36E2EB1C4340,0xBF554C985F06F690,0xBF4A36E2EB1C4340,0xBF647AE147AE1478,0xBF33A92A30553280,0xBF589374BC6A7F00,0xBF69652BD3C36118,0xBF2A36E2EB1C4300,0xBF3A36E2EB1C4340,0xBF5BDA5119CE0760,0xBF46F0068DB8BAC0,0xBF60624DD2F1AA00,0xBF5205BC01A36E30,0x3F2A36E2EB1C4300,0x3F56F0068DB8BAC0,0x3F3A36E2EB1C4340,0x3F43A92A30553260,0x3F63A92A30553260,0x3F56F0068DB8BAC0,0x3F56F0068DB8BAC0,0x3F46F0068DB8BAC0,0x3F56F0068DB8BAC0,0x3F50624DD2F1AA00,0xBF613404EA4A8C18,0x3F2A36E2EB1C4300,0x0,0x3F50624DD2F1AA00,0xBF1A36E2EB1C4300,0x3F1A36E2EB1C4300,0x3F2A36E2EB1C4300,0x3F46F0068DB8BAC0,0x3F76872B020C49B8,0x3F554C985F06F690,0x3F4D7DBF487FCB80,0x3F4A36E2EB1C4320,0x3F661E4F765FD8B0,0x3F4D7DBF487FCB80,0xBF1A36E2EB1C4300,0x3F50624DD2F1AA00,0xBF3A36E2EB1C4340,0xBF2A36E2EB1C4300,0x3F56F0068DB8BAC0,0xBF1A36E2EB1C4300,0x3F5BDA5119CE0760,0x3F4D7DBF487FCB80,0x3F589374BC6A7EF0,0x3F53A92A30553260,0x3F3A36E2EB1C4340,0x3F4D7DBF487FCB80,0x3F56F0068DB8BAC0,0xBF4A36E2EB1C4340,0x3F589374BC6A7EF0,0x3F5A36E2EB1C4330,0x3F69652BD3C36110,0x3F6CAC083126E978,0x3F69652BD3C36110,0x3F4A36E2EB1C4320,0x3F5205BC01A36E30,0x3F6D7DBF487FCB90,0x3F4A36E2EB1C4320,0x3F4D7DBF487FCB80,0x3F1A36E2EB1C4300,0xBF40624DD2F1AA00,0xBF4A36E2EB1C4340,0x3F33A92A30553240,0x3F43A92A30553260,0x3F5D7DBF487FCB90</Elements>
+                </Array>
+            </p.DefaultValue>
+        </DataItem>
+        <DataItem DataType="String" Id="2835" Name="DisplayName">
+            <p.DefaultValue>Y_intoSoundOutput</p.DefaultValue>
+        </DataItem>
+        <DataItem DataType="String" Id="2836" Name="Source">
+            <p.DefaultValue>SoundTestbench.gvi</p.DefaultValue>
+        </DataItem>
+        <DataItem DataType="Timestamp" Id="2837" Name="Timestamp">
+            <p.DefaultValue>63597647206;16257097105416154129;Utc</p.DefaultValue>
+        </DataItem>
+        <DataItem AdaptToDiagramType="True" DataType="Double[]" Id="2841" Name="ControlSettings" />
+        <DataItem DataType="String" Id="2844" Name="ControlName">
+            <p.DefaultValue>Y_intoSoundOutput</p.DefaultValue>
+        </DataItem>
+    </VirtualInstrument>
+</SourceFile>
