@@ -6,7 +6,7 @@
     </SourceModelFeatureSet>
     <UserSettingsDefinition Envoy="1" Name=":Project:ZProjectSettings">
         <OpenDocumentManager Envoy="1" Target="Project" xmlns="http://www.ni.com/PlatformFramework">
-            <OpenDocument ActiveDocument="True" ActiveEditor="Diagram" Envoy="241" />
+            <OpenDocument ActiveDocument="True" ActiveEditor="Panel" Envoy="66" />
         </OpenDocumentManager>
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="3" Name=":Project:SystemDiagram" xmlns="http://www.ni.com/PlatformFramework">
@@ -248,7 +248,7 @@
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="66" Name=":Project:PC:Tx_main\.gvi">
         <DefinitionCacheUserSetting Envoy="66" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-            <FunctionSignatureCache CacheSignature="1D1A45EEB4746B7" Height="50" ListViewHeight="30" ListViewWidth="150" Name="Tx_main\.gvi" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
+            <FunctionSignatureCache CacheSignature="1D1A45EEB4746B0" Height="50" ListViewHeight="30" ListViewWidth="150" Name="Tx_main\.gvi" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
                 <p.IconModel>
                     <MergeScript xmlns="http://www.ni.com/PlatformFramework">
                         <MergeFeatureSet>
@@ -1675,7 +1675,7 @@
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="106" Name=":Project:PC:modulation_block\.gvi">
         <DefinitionCacheUserSetting Envoy="106" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-            <FunctionSignatureCache CacheSignature="1D1A4521C35FD1A" Height="50" ListViewHeight="210" ListViewWidth="150" Name="modulation_block\.gvi" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
+            <FunctionSignatureCache CacheSignature="1D1A4521C35FD14" Height="50" ListViewHeight="210" ListViewWidth="150" Name="modulation_block\.gvi" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
                 <p.IconModel>
                     <MergeScript xmlns="http://www.ni.com/PlatformFramework">
                         <MergeFeatureSet>
@@ -5464,7 +5464,7 @@
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="176" Name=":Project:PC:SoundTestbench\.gvi">
         <DefinitionCacheUserSetting Envoy="176" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-            <FunctionSignatureCache CacheSignature="1D1A33276E124B6" Height="50" ListViewHeight="30" ListViewWidth="150" Name="SoundTestbench\.gvi" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
+            <FunctionSignatureCache CacheSignature="1D1A33276E124B2" Height="50" ListViewHeight="30" ListViewWidth="150" Name="SoundTestbench\.gvi" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
                 <p.IconModel>
                     <MergeScript xmlns="http://www.ni.com/PlatformFramework">
                         <MergeFeatureSet>
@@ -5486,145 +5486,6 @@
                         </MergeItem>
                     </MergeScript>
                 </p.IconModel>
-                <CachedQualifiedDependency SourceId="67" TargetName="Sound\ Input\ Configure\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="79" TargetName="Sound\ Input\ Read\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="169" TargetName="Sound\ Input\ Stop\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="170" TargetName="Sound\ Input\ Clear\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="171" TargetName="Sound\ Input\ Start\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="746" TargetName="Sound\ Output\ Stop\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="755" TargetName="Sound\ Output\ Clear\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="737" TargetName="Sound\ Output\ Configure\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="778" TargetName="Sound\ Output\ Start\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="67" TargetName="Sound\ Input\ Configure\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="79" TargetName="Sound\ Input\ Read\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="169" TargetName="Sound\ Input\ Stop\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="170" TargetName="Sound\ Input\ Clear\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="171" TargetName="Sound\ Input\ Start\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="803" TargetName="Sound\ Output\ Write\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="746" TargetName="Sound\ Output\ Stop\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="755" TargetName="Sound\ Output\ Clear\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="737" TargetName="Sound\ Output\ Configure\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="778" TargetName="Sound\ Output\ Start\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="67" TargetName="Sound\ Input\ Configure\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="79" TargetName="Sound\ Input\ Read\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="169" TargetName="Sound\ Input\ Stop\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="170" TargetName="Sound\ Input\ Clear\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="171" TargetName="Sound\ Input\ Start\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="803" TargetName="Sound\ Output\ Write\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="746" TargetName="Sound\ Output\ Stop\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="755" TargetName="Sound\ Output\ Clear\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="737" TargetName="Sound\ Output\ Configure\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="778" TargetName="Sound\ Output\ Start\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="67" TargetName="Sound\ Input\ Configure\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="79" TargetName="Sound\ Input\ Read\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="169" TargetName="Sound\ Input\ Stop\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="170" TargetName="Sound\ Input\ Clear\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="171" TargetName="Sound\ Input\ Start\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="803" TargetName="Sound\ Output\ Write\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="746" TargetName="Sound\ Output\ Stop\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="755" TargetName="Sound\ Output\ Clear\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="737" TargetName="Sound\ Output\ Configure\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="778" TargetName="Sound\ Output\ Start\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="67" TargetName="Sound\ Input\ Configure\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="79" TargetName="Sound\ Input\ Read\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="169" TargetName="Sound\ Input\ Stop\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="170" TargetName="Sound\ Input\ Clear\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="171" TargetName="Sound\ Input\ Start\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="803" TargetName="Sound\ Output\ Write\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="746" TargetName="Sound\ Output\ Stop\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="755" TargetName="Sound\ Output\ Clear\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="737" TargetName="Sound\ Output\ Configure\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="778" TargetName="Sound\ Output\ Start\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="67" TargetName="Sound\ Input\ Configure\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="79" TargetName="Sound\ Input\ Read\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="169" TargetName="Sound\ Input\ Stop\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="170" TargetName="Sound\ Input\ Clear\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="171" TargetName="Sound\ Input\ Start\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="803" TargetName="Sound\ Output\ Write\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="746" TargetName="Sound\ Output\ Stop\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="755" TargetName="Sound\ Output\ Clear\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="737" TargetName="Sound\ Output\ Configure\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="778" TargetName="Sound\ Output\ Start\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="67" TargetName="Sound\ Input\ Configure\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="79" TargetName="Sound\ Input\ Read\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="169" TargetName="Sound\ Input\ Stop\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="170" TargetName="Sound\ Input\ Clear\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="171" TargetName="Sound\ Input\ Start\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="803" TargetName="Sound\ Output\ Write\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="746" TargetName="Sound\ Output\ Stop\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="755" TargetName="Sound\ Output\ Clear\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="737" TargetName="Sound\ Output\ Configure\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="778" TargetName="Sound\ Output\ Start\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="67" TargetName="Sound\ Input\ Configure\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="79" TargetName="Sound\ Input\ Read\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="169" TargetName="Sound\ Input\ Stop\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="170" TargetName="Sound\ Input\ Clear\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="171" TargetName="Sound\ Input\ Start\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="803" TargetName="Sound\ Output\ Write\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="746" TargetName="Sound\ Output\ Stop\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="755" TargetName="Sound\ Output\ Clear\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="737" TargetName="Sound\ Output\ Configure\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="778" TargetName="Sound\ Output\ Start\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="67" TargetName="Sound\ Input\ Configure\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="79" TargetName="Sound\ Input\ Read\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="169" TargetName="Sound\ Input\ Stop\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="170" TargetName="Sound\ Input\ Clear\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="171" TargetName="Sound\ Input\ Start\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="803" TargetName="Sound\ Output\ Write\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="746" TargetName="Sound\ Output\ Stop\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="755" TargetName="Sound\ Output\ Clear\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="737" TargetName="Sound\ Output\ Configure\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="778" TargetName="Sound\ Output\ Start\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="1099" TargetName="minAndMax\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="1153" TargetName="shiftAndMultSoundArray\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="67" TargetName="Sound\ Input\ Configure\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="79" TargetName="Sound\ Input\ Read\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="1099" TargetName="minAndMax\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="1153" TargetName="shiftAndMultSoundArray\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="169" TargetName="Sound\ Input\ Stop\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="170" TargetName="Sound\ Input\ Clear\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="171" TargetName="Sound\ Input\ Start\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="803" TargetName="Sound\ Output\ Write\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="746" TargetName="Sound\ Output\ Stop\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="755" TargetName="Sound\ Output\ Clear\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="737" TargetName="Sound\ Output\ Configure\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="778" TargetName="Sound\ Output\ Start\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="67" TargetName="Sound\ Input\ Configure\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="79" TargetName="Sound\ Input\ Read\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="1099" TargetName="minAndMax\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="1153" TargetName="shiftAndMultSoundArray\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="169" TargetName="Sound\ Input\ Stop\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="170" TargetName="Sound\ Input\ Clear\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="171" TargetName="Sound\ Input\ Start\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="803" TargetName="Sound\ Output\ Write\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="746" TargetName="Sound\ Output\ Stop\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="755" TargetName="Sound\ Output\ Clear\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="737" TargetName="Sound\ Output\ Configure\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="778" TargetName="Sound\ Output\ Start\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="67" TargetName="Sound\ Input\ Configure\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="79" TargetName="Sound\ Input\ Read\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="1099" TargetName="minAndMax\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="1153" TargetName="shiftAndMultSoundArray\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="169" TargetName="Sound\ Input\ Stop\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="170" TargetName="Sound\ Input\ Clear\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="171" TargetName="Sound\ Input\ Start\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="803" TargetName="Sound\ Output\ Write\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="746" TargetName="Sound\ Output\ Stop\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="755" TargetName="Sound\ Output\ Clear\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="737" TargetName="Sound\ Output\ Configure\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="778" TargetName="Sound\ Output\ Start\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="67" TargetName="Sound\ Input\ Configure\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="79" TargetName="Sound\ Input\ Read\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="1099" TargetName="minAndMax\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="1153" TargetName="shiftAndMultSoundArray\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="169" TargetName="Sound\ Input\ Stop\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="170" TargetName="Sound\ Input\ Clear\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="171" TargetName="Sound\ Input\ Start\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="803" TargetName="Sound\ Output\ Write\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="746" TargetName="Sound\ Output\ Stop\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="755" TargetName="Sound\ Output\ Clear\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="737" TargetName="Sound\ Output\ Configure\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
-                <CachedQualifiedDependency SourceId="778" TargetName="Sound\ Output\ Start\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
                 <CachedQualifiedDependency SourceId="67" TargetName="Sound\ Input\ Configure\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
                 <CachedQualifiedDependency SourceId="79" TargetName="Sound\ Input\ Read\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
                 <CachedQualifiedDependency SourceId="1099" TargetName="minAndMax\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
@@ -6998,7 +6859,7 @@
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="241" Name=":Project:PC:Rx_main\.gvi">
         <DefinitionCacheUserSetting Envoy="241" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-            <FunctionSignatureCache CacheSignature="1D1A46A6BA59272" Height="50" ListViewHeight="30" ListViewWidth="150" Name="Rx_main\.gvi" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
+            <FunctionSignatureCache CacheSignature="1D1A521E3B03FB3" Height="50" ListViewHeight="30" ListViewWidth="150" Name="Rx_main\.gvi" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
                 <p.IconModel>
                     <MergeScript xmlns="http://www.ni.com/PlatformFramework">
                         <MergeFeatureSet>
@@ -7038,11 +6899,29 @@
                 <CachedQualifiedDependency SourceId="468" TargetName="Sound\ Output\ Clear\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
                 <CachedQualifiedDependency SourceId="479" TargetName="niUSRP\ Abort\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
                 <CachedQualifiedDependency SourceId="480" TargetName="niUSRP\ Close\ Session\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+                <CachedQualifiedDependency SourceId="14" TargetName="niUSRP\ Open\ Rx\ Session\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+                <CachedQualifiedDependency SourceId="15" TargetName="niUSRP\ Configure\ Signal\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+                <CachedQualifiedDependency SourceId="16" TargetName="niUSRP\ Initiate\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+                <CachedQualifiedDependency SourceId="108" TargetName="niUSRP\ Fetch\ Rx\ Data\ \(CDB\ Cluster\)\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+                <CachedQualifiedDependency SourceId="229" TargetName="demodulation_block\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+                <CachedQualifiedDependency SourceId="232" TargetName="MT\ Format\ Constellation\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+                <CachedQualifiedDependency SourceId="277" TargetName="extractDataBits\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+                <CachedQualifiedDependency SourceId="309" TargetName="Sound\ Output\ Write\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+                <CachedQualifiedDependency SourceId="489" TargetName="soundBitStream2Integer\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+                <CachedQualifiedDependency SourceId="671" TargetName="deShiftAndMultSoundArray\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+                <CachedQualifiedDependency SourceId="824" TargetName="adjust_Samples_to_sync\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+                <CachedQualifiedDependency SourceId="113" TargetName="initPSK\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+                <CachedQualifiedDependency SourceId="440" TargetName="Sound\ Output\ Configure\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+                <CachedQualifiedDependency SourceId="441" TargetName="Sound\ Output\ Start\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+                <CachedQualifiedDependency SourceId="374" TargetName="Sound\ Output\ Stop\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+                <CachedQualifiedDependency SourceId="468" TargetName="Sound\ Output\ Clear\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+                <CachedQualifiedDependency SourceId="479" TargetName="niUSRP\ Abort\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
+                <CachedQualifiedDependency SourceId="480" TargetName="niUSRP\ Close\ Session\.gvi" xmlns="http://www.ni.com/PlatformFramework" />
             </FunctionSignatureCache>
         </DefinitionCacheUserSetting>
         <ScrollAndZoomSettingCache Envoy="241" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-            <ScrollAndZoomEditor EditorName="VIPanelControl" ScrollHorizontalOffset="159.88580322265625" ScrollVerticalOffset="48" Zoom="1" />
-            <ScrollAndZoomEditor EditorName="VIDiagramControl" ScrollHorizontalOffset="-182.5" ScrollVerticalOffset="175" Zoom="0.8" />
+            <ScrollAndZoomEditor EditorName="VIPanelControl" ScrollHorizontalOffset="0" ScrollVerticalOffset="0" Zoom="0.75" />
+            <ScrollAndZoomEditor EditorName="VIDiagramControl" ScrollHorizontalOffset="-579" ScrollVerticalOffset="-121" Zoom="1" />
         </ScrollAndZoomSettingCache>
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="245" Name=":Project:PC:niUSRP\ Open\ Rx\ Session\.gvi">
@@ -8509,7 +8388,7 @@
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="252" Name=":Project:PC:extractDataBits\.gvi">
         <DefinitionCacheUserSetting Envoy="252" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-            <FunctionSignatureCache CacheSignature="1D1A32B98B582B3" Height="50" ListViewHeight="75" ListViewWidth="150" Name="extractDataBits\.gvi" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
+            <FunctionSignatureCache CacheSignature="1D1A32B98B582B0" Height="50" ListViewHeight="75" ListViewWidth="150" Name="extractDataBits\.gvi" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
                 <p.IconModel>
                     <MergeScript xmlns="http://www.ni.com/PlatformFramework">
                         <MergeFeatureSet>
@@ -17454,7 +17333,7 @@
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="372" Name=":Project:PC:soundBitStream2Integer\.gvi">
         <DefinitionCacheUserSetting Envoy="372" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-            <FunctionSignatureCache CacheSignature="1D1A340328B2320" Height="50" ListViewHeight="90" ListViewWidth="150" Name="soundBitStream2Integer\.gvi" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
+            <FunctionSignatureCache CacheSignature="1D1A340328B2318" Height="50" ListViewHeight="90" ListViewWidth="150" Name="soundBitStream2Integer\.gvi" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
                 <p.IconModel>
                     <MergeScript xmlns="http://www.ni.com/PlatformFramework">
                         <MergeFeatureSet>
@@ -21928,7 +21807,7 @@
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="444" Name=":Project:PC:minAndMax\.gvi">
         <DefinitionCacheUserSetting Envoy="444" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-            <FunctionSignatureCache CacheSignature="1D1A320989F81A2" Height="50" ListViewHeight="135" ListViewWidth="150" Name="minAndMax\.gvi" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
+            <FunctionSignatureCache CacheSignature="1D1A320989F81A0" Height="50" ListViewHeight="135" ListViewWidth="150" Name="minAndMax\.gvi" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
                 <p.IconModel>
                     <MergeScript xmlns="http://www.ni.com/PlatformFramework">
                         <MergeFeatureSet>
@@ -21979,7 +21858,7 @@
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="449" Name=":Project:PC:shiftAndMultSoundArray\.gvi">
         <DefinitionCacheUserSetting Envoy="449" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-            <FunctionSignatureCache CacheSignature="1D1A3235AF8F938" Height="50" ListViewHeight="90" ListViewWidth="150" Name="shiftAndMultSoundArray\.gvi" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
+            <FunctionSignatureCache CacheSignature="1D1A3235AF8F932" Height="50" ListViewHeight="90" ListViewWidth="150" Name="shiftAndMultSoundArray\.gvi" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
                 <p.IconModel>
                     <MergeScript xmlns="http://www.ni.com/PlatformFramework">
                         <MergeFeatureSet>
@@ -22019,7 +21898,7 @@
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="453" Name=":Project:DataDepot:data\ \(453\)\.data">
         <DefinitionCacheUserSetting Envoy="453" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-            <FunctionSignatureCache CacheSignature="1D1A32F1A154F95" Height="50" ListViewHeight="30" ListViewWidth="150" Name="data\ \(453\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
+            <FunctionSignatureCache CacheSignature="1D1A32F1A154F90" Height="50" ListViewHeight="30" ListViewWidth="150" Name="data\ \(453\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
                 <p.IconModel>
                     <MergeScript xmlns="http://www.ni.com/PlatformFramework">
                         <MergeFeatureSet>
@@ -22046,7 +21925,7 @@
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="454" Name=":Project:DataDepot:inDbl\ \(454\)\.data">
         <DefinitionCacheUserSetting Envoy="454" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-            <FunctionSignatureCache CacheSignature="1D1A32F1A15C4C7" Height="50" ListViewHeight="30" ListViewWidth="150" Name="inDbl\ \(454\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
+            <FunctionSignatureCache CacheSignature="1D1A32F1A15C4C0" Height="50" ListViewHeight="30" ListViewWidth="150" Name="inDbl\ \(454\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
                 <p.IconModel>
                     <MergeScript xmlns="http://www.ni.com/PlatformFramework">
                         <MergeFeatureSet>
@@ -22073,7 +21952,7 @@
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="455" Name=":Project:DataDepot:sizeOfdblArray\ \(455\)\.data">
         <DefinitionCacheUserSetting Envoy="455" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-            <FunctionSignatureCache CacheSignature="1D1A32F1A1612E8" Height="50" ListViewHeight="30" ListViewWidth="150" Name="sizeOfdblArray\ \(455\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
+            <FunctionSignatureCache CacheSignature="1D1A32F1A1612E0" Height="50" ListViewHeight="30" ListViewWidth="150" Name="sizeOfdblArray\ \(455\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
                 <p.IconModel>
                     <MergeScript xmlns="http://www.ni.com/PlatformFramework">
                         <MergeFeatureSet>
@@ -22100,7 +21979,7 @@
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="456" Name=":Project:DataDepot:OutDbl\ \(456\)\.data">
         <DefinitionCacheUserSetting Envoy="456" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-            <FunctionSignatureCache CacheSignature="1D1A32F1A166109" Height="50" ListViewHeight="30" ListViewWidth="150" Name="OutDbl\ \(456\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
+            <FunctionSignatureCache CacheSignature="1D1A32F1A166100" Height="50" ListViewHeight="30" ListViewWidth="150" Name="OutDbl\ \(456\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
                 <p.IconModel>
                     <MergeScript xmlns="http://www.ni.com/PlatformFramework">
                         <MergeFeatureSet>
@@ -22154,7 +22033,7 @@
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="458" Name=":Project:DataDepot:array2Queue_size\ \(458\)\.data">
         <DefinitionCacheUserSetting Envoy="458" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-            <FunctionSignatureCache CacheSignature="1D1A32F1A16FD4B" Height="50" ListViewHeight="30" ListViewWidth="150" Name="array2Queue_size\ \(458\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
+            <FunctionSignatureCache CacheSignature="1D1A32F1A16FD4A" Height="50" ListViewHeight="30" ListViewWidth="150" Name="array2Queue_size\ \(458\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
                 <p.IconModel>
                     <MergeScript xmlns="http://www.ni.com/PlatformFramework">
                         <MergeFeatureSet>
@@ -22181,7 +22060,7 @@
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="459" Name=":Project:DataDepot:arrayFromQueue\ \(459\)\.data">
         <DefinitionCacheUserSetting Envoy="459" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-            <FunctionSignatureCache CacheSignature="1D1A32F1A174B6C" Height="50" ListViewHeight="30" ListViewWidth="150" Name="arrayFromQueue\ \(459\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
+            <FunctionSignatureCache CacheSignature="1D1A32F1A174B6A" Height="50" ListViewHeight="30" ListViewWidth="150" Name="arrayFromQueue\ \(459\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
                 <p.IconModel>
                     <MergeScript xmlns="http://www.ni.com/PlatformFramework">
                         <MergeFeatureSet>
@@ -22235,7 +22114,7 @@
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="461" Name=":Project:DataDepot:sizeOfClusterArray\ \(461\)\.data">
         <DefinitionCacheUserSetting Envoy="461" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-            <FunctionSignatureCache CacheSignature="1D1A32F1A19BC76" Height="50" ListViewHeight="30" ListViewWidth="150" Name="sizeOfClusterArray\ \(461\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
+            <FunctionSignatureCache CacheSignature="1D1A32F1A19BC74" Height="50" ListViewHeight="30" ListViewWidth="150" Name="sizeOfClusterArray\ \(461\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
                 <p.IconModel>
                     <MergeScript xmlns="http://www.ni.com/PlatformFramework">
                         <MergeFeatureSet>
@@ -22262,7 +22141,7 @@
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="462" Name=":Project:DataDepot:integet_arr\ \(462\)\.data">
         <DefinitionCacheUserSetting Envoy="462" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-            <FunctionSignatureCache CacheSignature="1D1A32F1A1A0A97" Height="50" ListViewHeight="30" ListViewWidth="150" Name="integet_arr\ \(462\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
+            <FunctionSignatureCache CacheSignature="1D1A32F1A1A0A94" Height="50" ListViewHeight="30" ListViewWidth="150" Name="integet_arr\ \(462\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
                 <p.IconModel>
                     <MergeScript xmlns="http://www.ni.com/PlatformFramework">
                         <MergeFeatureSet>
@@ -22289,7 +22168,7 @@
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="463" Name=":Project:DataDepot:bit_arr\ \(463\)\.data">
         <DefinitionCacheUserSetting Envoy="463" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-            <FunctionSignatureCache CacheSignature="1D1A32F1A1A58B8" Height="50" ListViewHeight="30" ListViewWidth="150" Name="bit_arr\ \(463\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
+            <FunctionSignatureCache CacheSignature="1D1A32F1A1A58B4" Height="50" ListViewHeight="30" ListViewWidth="150" Name="bit_arr\ \(463\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
                 <p.IconModel>
                     <MergeScript xmlns="http://www.ni.com/PlatformFramework">
                         <MergeFeatureSet>
@@ -22316,7 +22195,7 @@
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="464" Name=":Project:DataDepot:concat_arr\ \(464\)\.data">
         <DefinitionCacheUserSetting Envoy="464" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-            <FunctionSignatureCache CacheSignature="1D1A32F1A1AA6D9" Height="50" ListViewHeight="30" ListViewWidth="150" Name="concat_arr\ \(464\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
+            <FunctionSignatureCache CacheSignature="1D1A32F1A1AA6D4" Height="50" ListViewHeight="30" ListViewWidth="150" Name="concat_arr\ \(464\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
                 <p.IconModel>
                     <MergeScript xmlns="http://www.ni.com/PlatformFramework">
                         <MergeFeatureSet>
@@ -22343,7 +22222,7 @@
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="465" Name=":Project:DataDepot:correcting\ \(465\)\.data">
         <DefinitionCacheUserSetting Envoy="465" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-            <FunctionSignatureCache CacheSignature="1D1A32F1A1AF4FA" Height="50" ListViewHeight="30" ListViewWidth="150" Name="correcting\ \(465\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
+            <FunctionSignatureCache CacheSignature="1D1A32F1A1AF4F4" Height="50" ListViewHeight="30" ListViewWidth="150" Name="correcting\ \(465\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
                 <p.IconModel>
                     <MergeScript xmlns="http://www.ni.com/PlatformFramework">
                         <MergeFeatureSet>
@@ -22370,7 +22249,7 @@
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="466" Name=":Project:DataDepot:multiple\ \(466\)\.data">
         <DefinitionCacheUserSetting Envoy="466" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-            <FunctionSignatureCache CacheSignature="1D1A32F1A1B431B" Height="50" ListViewHeight="30" ListViewWidth="150" Name="multiple\ \(466\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
+            <FunctionSignatureCache CacheSignature="1D1A32F1A1B4314" Height="50" ListViewHeight="30" ListViewWidth="150" Name="multiple\ \(466\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
                 <p.IconModel>
                     <MergeScript xmlns="http://www.ni.com/PlatformFramework">
                         <MergeFeatureSet>
@@ -22397,7 +22276,7 @@
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="467" Name=":Project:DataDepot:numElementsInInputQueue\ \(467\)\.data">
         <DefinitionCacheUserSetting Envoy="467" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-            <FunctionSignatureCache CacheSignature="1D1A32F1A1B913C" Height="50" ListViewHeight="30" ListViewWidth="150" Name="numElementsInInputQueue\ \(467\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
+            <FunctionSignatureCache CacheSignature="1D1A32F1A1B9134" Height="50" ListViewHeight="30" ListViewWidth="150" Name="numElementsInInputQueue\ \(467\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
                 <p.IconModel>
                     <MergeScript xmlns="http://www.ni.com/PlatformFramework">
                         <MergeFeatureSet>
@@ -22451,7 +22330,7 @@
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="469" Name=":Project:DataDepot:bitsPerChannel\ \(469\)\.data">
         <DefinitionCacheUserSetting Envoy="469" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-            <FunctionSignatureCache CacheSignature="1D1A32F1A1C2D7F" Height="50" ListViewHeight="30" ListViewWidth="150" Name="bitsPerChannel\ \(469\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
+            <FunctionSignatureCache CacheSignature="1D1A32F1A1C2D7E" Height="50" ListViewHeight="30" ListViewWidth="150" Name="bitsPerChannel\ \(469\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
                 <p.IconModel>
                     <MergeScript xmlns="http://www.ni.com/PlatformFramework">
                         <MergeFeatureSet>
@@ -22478,7 +22357,7 @@
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="470" Name=":Project:DataDepot:integer_array\ \(470\)\.data">
         <DefinitionCacheUserSetting Envoy="470" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-            <FunctionSignatureCache CacheSignature="1D1A32F1A1C7BA0" Height="50" ListViewHeight="30" ListViewWidth="150" Name="integer_array\ \(470\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
+            <FunctionSignatureCache CacheSignature="1D1A32F1A1C7B9E" Height="50" ListViewHeight="30" ListViewWidth="150" Name="integer_array\ \(470\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
                 <p.IconModel>
                     <MergeScript xmlns="http://www.ni.com/PlatformFramework">
                         <MergeFeatureSet>
@@ -22505,7 +22384,7 @@
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="471" Name=":Project:DataDepot:error\ out_2\ \(471\)\.data">
         <DefinitionCacheUserSetting Envoy="471" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-            <FunctionSignatureCache CacheSignature="1D1A32F1A1CF0D2" Height="50" ListViewHeight="30" ListViewWidth="150" Name="error\ out_2\ \(471\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
+            <FunctionSignatureCache CacheSignature="1D1A32F1A1CF0CE" Height="50" ListViewHeight="30" ListViewWidth="150" Name="error\ out_2\ \(471\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
                 <p.IconModel>
                     <MergeScript xmlns="http://www.ni.com/PlatformFramework">
                         <MergeFeatureSet>
@@ -22532,7 +22411,7 @@
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="472" Name=":Project:DataDepot:Y_intoSoundOutput\ \(472\)\.data">
         <DefinitionCacheUserSetting Envoy="472" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-            <FunctionSignatureCache CacheSignature="1D1A32F1A1EECA9" Height="50" ListViewHeight="30" ListViewWidth="150" Name="Y_intoSoundOutput\ \(472\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
+            <FunctionSignatureCache CacheSignature="1D1A32F1A1EECA8" Height="50" ListViewHeight="30" ListViewWidth="150" Name="Y_intoSoundOutput\ \(472\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
                 <p.IconModel>
                     <MergeScript xmlns="http://www.ni.com/PlatformFramework">
                         <MergeFeatureSet>
@@ -22559,7 +22438,7 @@
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="473" Name=":Project:DataDepot:currentMax\ \(473\)\.data">
         <DefinitionCacheUserSetting Envoy="473" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-            <FunctionSignatureCache CacheSignature="1D1A32F1A1F3ACA" Height="50" ListViewHeight="30" ListViewWidth="150" Name="currentMax\ \(473\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
+            <FunctionSignatureCache CacheSignature="1D1A32F1A1F3AC8" Height="50" ListViewHeight="30" ListViewWidth="150" Name="currentMax\ \(473\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
                 <p.IconModel>
                     <MergeScript xmlns="http://www.ni.com/PlatformFramework">
                         <MergeFeatureSet>
@@ -22586,7 +22465,7 @@
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="474" Name=":Project:DataDepot:absoluteMax\ \(474\)\.data">
         <DefinitionCacheUserSetting Envoy="474" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-            <FunctionSignatureCache CacheSignature="1D1A32F1A1F88EB" Height="50" ListViewHeight="30" ListViewWidth="150" Name="absoluteMax\ \(474\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
+            <FunctionSignatureCache CacheSignature="1D1A32F1A1F88E8" Height="50" ListViewHeight="30" ListViewWidth="150" Name="absoluteMax\ \(474\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
                 <p.IconModel>
                     <MergeScript xmlns="http://www.ni.com/PlatformFramework">
                         <MergeFeatureSet>
@@ -22613,7 +22492,7 @@
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="475" Name=":Project:DataDepot:currentMin\ \(475\)\.data">
         <DefinitionCacheUserSetting Envoy="475" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-            <FunctionSignatureCache CacheSignature="1D1A32F1A1FD70C" Height="50" ListViewHeight="30" ListViewWidth="150" Name="currentMin\ \(475\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
+            <FunctionSignatureCache CacheSignature="1D1A32F1A1FD708" Height="50" ListViewHeight="30" ListViewWidth="150" Name="currentMin\ \(475\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
                 <p.IconModel>
                     <MergeScript xmlns="http://www.ni.com/PlatformFramework">
                         <MergeFeatureSet>
@@ -22640,7 +22519,7 @@
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="476" Name=":Project:DataDepot:absoluteMin\ \(476\)\.data">
         <DefinitionCacheUserSetting Envoy="476" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-            <FunctionSignatureCache CacheSignature="1D1A32F1A20252E" Height="50" ListViewHeight="30" ListViewWidth="150" Name="absoluteMin\ \(476\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
+            <FunctionSignatureCache CacheSignature="1D1A32F1A202528" Height="50" ListViewHeight="30" ListViewWidth="150" Name="absoluteMin\ \(476\)\.data" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
                 <p.IconModel>
                     <MergeScript xmlns="http://www.ni.com/PlatformFramework">
                         <MergeFeatureSet>
@@ -22667,7 +22546,7 @@
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="503" Name=":Project:PC:deShiftAndMultSoundArray\.gvi">
         <DefinitionCacheUserSetting Envoy="503" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-            <FunctionSignatureCache CacheSignature="1D1A32A0A9EC63C" Height="50" ListViewHeight="90" ListViewWidth="150" Name="deShiftAndMultSoundArray\.gvi" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
+            <FunctionSignatureCache CacheSignature="1D1A32A0A9EC636" Height="50" ListViewHeight="90" ListViewWidth="150" Name="deShiftAndMultSoundArray\.gvi" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
                 <p.IconModel>
                     <MergeScript xmlns="http://www.ni.com/PlatformFramework">
                         <MergeFeatureSet>
@@ -22773,7 +22652,7 @@
     </UserSettingsDefinition>
     <UserSettingsDefinition Envoy="513" Name=":Project:PC:intArray2BitStream\.gvi">
         <DefinitionCacheUserSetting Envoy="513" Target="Envoy" xmlns="http://www.ni.com/PlatformFramework">
-            <FunctionSignatureCache CacheSignature="1D1A3B13DF19AFF" Height="50" ListViewHeight="60" ListViewWidth="150" Name="intArray2BitStream\.gvi" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
+            <FunctionSignatureCache CacheSignature="1D1A3B13DF19AFE" Height="50" ListViewHeight="60" ListViewWidth="150" Name="intArray2BitStream\.gvi" Width="50" xmlns="http://www.ni.com/LabVIEW.VI">
                 <p.IconModel>
                     <MergeScript xmlns="http://www.ni.com/PlatformFramework">
                         <MergeFeatureSet>
