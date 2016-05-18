@@ -1,9 +1,15 @@
+#!/usr/bin/python
+
+#arguments are : input file, output file, number of columns
+
+
 import sys
 import re
 
 fIn=open(sys.argv[1],'r')
-fOutL=open(sys.argv[2]+"L",'w')
-fOutU=open(sys.argv[2]+"U",'w')
+nameOut=str.split(sys.argv[2],".")
+fOutL=open(nameOut[0]+"L."+nameOut[1],'w')
+fOutU=open(nameOut[0]+"U."+nameOut[1],'w')
 
 
 foundL=False
@@ -18,34 +24,22 @@ for line in fIn:
 		print "found U"
 		continue
 		
-	print line
 	if foundL and not foundU and not line=="\n":
 		splitted=str.split(line)
-		splitted=splitted[1:]
-		print splitted
 		lineOut=""
-		for i in range(0,int(sys.argv[3])):
-			if str(i) in splitted:
-				lineOut=lineOut+"1,"
-			else:
-				lineOut=lineOut+"0,"
+		for i in splitted:
+			lineOut=lineOut+i+","
 		lineOut=lineOut[:-1]
 		lineOut=lineOut+"\n"
-		print lineOut
-		fOutL.write(lineOut)
+		if len(lineOut)>3:
+			fOutL.write(lineOut)
 
 	if foundL and foundU and not line=="\n":
-		print line
 		splitted=str.split(line)
-		splitted=splitted[1:]
-		print splitted
 		lineOut=""
-		for i in range(0,int(sys.argv[3])):
-			if str(i) in splitted:
-				lineOut=lineOut+"1,"
-			else:
-				lineOut=lineOut+"0,"
+		for i in splitted:
+			lineOut=lineOut+i+","
 		lineOut=lineOut[:-1]
 		lineOut=lineOut+"\n"
-		print lineOut
-		fOutU.write(lineOut)
+		if len(lineOut)>3:
+			fOutU.write(lineOut)

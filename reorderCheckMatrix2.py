@@ -44,10 +44,10 @@ for line in range(len(mIn)):
 	print mOutLine
 	for col in range(len(mIn[line])):
 		if swapLine:
-			mOut[line][col]=mIn[orderLine[line]][orderCol[col]]
+			mOut[orderLine[line]][orderCOl[col]]=mIn[line][col]
 			print line,col,"comes from",orderLine[line],orderCol[col],"is",mOut[line][col],mIn[orderLine[line]][orderCol[col]]
 		else:
-			mOut[line][col]=mIn[line][orderCol[col]]
+			mOut[line][orderCol[col]]=mIn[line][col]
 			print line,col,"comes from",line,orderCol[col],"is",mOut[line][col],mIn[line][orderCol[col]]
 	mInLine="  "
 	mOutLine="  "

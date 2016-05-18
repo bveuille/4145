@@ -1,4 +1,4 @@
-function [out] = ldpcCheckMatrix( n, wc, wr )
+function [out] = ldpcCheckMatrix( n )
 %UNTITLED Summary of this function goes here
 %   Detailed explanation goes here
 
@@ -9,9 +9,10 @@ function [out] = ldpcCheckMatrix( n, wc, wr )
 % should verify
 % m/wc = k/wr integer
 
-
+wc=4;    % checks per bit
+wr=6;    % bits per check
 m=n*wc/wr;  % number of checks
-k=n-m;  % number of bit coded
+k=n-m  % number of bit coded
 
 if not(m/wc == n/wr)
     out = -1;

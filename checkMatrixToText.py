@@ -1,3 +1,7 @@
+#!/usr/bin/python
+
+#arguments are : input file, output file, number of columns
+
 import sys
 import re
 
@@ -8,17 +12,11 @@ fIn.readline()
 fIn.readline()
 fIn.readline()
 for line in fIn:
-	print line
 	splitted=str.split(line)
-	splitted=splitted[1:]
-	print splitted
 	lineOut=""
-	for i in range(0,int(sys.argv[3])):
-		if str(i) in splitted:
-			lineOut=lineOut+"1,"
-		else:
-			lineOut=lineOut+"0,"
+	for i in splitted:
+		lineOut=lineOut+i+","
 	lineOut=lineOut[:-1]
 	lineOut=lineOut+"\n"
-	print lineOut
-	fOut.write(lineOut)
+	if len(lineOut)>3:
+		fOut.write(lineOut)
