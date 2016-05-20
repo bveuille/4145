@@ -333,24 +333,22 @@
                             <p.MethodDeclaration>
                                 <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
                                     <Parameter Id="L0" Desc="Message" />
-                                    <Parameter Id="L2" Desc="GeneratorMatrixLocation" />
+                                    <Parameter Id="L2" Desc="generatorMatrix" />
                                     <Parameter Id="R0" Desc="EncodedMessage" />
-                                    <Parameter Id="R2" Desc="GeneratorMatrix" />
                                 </MethodDeclaration>
                             </p.MethodDeclaration>
                             <Terminal DataType="Double[]" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
-                            <Terminal DataType="Path" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+                            <Terminal DataType="Double[,]" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
                             <Terminal DataType="Double[]" Direction="Output" Hotspot="30 5" Id="R0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
-                            <Terminal DataType="Double[,]" Direction="Output" Hotspot="30 25" Id="R2" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
                         </MethodCall>
                         <Wire Id="1138" Joints="N(1126:1123) N(1137:L0)" xmlns="http://www.ni.com/PlatformFramework" />
                         <Wire Id="1139" Joints="N(1137:R0) N(1128:1123)" xmlns="http://www.ni.com/PlatformFramework" />
-                        <Wire Id="1145" Joints="N(1146:1123) N(1137:L2)" xmlns="http://www.ni.com/PlatformFramework" />
+                        <Wire Id="1172" Joints="N(1171:1123) N(1137:L2)" xmlns="http://www.ni.com/PlatformFramework" />
                     </CaseStructure.Case>
                     <CaseStructure.Selector Bounds="-4 5 13 15" Docking="Left" Id="1124" Terminals="1121=1136, 1122, 1123" />
                     <CaseStructure.Tunnel Bounds="-4 25 13 10" Docking="Left" Id="1126" Terminals="1121=1125, 1122=1130, 1123=1138" />
                     <CaseStructure.Tunnel Bounds="91 25 13 10" Docking="Right" Id="1128" Terminals="1121=1129, 1122=1130, 1123=1139" />
-                    <CaseStructure.Tunnel Bounds="-4 45 13 10" Docking="Left" Id="1146" Terminals="1121=1147, 1122, 1123=1145" />
+                    <CaseStructure.Tunnel Bounds="-4 45 13 10" Docking="Left" Id="1171" Terminals="1121=1170, 1122, 1123=1172" />
                 </CaseStructure>
                 <Wire Id="1125" Joints="N(397:outArray) N(1126:1121)" xmlns="http://www.ni.com/PlatformFramework" />
                 <Wire Id="1129" Joints="N(1128:1121) N(520:L0)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -359,11 +357,7 @@
                 </DataAccessor>
                 <Wire Id="1136" Joints="N(1133:Value) h(5) v(110) h(-75) v(25) N(1124:1121)" xmlns="http://www.ni.com/PlatformFramework" />
                 <TextNode AttachedTo="1133" Bounds="610 45 29 16" Id="1135" Text="LDPC" xmlns="http://www.ni.com/PlatformFramework" />
-                <DataAccessor Bounds="639 60 40 15" DataItem="1140" Id="1142" Label="1144">
-                    <Terminal DataType="Path" Direction="Output" Hotspot="40 5" Id="Path" xmlns="http://www.ni.com/PlatformFramework" />
-                </DataAccessor>
-                <Wire Id="1147" Joints="N(1142:Path) h(5) v(85) h(-65) v(75) N(1146:1121)" xmlns="http://www.ni.com/PlatformFramework" />
-                <TextNode AttachedTo="1142" Bounds="502 60 132 16" Id="1144" Text="GeneratorMatrixLocation" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="1170" Joints="N(1169:329) v(221) N(1171:1121)" xmlns="http://www.ni.com/PlatformFramework" />
                 <WhileLoop.Tunnel Bounds="-4 165 13 10" Docking="Left" Id="330" Terminals="328=434, 329=340" />
                 <WhileLoop.Tunnel Bounds="-4 195 13 10" Docking="Left" Id="331" Terminals="328=437, 329=341" />
                 <WhileLoop.Tunnel Bounds="1153 225 13 10" Docking="Right" Id="332" Terminals="328=438, 329=342" />
@@ -374,6 +368,7 @@
                 <WhileLoop.Tunnel Bounds="-4 390 13 10" Docking="Left" Id="941" Terminals="328=940, 329=961" />
                 <WhileLoop.Tunnel Bounds="-4 370 13 10" Docking="Left" Id="944" Terminals="328=943, 329=960" />
                 <WhileLoop.Tunnel Bounds="-4 80 13 10" Docking="Left" Id="973" Terminals="328=972, 329=974" />
+                <WhileLoop.Tunnel Bounds="604 -4 10 13" Docking="Top" Id="1169" Terminals="328=1168, 329=1170" />
             </WhileLoop>
             <MethodCall Bounds="1070 -155 40 40" Id="431" Target="Sound\ Input\ Stop\.gvi">
                 <p.MethodDeclaration>
@@ -761,6 +756,54 @@
             <ReleaseQueue Bounds="1135 130 40 40" Id="1008" />
             <Wire Id="1009" Joints="N(1007:queue out) N(1008:queue)" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="1015" Joints="N(1014:523) N(1007:queue)" xmlns="http://www.ni.com/PlatformFramework" />
+            <MethodCall Bounds="325 -445 40 40" Id="1152" Target="Read\ from\ Spreadsheet\ File\ \(DBL\)\.gvi">
+                <p.MethodDeclaration>
+                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                        <Parameter Id="L0" Desc="file path" />
+                        <Parameter Id="L1" Desc="number of lines" />
+                        <Parameter Id="L2" Desc="start of read offset" />
+                        <Parameter Id="L3" Desc="maximum characters per line" />
+                        <Parameter Id="T0" Desc="format" />
+                        <Parameter Id="B0" Desc="transpose?" />
+                        <Parameter Id="B1" Desc="delimiter" />
+                        <Parameter Id="R0" Desc="all rows" />
+                        <Parameter Id="R1" Desc="first row" />
+                        <Parameter Id="R2" Desc="mark after read" />
+                        <Parameter Id="T1" Desc="new file path" />
+                        <Parameter Id="R3" Desc="end of file?" />
+                    </MethodDeclaration>
+                </p.MethodDeclaration>
+                <Terminal DataType="Path" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Int32" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Int32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Int32" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="String" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Boolean" Direction="Input" Hotspot="15 40" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="String" Direction="Input" Hotspot="25 40" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Double[,]" Direction="Output" Hotspot="40 5" Id="R0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Double[]" Direction="Output" Hotspot="40 15" Id="R1" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Int32" Direction="Output" Hotspot="40 25" Id="R2" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Path" Direction="Output" Hotspot="25 0" Id="T1" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+            </MethodCall>
+            <Literal Bounds="280 -470 50 15" DataType="String" Facade="NationalInstruments.MocCommon.Modeling.IStringBehavior" Id="1154" Label="1159" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>%.3f</p.Data>
+                <StringBehavior />
+            </Literal>
+            <Literal Bounds="305 -390 40 15" DataType="String" Facade="NationalInstruments.MocCommon.Modeling.IStringBehavior" Id="1155" Label="1160" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>,</p.Data>
+                <StringBehavior />
+            </Literal>
+            <Wire Id="1157" Joints="N(1155:Out) h(5) N(1152:B1)" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="1154" Bounds="280 -470 0 0" Id="1159" Text="format" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="1155" Bounds="305 -390 0 0" Id="1160" Text="delimiter" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <DataAccessor Bounds="265 -445 40 15" DataItem="1140" Id="1142" Label="1144">
+                <Terminal DataType="Path" Direction="Output" Hotspot="40 5" Id="Path" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="1142" Bounds="128 -445 132 16" Id="1144" Text="GeneratorMatrixLocation" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="1166" Joints="N(1142:Path) N(1152:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="1167" Joints="N(1154:Out) h(10) N(1152:T0)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="1168" Joints="N(1152:R0) h(140) N(1169:328)" xmlns="http://www.ni.com/PlatformFramework" />
         </BlockDiagram>
         <CPFrontPanel Height="[float]1600" Id="13" Width="[float]2000">
             <Rectangle Fill="[SMSolidColorBrush]#ff8cdfff" Height="[float]286" Id="789" Left="[float]170" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]18.043438" RadiusY="[float]21.3355789" Stroke="[SMSolidColorBrush]#ff000000" StrokeThickness="[float]1" Top="[float]413" Width="[float]1109" xmlns="http://www.ni.com/PlatformFramework" />
