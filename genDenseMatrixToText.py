@@ -2,7 +2,6 @@
 
 #arguments are : input file, output file, number of columns
 
-
 import sys
 import os
 import re
@@ -10,8 +9,11 @@ import re
 fIn=open(sys.argv[1],'r')
 fOutL=open(sys.argv[2],'w')
 
-for i in range(9):
-	fIn.readline()
+while True:
+	line=fIn.readline()
+	if line[0:6]=="Inv(A)":
+		break
+fIn.readline()
 
 for line in fIn:
 		

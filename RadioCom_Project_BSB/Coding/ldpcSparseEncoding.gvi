@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile xmlns="http://www.ni.com/PlatformFramework">
+    <SourceModelFeatureSet>
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="3.0.0.49154" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="Editor" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/PlatformFramework" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="Common Language Components" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/MocCommon" Version="3.0.0.49152" />
+    </SourceModelFeatureSet>
+    <VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+        <Icon Id="2" ListViewIconCrop="0 0 50 50" xmlns="http://www.ni.com/PlatformFramework">
+            <IconPanel Height="[float]50" Id="3" Width="[float]50">
+                <IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="4" TemplateName="Gray">
+                    <Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" />
+                    <Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" />
+                    <FileNameText FileNameText="[bool]True" Font="[SMFont]0,6," HorizontalAlignment="[HorizontalAlignment]Left" Id="7" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]ldpcSparseEncoding" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" VerticalAlignment="[VerticalAlignment]Top" />
+                </IconTemplate>
+                <Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Id="8" Margin="[SMThickness]3,3,3,3" />
+            </IconPanel>
+        </Icon>
+        <ConnectorPane Height="50" Id="9" ListViewHeight="30" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/PlatformFramework">
+            <ConnectorPaneTerminal />
+            <ConnectorPaneTerminal Hotspot="0 15" />
+            <ConnectorPaneTerminal Hotspot="0 25" />
+            <ConnectorPaneTerminal Hotspot="0 35" />
+            <ConnectorPaneTerminal Hotspot="0 45" />
+            <ConnectorPaneTerminal Hotspot="15 0" />
+            <ConnectorPaneTerminal Hotspot="25 0" />
+            <ConnectorPaneTerminal Hotspot="35 0" />
+            <ConnectorPaneTerminal Hotspot="50 5" />
+            <ConnectorPaneTerminal Hotspot="50 15" />
+            <ConnectorPaneTerminal Hotspot="50 25" />
+            <ConnectorPaneTerminal Hotspot="50 35" />
+            <ConnectorPaneTerminal Hotspot="50 45" />
+            <ConnectorPaneTerminal Hotspot="15 50" />
+            <ConnectorPaneTerminal Hotspot="25 50" />
+            <ConnectorPaneTerminal Hotspot="35 50" />
+        </ConnectorPane>
+        <MethodDocumentation xmlns="http://www.ni.com/PlatformFramework" />
+        <DiagramUnplacedItems Id="10" />
+        <FrontPanelUnplacedItems Id="11">
+            <PathSelector BaseName="[string]Path" BrowseDialogTitle="[string]Open File" Filter="[string]txt;*.csv" Height="[float]28" Id="38" InteractionMode="[PathSelectorInteractionModes]BrowseDialog, TextInput, AllowNullPathSelection" Label="[UIModel]39" Left="[float]106" Path="{DataItemBinding Id=37}" Top="[float]123" Width="[float]180" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Label Id="39" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]38" Left="[float]106" Locked="[bool]True" Text="[string]Umatrix" Top="[float]100" />
+            <PathSelector BaseName="[string]Path" BrowseDialogTitle="[string]Open File" Filter="[string]txt;*.csv" Height="[float]28" Id="51" InteractionMode="[PathSelectorInteractionModes]BrowseDialog, TextInput, AllowNullPathSelection" Label="[UIModel]52" Left="[float]106" Path="{DataItemBinding Id=50}" Top="[float]123" Width="[float]180" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Label Id="52" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]51" Left="[float]106" Locked="[bool]True" Text="[string]Lmatrix" Top="[float]100" />
+            <ArrayViewer ArrayElement="[UIModel]59" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Id="62" Name="[string]Message" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Value="{DataItemBinding Id=56}" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                <p.DefaultElementValue>0x0</p.DefaultElementValue>
+                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="59" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Name="[string]Child" RadixVisibility="[SMVisibility]Collapsed" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]69" />
+            </ArrayViewer>
+            <ArrayViewer ArrayElement="[UIModel]69" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Id="72" Name="[string]y" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Value="{DataItemBinding Id=66}" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                <p.DefaultElementValue>0x0</p.DefaultElementValue>
+                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="69" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Name="[string]Child" RadixVisibility="[SMVisibility]Collapsed" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]54" />
+            </ArrayViewer>
+            <PathSelector BaseName="[string]Path" BrowseDialogTitle="[string]Open File" Filter="[string]txt;*.csv" Height="[float]28" Id="85" InteractionMode="[PathSelectorInteractionModes]BrowseDialog, TextInput, AllowNullPathSelection" Label="[UIModel]86" Left="[float]106" Path="{DataItemBinding Id=84}" Top="[float]123" Width="[float]180" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Label Id="86" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]85" Left="[float]106" Locked="[bool]True" Text="[string]Bmatrix" Top="[float]100" />
+            <ArrayViewer ArrayElement="[UIModel]106" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Id="109" Name="[string]z" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Value="{DataItemBinding Id=103}" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                <p.DefaultElementValue>0x0</p.DefaultElementValue>
+                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="106" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Name="[string]Child" RadixVisibility="[SMVisibility]Collapsed" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]54" />
+            </ArrayViewer>
+        </FrontPanelUnplacedItems>
+        <BlockDiagram Id="12">
+            <SolveLinearEquationsSingleRightHand Bounds="530 470 50 50" Id="14" Target="Solve\ Linear\ Equations\ \(single\ right\ hand\)\.gvi">
+                <p.MethodDeclaration>
+                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                        <Parameter Id="L0" Desc="input matrix" />
+                        <Parameter Id="L2" Desc="known vector" />
+                        <Parameter Id="L4" Desc="matrix type" />
+                        <Parameter Id="R1" Desc="solution vector" />
+                        <Parameter Id="R3" Desc="error" />
+                    </MethodDeclaration>
+                </p.MethodDeclaration>
+                <Terminal DataType="Double[,]" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Double[]" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="@-1888508623_0" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Double[]" Direction="Output" Hotspot="50 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Int32" Direction="Output" Hotspot="50 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+            </SolveLinearEquationsSingleRightHand>
+            <Wire Id="27" Joints="N(30:Out) h(10) N(28:T0)" xmlns="http://www.ni.com/PlatformFramework" />
+            <MethodCall Bounds="415 605 40 40" Id="28" Target="Read\ from\ Spreadsheet\ File\ \(DBL\)\.gvi">
+                <p.MethodDeclaration>
+                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                        <Parameter Id="L0" Desc="file path" />
+                        <Parameter Id="L1" Desc="number of lines" />
+                        <Parameter Id="L2" Desc="start of read offset" />
+                        <Parameter Id="L3" Desc="maximum characters per line" />
+                        <Parameter Id="T0" Desc="format" />
+                        <Parameter Id="B0" Desc="transpose?" />
+                        <Parameter Id="B1" Desc="delimiter" />
+                        <Parameter Id="R0" Desc="all rows" />
+                        <Parameter Id="R1" Desc="first row" />
+                        <Parameter Id="R2" Desc="mark after read" />
+                        <Parameter Id="T1" Desc="new file path" />
+                        <Parameter Id="R3" Desc="end of file?" />
+                    </MethodDeclaration>
+                </p.MethodDeclaration>
+                <Terminal DataType="Path" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Int32" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Int32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Int32" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="String" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Boolean" Direction="Input" Hotspot="15 40" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="String" Direction="Input" Hotspot="25 40" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Double[,]" Direction="Output" Hotspot="40 5" Id="R0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Double[]" Direction="Output" Hotspot="40 15" Id="R1" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Int32" Direction="Output" Hotspot="40 25" Id="R2" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Path" Direction="Output" Hotspot="25 0" Id="T1" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+            </MethodCall>
+            <DataAccessor Bounds="335 605 40 15" DataItem="37" Id="29" Label="34">
+                <Terminal DataType="Path" Direction="Output" Hotspot="40 5" Id="Path" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <Literal Bounds="370 580 50 15" DataType="String" Facade="NationalInstruments.MocCommon.Modeling.IStringBehavior" Id="30" Label="35" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>%.3f</p.Data>
+                <StringBehavior />
+            </Literal>
+            <Literal Bounds="395 660 40 15" DataType="String" Facade="NationalInstruments.MocCommon.Modeling.IStringBehavior" Id="31" Label="36" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>,</p.Data>
+                <StringBehavior />
+            </Literal>
+            <Wire Id="32" Joints="N(29:Path) N(28:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="33" Joints="N(31:Out) h(5) N(28:B1)" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="29" Bounds="288 605 42 16" Id="34" Text="Umatrix" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="30" Bounds="370 580 0 0" Id="35" Text="format" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="31" Bounds="395 660 0 0" Id="36" Text="delimiter" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="40" Joints="N(43:Out) h(10) N(41:T0)" xmlns="http://www.ni.com/PlatformFramework" />
+            <MethodCall Bounds="405 470 40 40" Id="41" Target="Read\ from\ Spreadsheet\ File\ \(DBL\)\.gvi">
+                <p.MethodDeclaration>
+                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                        <Parameter Id="L0" Desc="file path" />
+                        <Parameter Id="L1" Desc="number of lines" />
+                        <Parameter Id="L2" Desc="start of read offset" />
+                        <Parameter Id="L3" Desc="maximum characters per line" />
+                        <Parameter Id="T0" Desc="format" />
+                        <Parameter Id="B0" Desc="transpose?" />
+                        <Parameter Id="B1" Desc="delimiter" />
+                        <Parameter Id="R0" Desc="all rows" />
+                        <Parameter Id="R1" Desc="first row" />
+                        <Parameter Id="R2" Desc="mark after read" />
+                        <Parameter Id="T1" Desc="new file path" />
+                        <Parameter Id="R3" Desc="end of file?" />
+                    </MethodDeclaration>
+                </p.MethodDeclaration>
+                <Terminal DataType="Path" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Int32" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Int32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Int32" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="String" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Boolean" Direction="Input" Hotspot="15 40" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="String" Direction="Input" Hotspot="25 40" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Double[,]" Direction="Output" Hotspot="40 5" Id="R0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Double[]" Direction="Output" Hotspot="40 15" Id="R1" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Int32" Direction="Output" Hotspot="40 25" Id="R2" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Path" Direction="Output" Hotspot="25 0" Id="T1" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+            </MethodCall>
+            <DataAccessor Bounds="325 470 40 15" DataItem="50" Id="42" Label="47">
+                <Terminal DataType="Path" Direction="Output" Hotspot="40 5" Id="Path" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <Literal Bounds="360 445 50 15" DataType="String" Facade="NationalInstruments.MocCommon.Modeling.IStringBehavior" Id="43" Label="48" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>%.3f</p.Data>
+                <StringBehavior />
+            </Literal>
+            <Literal Bounds="385 525 40 15" DataType="String" Facade="NationalInstruments.MocCommon.Modeling.IStringBehavior" Id="44" Label="49" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>,</p.Data>
+                <StringBehavior />
+            </Literal>
+            <Wire Id="45" Joints="N(42:Path) N(41:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="46" Joints="N(44:Out) h(5) N(41:B1)" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="42" Bounds="281 470 39 16" Id="47" Text="Lmatrix" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="43" Bounds="360 445 0 0" Id="48" Text="format" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="44" Bounds="385 525 0 0" Id="49" Text="delimiter" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <SolveLinearEquationsSingleRightHand Bounds="525 605 50 50" Id="53" Target="Solve\ Linear\ Equations\ \(single\ right\ hand\)\.gvi">
+                <p.MethodDeclaration>
+                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                        <Parameter Id="L0" Desc="input matrix" />
+                        <Parameter Id="L2" Desc="known vector" />
+                        <Parameter Id="L4" Desc="matrix type" />
+                        <Parameter Id="R1" Desc="solution vector" />
+                        <Parameter Id="R3" Desc="error" />
+                    </MethodDeclaration>
+                </p.MethodDeclaration>
+                <Terminal DataType="Double[,]" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Double[]" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="@-1888508623_0" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Double[]" Direction="Output" Hotspot="50 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Int32" Direction="Output" Hotspot="50 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+            </SolveLinearEquationsSingleRightHand>
+            <Wire Id="54" Joints="N(41:R0) N(14:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="55" Joints="N(28:R0) N(53:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+            <DataAccessor Bounds="350 330 40 15" DataItem="56" Id="61" Label="63">
+                <Terminal DataType="Double[]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="61" Bounds="298 330 47 16" Id="63" Text="Message" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="65" Joints="N(14:R1) h(70) B(1) N(71:Value) B(1) v(75) h(-175) v(70) N(53:L2)" xmlns="http://www.ni.com/PlatformFramework" />
+            <DataAccessor Bounds="670 480 40 15" DataItem="66" Id="71" Label="73">
+                <Terminal DataType="Double[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="71" Bounds="715 480 6 16" Id="73" Text="y" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="74" Joints="N(77:Out) h(10) N(75:T0)" xmlns="http://www.ni.com/PlatformFramework" />
+            <MethodCall Bounds="405 235 40 40" Id="75" Target="Read\ from\ Spreadsheet\ File\ \(DBL\)\.gvi">
+                <p.MethodDeclaration>
+                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                        <Parameter Id="L0" Desc="file path" />
+                        <Parameter Id="L1" Desc="number of lines" />
+                        <Parameter Id="L2" Desc="start of read offset" />
+                        <Parameter Id="L3" Desc="maximum characters per line" />
+                        <Parameter Id="T0" Desc="format" />
+                        <Parameter Id="B0" Desc="transpose?" />
+                        <Parameter Id="B1" Desc="delimiter" />
+                        <Parameter Id="R0" Desc="all rows" />
+                        <Parameter Id="R1" Desc="first row" />
+                        <Parameter Id="R2" Desc="mark after read" />
+                        <Parameter Id="T1" Desc="new file path" />
+                        <Parameter Id="R3" Desc="end of file?" />
+                    </MethodDeclaration>
+                </p.MethodDeclaration>
+                <Terminal DataType="Path" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Int32" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Int32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Int32" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="String" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Boolean" Direction="Input" Hotspot="15 40" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="String" Direction="Input" Hotspot="25 40" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Double[,]" Direction="Output" Hotspot="40 5" Id="R0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Double[]" Direction="Output" Hotspot="40 15" Id="R1" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Int32" Direction="Output" Hotspot="40 25" Id="R2" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Path" Direction="Output" Hotspot="25 0" Id="T1" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+            </MethodCall>
+            <DataAccessor Bounds="325 235 40 15" DataItem="84" Id="76" Label="81">
+                <Terminal DataType="Path" Direction="Output" Hotspot="40 5" Id="Path" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <Literal Bounds="360 210 50 15" DataType="String" Facade="NationalInstruments.MocCommon.Modeling.IStringBehavior" Id="77" Label="82" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>%.3f</p.Data>
+                <StringBehavior />
+            </Literal>
+            <Literal Bounds="385 290 40 15" DataType="String" Facade="NationalInstruments.MocCommon.Modeling.IStringBehavior" Id="78" Label="83" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>,</p.Data>
+                <StringBehavior />
+            </Literal>
+            <Wire Id="79" Joints="N(76:Path) N(75:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="80" Joints="N(78:Out) h(5) N(75:B1)" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="76" Bounds="280 235 40 16" Id="81" Text="Bmatrix" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="77" Bounds="360 210 0 0" Id="82" Text="format" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="78" Bounds="385 290 0 0" Id="83" Text="delimiter" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="100" Joints="N(61:Value) h(95) v(-75) N(101:L3)" xmlns="http://www.ni.com/PlatformFramework" />
+            <RealAxVector Bounds="525 225 50 50" Id="101" Target="A\ x\ Vector\.gvi">
+                <p.MethodDeclaration>
+                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                        <Parameter Id="L1" Desc="A" />
+                        <Parameter Id="L3" Desc="Vector" />
+                        <Parameter Id="R1" Desc="A x Vector" />
+                        <Parameter Id="R3" Desc="error" />
+                    </MethodDeclaration>
+                </p.MethodDeclaration>
+                <Terminal DataType="Double[,]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Double[]" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Double[]" Direction="Output" Hotspot="50 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Int32" Direction="Output" Hotspot="50 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+            </RealAxVector>
+            <Wire Id="102" Joints="N(75:R0) N(101:L1)" xmlns="http://www.ni.com/PlatformFramework" />
+            <DataAccessor Bounds="645 235 40 15" DataItem="103" Id="108" Label="110">
+                <Terminal DataType="Double[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="108" Bounds="690 235 6 16" Id="110" Text="z" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="111" Joints="N(101:R1) h(35) B(1) N(108:Value) B(1) v(170) h(-110) v(85) N(14:L2)" xmlns="http://www.ni.com/PlatformFramework" />
+        </BlockDiagram>
+        <CPFrontPanel Height="[float]1600" Id="13" Width="[float]2000" />
+        <DataItem DataType="Path" Id="37" Name="Umatrix">
+            <p.DefaultValue>
+                <Path a="1" />
+            </p.DefaultValue>
+        </DataItem>
+        <DataItem DataType="Path" Id="50" Name="Lmatrix">
+            <p.DefaultValue>
+                <Path a="1" />
+            </p.DefaultValue>
+        </DataItem>
+        <DataItem DataType="Double[]" Id="56" Name="Message">
+            <p.DefaultValue>
+                <Array Lengths="0" />
+            </p.DefaultValue>
+        </DataItem>
+        <DataItem AdaptToDiagramType="True" DataType="Double[]" Id="66" Name="y">
+            <p.DefaultValue>
+                <Array Lengths="0" />
+            </p.DefaultValue>
+        </DataItem>
+        <DataItem DataType="Path" Id="84" Name="Bmatrix">
+            <p.DefaultValue>
+                <Path a="1" />
+            </p.DefaultValue>
+        </DataItem>
+        <DataItem AdaptToDiagramType="True" DataType="Double[]" Id="103" Name="z">
+            <p.DefaultValue>
+                <Array Lengths="0" />
+            </p.DefaultValue>
+        </DataItem>
+        <DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+            <p.TypeReference TypeId="-1888508623_0">
+                <Enumeration Name="">
+                    <Members>
+                        <EnumerationMember Value="0" Name="General" />
+                        <EnumerationMember Value="1" Name="Positive Definite" />
+                        <EnumerationMember Value="2" Name="Lower Triangular" />
+                        <EnumerationMember Value="3" Name="Upper Triangular" />
+                    </Members>
+                    <DataType>
+                        <UInt32 />
+                    </DataType>
+                </Enumeration>
+            </p.TypeReference>
+        </DataTypeReferenceTable>
+    </VirtualInstrument>
+</SourceFile>

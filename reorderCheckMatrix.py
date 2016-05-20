@@ -17,11 +17,9 @@ for line in fIn:
 orderCol=str.split(fOrder.readline()[:-1],',')
 for i in range(len(orderCol)):
 	orderCol[i]=int(orderCol[i])
-print("orderCol: ",orderCol)
 
 #import the order of the lines orderLine
 orderLine=str.split(fOrder.readline()[:-1],',')
-print("orderLine: ",orderLine)
 
 if len(orderLine)>3:
 	for i in range(len(orderLine)):
@@ -34,28 +32,21 @@ else:
 #swap the lines of mIn according to orderLine if it is non empty
 mOut = copy.deepcopy(mIn)
 for line in range(len(mIn)):
-	print line,mIn[line]
 	mInLine="  "
 	mOutLine="  "
 	for i in range(len(mIn[line])):
 		mInLine=mInLine+str(i)+":"+mIn[line][i]+"  "
 		mOutLine=mOutLine+str(i)+":"+mIn[line][orderCol[i]]+"  "
-	print mInLine
-	print mOutLine
 	for col in range(len(mIn[line])):
 		if swapLine:
 			mOut[line][col]=mIn[orderLine[line]][orderCol[col]]
-			print line,col,"comes from",orderLine[line],orderCol[col],"is",mOut[line][col],mIn[orderLine[line]][orderCol[col]]
 		else:
 			mOut[line][col]=mIn[line][orderCol[col]]
-			print line,col,"comes from",line,orderCol[col],"is",mOut[line][col],mIn[line][orderCol[col]]
 	mInLine="  "
 	mOutLine="  "
 	for i in range(len(mIn[line])):
 		mInLine=mInLine+str(i)+":"+mIn[line][i]+"  "
 		mOutLine=mOutLine+str(i)+":"+mIn[line][orderCol[i]]+"  "
-	print mInLine
-	print mOutLine
 
 
 #write the reordered matrix mOut in fOut
