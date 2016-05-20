@@ -30,9 +30,10 @@
         <MethodDocumentation xmlns="http://www.ni.com/PlatformFramework" />
         <DiagramUnplacedItems Id="10" />
         <FrontPanelUnplacedItems Id="11">
-            <ArrayViewer ArrayElement="[UIModel]141" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]2" Id="144" Name="[string]generatorMatrix" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Value="{DataItemBinding Id=138}" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+            <ArrayViewer ArrayElement="[UIModel]141" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]2" Height="[float]60" Id="144" Label="[UIModel]189" Left="[float]826" Orientation="[SMOrientation]Horizontal" Rows="[int]2" Top="[float]328" Value="{DataItemBinding Id=138}" Width="[float]129" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
                 <p.DefaultElementValue>0x0</p.DefaultElementValue>
-                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="141" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Name="[string]Child" RadixVisibility="[SMVisibility]Collapsed" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]69" />
+                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="141" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Left="[float]53" Name="[string]Child" RadixVisibility="[SMVisibility]Collapsed" Top="[float]31" Value="[double]0" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]69" />
+                <Label Id="189" IsVisualChild="[bool]False" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]144" Left="[float]826" Locked="[bool]True" Text="[string]generatorMatrix" Top="[float]305" xmlns="http://www.ni.com/LabVIEW.VI" />
             </ArrayViewer>
         </FrontPanelUnplacedItems>
         <BlockDiagram Id="12">
@@ -78,7 +79,7 @@
             </CreateSpecialRealMatrix>
             <ArraySize Bounds="65 -15 40 20" Id="121" />
             <ArrayIndex Bounds="110 -5 40 30" Id="122" Terminals="array=125, c0t0v=128, c0t1v=124" />
-            <BuildArray Bounds="230 -55 40 20" ConcatenateInputs="True" Id="123" Terminals="outArray=148, c0t0v=147, c1t0v=126" VerticalChunkCount="2" />
+            <BuildArray Bounds="230 -55 40 20" ConcatenateInputs="True" Id="123" Terminals="outArray=159, c0t0v=147, c1t0v=126" VerticalChunkCount="2" />
             <Wire Id="124" Joints="N(122:c0t1v) N(120:L1)" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="125" Joints="N(121:size(s\)) N(122:array)" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="126" Joints="N(120:R1) h(15) v(-60) N(123:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -89,8 +90,8 @@
             </Literal>
             <Wire Facade="WireInvisibleFacade" Id="128" Joints="N(127:Out) N(122:c0t0v)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
             <TextNode AttachedTo="127" Bounds="98 15 0 0" Id="129" Text="index" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
-            <Wire Id="133" Joints="N(91:x-y*floor(x/y\)) N(49:Value)" xmlns="http://www.ni.com/PlatformFramework" />
-            <Wire Id="136" Joints="N(26:Value) N(137:L3)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="133" Joints="N(91:x-y*floor(x/y\)) h(15) B(1) N(49:Value) B(1) v(-55) N(179:array)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="136" Joints="N(26:Value) h(10) B(1) N(137:L3) B(1) v(65) N(167:array)" xmlns="http://www.ni.com/PlatformFramework" />
             <RealAxVector Bounds="480 175 50 50" Id="137" Target="A\ x\ Vector\.gvi">
                 <p.MethodDeclaration>
                     <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
@@ -109,8 +110,32 @@
                 <Terminal DataType="Double[,]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
             </DataAccessor>
             <TextNode AttachedTo="143" Bounds="-126 -55 86 16" Id="145" Text="generatorMatrix" xmlns="http://www.ni.com/PlatformFramework" />
-            <Wire Id="147" Joints="N(143:Value) h(5) B(1) N(123:c0t0v) B(1) v(40) N(121:array)" xmlns="http://www.ni.com/PlatformFramework" />
-            <Wire Id="148" Joints="N(123:outArray) h(25) v(240) N(137:L1)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="147" Joints="N(143:Value) h(5) B(1) h(110) B(2) N(123:c0t0v) B(2) v(-70) N(149:array) B(1) v(40) N(121:array)" xmlns="http://www.ni.com/PlatformFramework" />
+            <ArraySize Bounds="145 -125 40 20" Id="149" />
+            <DataAccessor Bounds="195 -115 40 15" DataItem="150" Id="155" Label="157">
+                <Terminal DataType="Int32[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="155" Bounds="240 -115 46 16" Id="157" Text="seedSize" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="158" Joints="N(149:size(s\)) N(155:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="159" Joints="N(123:outArray) h(25) v(5) B(2) N(160:array) B(2) v(235) N(137:L1)" xmlns="http://www.ni.com/PlatformFramework" />
+            <ArraySize Bounds="405 -50 40 20" Id="160" />
+            <DataAccessor Bounds="455 -40 40 15" DataItem="164" Id="161" Label="163">
+                <Terminal DataType="Int32[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <Wire Id="162" Joints="N(160:size(s\)) N(161:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="161" Bounds="500 -40 42 16" Id="163" Text="genSize" xmlns="http://www.ni.com/PlatformFramework" />
+            <ArraySize Bounds="445 270 40 20" Id="167" />
+            <Wire Id="169" Joints="N(167:size(s\)) N(176:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+            <DataAccessor Bounds="505 280 40 15" DataItem="174" Id="176" Label="178">
+                <Terminal DataType="Int32" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="176" Bounds="550 280 68 16" Id="178" Text="messageSize" xmlns="http://www.ni.com/PlatformFramework" />
+            <ArraySize Bounds="645 130 40 20" Id="179" />
+            <DataAccessor Bounds="715 140 40 15" DataItem="180" Id="182" Label="184">
+                <Terminal DataType="Int32" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="182" Bounds="760 140 40 16" Id="184" Text="encSize" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="185" Joints="N(179:size(s\)) N(182:Value)" xmlns="http://www.ni.com/PlatformFramework" />
         </BlockDiagram>
         <CPFrontPanel Height="[float]1600" Id="13" Width="[float]2000">
             <ArrayViewer ArrayElement="[UIModel]22" BaseName="[string]Numeric Array Input" Columns="[int]1" Dimensions="[int]1" Height="[float]348" Id="21" Label="[UIModel]24" Left="[float]468" Orientation="[SMOrientation]Vertical" Rows="[int]14" Top="[float]195" Value="{DataItemBinding Id=25}" Width="[float]129" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
@@ -127,6 +152,20 @@
             <Label Id="74" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]50" Left="[float]687" Locked="[bool]True" Text="[string]EncodedMessage" Top="[float]172" />
             <NumericText BaseName="[string]Numeric" Height="[float]22" Id="87" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]134" Left="[float]106" Top="[float]245" Value="{DataItemBinding Id=84}" ValueType="[Type]Int32" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
             <Label Id="134" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]87" Left="[float]106" Locked="[bool]True" Text="[string]error" Top="[float]222" />
+            <NumericText BaseName="[string]Numeric" Height="[float]22" Id="177" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]186" Left="[float]1064" Top="[float]195" Value="{DataItemBinding Id=174}" ValueType="[Type]Int32" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Label Id="186" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]177" Left="[float]1064" Locked="[bool]True" Text="[string]messageSize" Top="[float]172" />
+            <NumericText BaseName="[string]Numeric" Height="[float]22" Id="183" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]187" Left="[float]1064" Top="[float]264" Value="{DataItemBinding Id=180}" ValueType="[Type]Int32" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Label Id="187" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]183" Left="[float]1064" Locked="[bool]True" Text="[string]encSize" Top="[float]241" />
+            <ArrayViewer ArrayElement="[UIModel]153" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]60" Id="156" Label="[UIModel]188" Left="[float]834" Orientation="[SMOrientation]Vertical" Rows="[int]2" Top="[float]195" Value="{DataItemBinding Id=150}" Width="[float]114" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                <p.DefaultElementValue>0</p.DefaultElementValue>
+                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="153" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]53" Name="[string]Child" Top="[float]32" Value="[int]2048" ValueType="[Type]Int32" Width="[float]54" />
+            </ArrayViewer>
+            <Label Id="188" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]156" Left="[float]834" Locked="[bool]True" Text="[string]seedSize" Top="[float]172" />
+            <ArrayViewer ArrayElement="[UIModel]166" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]60" Id="165" Label="[UIModel]190" Left="[float]834" Orientation="[SMOrientation]Vertical" Rows="[int]2" Top="[float]306" Value="{DataItemBinding Id=164}" Width="[float]114" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                <p.DefaultElementValue>0</p.DefaultElementValue>
+                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="166" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Name="[string]Child" ValueType="[Type]Int32" Width="[float]54" />
+            </ArrayViewer>
+            <Label Id="190" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]165" Left="[float]834" Locked="[bool]True" Text="[string]genSize" Top="[float]283" />
         </CPFrontPanel>
         <DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="0" DataType="Double[]" Id="25" Name="Message" />
         <DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="0" DataType="Double[]" Id="44" Name="EncodedMessage">
@@ -141,6 +180,14 @@
             <p.DefaultValue>
                 <Array Lengths="0,0" />
             </p.DefaultValue>
+        </DataItem>
+        <DataItem AdaptToDiagramType="True" DataType="Int32[]" Id="150" Name="seedSize" />
+        <DataItem AdaptToDiagramType="True" DataType="Int32[]" Id="164" Name="genSize" />
+        <DataItem AdaptToDiagramType="True" DataType="Int32" Id="174" Name="messageSize">
+            <p.DefaultValue>0</p.DefaultValue>
+        </DataItem>
+        <DataItem AdaptToDiagramType="True" DataType="Int32" Id="180" Name="encSize">
+            <p.DefaultValue>0</p.DefaultValue>
         </DataItem>
     </VirtualInstrument>
 </SourceFile>
