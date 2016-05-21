@@ -3,7 +3,7 @@ Report:
 Let us keep the report as short as possible, 4-6pages would be more than enough.
 
 Stian: link budget, choice of soundsampling, packetsize, decoding of bitstream
-Need to know: Reciver gain(in dB), transmitter gain(in dB)
+need to know: Recieved power Pr/N0 or C/N0
 
 
 Stian: Input
