@@ -1,0 +1,5 @@
+For the coding and decoding of the sound samples with LDPC, matrix must be provided to the software as CSV files.
+Those can be found in the directory Matrixk1024m512.
+For the transmitter, the generator matrix to be used is Gseedk1024m512.
+For the receiver, the check matrix to be used is Horderk1024m512.
+The coding rate with those matrix is 1.5.

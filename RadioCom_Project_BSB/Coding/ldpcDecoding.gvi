@@ -144,7 +144,7 @@
                         <TextNode AttachedTo="320" Bounds="1101 20 68 16" Id="322" Text="sizeSyndrom" xmlns="http://www.ni.com/PlatformFramework" />
                         <Wire Id="336" Joints="N(221:81) h(52) B(1) N(365:351) B(1) v(140) N(626:618)" xmlns="http://www.ni.com/PlatformFramework" />
                         <Wire Id="346" Joints="N(347:81) h(57) B(1) N(368:351) B(1) v(100) N(658:618)" xmlns="http://www.ni.com/PlatformFramework" />
-                        <CaseStructure Bounds="826 160 1080 510" DataType="Int32" Default="353" Id="351" Selected="353" UserSelectorBounds="486 0 109 17">
+                        <CaseStructure Bounds="826 160 1080 510" DataType="Int32" Default="353" Id="351" Selected="352" UserSelectorBounds="486 0 109 17">
                             <CaseStructure.Case Bounds="5 5 1070 500" Id="352" Pattern="1">
                                 <ForLoop Bounds="268 28 445 435" DiagramId="379" Id="378">
                                     <ForLoop.Iteration Bounds="5 405 15 15" Id="381" />
@@ -272,7 +272,7 @@
                                     <Wire Id="525" Joints="N(524:520) h(5) v(10) N(529:x)" xmlns="http://www.ni.com/PlatformFramework" />
                                     <Wire Id="528" Joints="N(527:520) h(5) v(-10) N(529:y)" xmlns="http://www.ni.com/PlatformFramework" />
                                     <IsGreater Bounds="20 220 30 30" Id="529" />
-                                    <CaseStructure Bounds="80 220 105 130" Default="531" Id="530" Selected="531" UserSelectorBounds="12 0 82 17">
+                                    <CaseStructure Bounds="80 220 105 130" Default="531" Id="530" Selected="532" UserSelectorBounds="12 0 82 17">
                                         <CaseStructure.Case Bounds="5 5 95 120" Id="531" Pattern="False">
                                             <Subtract Bounds="35 40 30 30" Id="544" />
                                             <Wire Id="545" Joints="N(537:531) N(544:y)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -295,14 +295,17 @@
                                     <Wire Id="536" Joints="N(535:520) N(537:530)" xmlns="http://www.ni.com/PlatformFramework" />
                                     <Wire Id="540" Joints="N(539:530) N(541:520)" xmlns="http://www.ni.com/PlatformFramework" />
                                     <Wire Id="543" Joints="N(529:x &gt; y?) N(533:530)" xmlns="http://www.ni.com/PlatformFramework" />
+                                    <Comment Bounds="25 10 120 28" Id="771" xmlns="http://www.ni.com/MocCommon">
+                                        <p.Text>For bit from 1 to n</p.Text>
+                                    </Comment>
                                     <ForLoop.Count Bounds="1 1 15 15" Docking="Left" Id="521" Terminals="519=391, 520" />
                                     <ForLoop.Tunnel AutoIndex="True" Bounds="-5 212 13 10" Docking="Left" Id="524" Terminals="519=523, 520=525" />
                                     <ForLoop.Tunnel AutoIndex="True" Bounds="-5 247 13 10" Docking="Left" Id="527" Terminals="519=526, 520=528" />
                                     <ForLoop.Tunnel AutoIndex="True" Bounds="-5 282 13 10" Docking="Left" Id="535" Terminals="519=534, 520=536" />
                                     <ForLoop.Tunnel AutoIndex="True" Bounds="215 277 13 10" Docking="Right" Id="541" Terminals="519=542, 520=540" />
                                 </ForLoop>
-                                <Wire Id="523" Joints="N(411:378) h(7) v(-5) h(2) B(3) N(524:519) B(3) v(-115) N(586:Value)" xmlns="http://www.ni.com/PlatformFramework" />
-                                <Wire Id="526" Joints="N(407:378) h(12) v(-5) h(2) B(3) N(527:519) B(3) v(-120) N(594:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+                                <Wire Id="523" Joints="N(411:378) h(7) v(-5) h(2) B(3) N(524:519) B(3) v(-20) N(586:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+                                <Wire Id="526" Joints="N(407:378) h(9) B(1) v(-5) N(527:519) B(1) v(15) N(594:Value)" xmlns="http://www.ni.com/PlatformFramework" />
                                 <Wire Id="534" Joints="N(362:352) h(65) v(115) h(76) v(270) h(640) v(-175) N(535:519)" xmlns="http://www.ni.com/PlatformFramework" />
                                 <Wire Id="542" Joints="N(541:519) h(25) v(-205) N(356:352)" xmlns="http://www.ni.com/PlatformFramework" />
                                 <Decrement Bounds="20 90 30 30" Id="550" />
@@ -312,22 +315,22 @@
                                     <Terminal DataType="Double[,]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
                                 </DataAccessor>
                                 <TextNode AttachedTo="566" Bounds="215 185 24 16" Id="568" Text="x - 1" xmlns="http://www.ni.com/PlatformFramework" />
-                                <DataAccessor Bounds="730 110 40 15" DataItem="581" Id="586" Label="588">
+                                <DataAccessor Bounds="730 205 40 15" DataItem="581" Id="586" Label="588">
                                     <Terminal DataType="Double[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
                                 </DataAccessor>
-                                <TextNode AttachedTo="586" Bounds="775 110 16 16" Id="588" Text="res" xmlns="http://www.ni.com/PlatformFramework" />
-                                <DataAccessor Bounds="735 140 40 15" DataItem="589" Id="594" Label="596">
+                                <TextNode AttachedTo="586" Bounds="775 205 16 16" Id="588" Text="res" xmlns="http://www.ni.com/PlatformFramework" />
+                                <DataAccessor Bounds="730 280 40 15" DataItem="589" Id="594" Label="596">
                                     <Terminal DataType="Double[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
                                 </DataAccessor>
-                                <TextNode AttachedTo="594" Bounds="780 140 37 16" Id="596" Text="notRes" xmlns="http://www.ni.com/PlatformFramework" />
+                                <TextNode AttachedTo="594" Bounds="775 280 37 16" Id="596" Text="notRes" xmlns="http://www.ni.com/PlatformFramework" />
                             </CaseStructure.Case>
                             <CaseStructure.Case Bounds="5 5 1070 500" Id="353" Pattern="0, Default">
                                 <MathNode Bounds="150 15 505 295" DocumentText="&quot;\r\n\r\n\r\nm=size(H,1);    % Number of checks\r\nn=size(H,2);    % Number of bits in codeword\r\nk=n-m;\r\n\r\n    \r\n% Find the checks that are not respected\r\nsyndrom;\r\n\r\n% For each bit count the number of checks respected and not respected\r\nres=zeros(1,n);\r\nnotRes=zeros(1,n);\r\n\r\nfor check=1:m\r\n    count=1\r\n    bit=Hposition(check,count)\r\n    while and(bit~=0, count&lt;=n)\r\n        if syndrom(1, check)==1\r\n            notRes(bit)=notRes(bit)+1;\r\n        else\r\n            res(bit)=res(bit)+1;\r\n        end\r\n        count=count+1;\r\n        if count&lt;=n\r\n            bit=Hposition(check,count);\r\n        end\r\n    end\r\nend\r\n\r\n% if more not respected flip the bit\r\nfor bit=1:n\r\n    if notRes(bit)&gt;res(bit)\r\n        in(bit)=mod(in(bit)+1,2);\r\n    end\r\nend\r\n\r\nout=in;\r\n\r\n\r\n&quot;" Id="62" xmlns="http://www.ni.com/MScript">
-                                    <MVariable Bounds="-60 40 80 15" DataType="Double[]" Direction="Input" Facade="" Hotspot="-60 45" Id="1" Name="syndrom" Usage="Required" />
-                                    <MVariable Bounds="-25 55 45 15" DataType="Double[,]" Direction="Input" Facade="" Hotspot="-25 60" Id="2" Name="H" Usage="Required" />
-                                    <MVariable Bounds="-25 70 45 15" DataType="Int32[]" Direction="Input" Facade="" Hotspot="-25 75" Id="3" Name="in" Usage="Required" />
-                                    <MVariable Bounds="485 70 50 15" DataType="Int32[]" Direction="Output" Facade="" Hotspot="535 75" Id="6" Name="out" Usage="Optional" />
-                                    <MVariable Bounds="-65 85 85 15" DataType="Double[,]" Direction="Input" Facade="" Hotspot="-65 90" Id="8" Name="Hposition" Usage="Required" />
+                                    <MVariable Bounds="-60 40 80 15" DataType="Double[]" Direction="Input" Hotspot="-60 45" Id="1" Name="syndrom" Usage="Required" />
+                                    <MVariable Bounds="-25 55 45 15" DataType="Double[,]" Direction="Input" Hotspot="-25 60" Id="2" Name="H" Usage="Required" />
+                                    <MVariable Bounds="-25 70 45 15" DataType="Int32[]" Direction="Input" Hotspot="-25 75" Id="3" Name="in" Usage="Required" />
+                                    <MVariable Bounds="485 70 50 15" DataType="Int32[]" Direction="Output" Hotspot="535 75" Id="6" Name="out" Usage="Optional" />
+                                    <MVariable Bounds="-65 85 85 15" DataType="Double[,]" Direction="Input" Hotspot="-65 90" Id="8" Name="Hposition" Usage="Required" />
                                 </MathNode>
                                 <Wire Id="355" Joints="N(62:6) N(356:353)" xmlns="http://www.ni.com/PlatformFramework" />
                                 <Wire Id="358" Joints="N(359:353) N(62:1)" xmlns="http://www.ni.com/PlatformFramework" />

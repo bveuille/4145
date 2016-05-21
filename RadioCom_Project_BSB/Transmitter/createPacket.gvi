@@ -3,8 +3,8 @@
     <SourceModelFeatureSet>
         <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="3.0.0.49154" />
         <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="Editor" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/PlatformFramework" Version="3.0.0.49152" />
-        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="3.0.0.49152" />
         <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="Common Language Components" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/MocCommon" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="3.0.0.49152" />
     </SourceModelFeatureSet>
     <VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
         <Icon Id="2" ListViewIconCrop="0 0 50 50" xmlns="http://www.ni.com/PlatformFramework">
@@ -37,16 +37,7 @@
         </ConnectorPane>
         <MethodDocumentation xmlns="http://www.ni.com/PlatformFramework" />
         <DiagramUnplacedItems Id="10" />
-        <FrontPanelUnplacedItems Id="11">
-            <ArrayViewer ArrayElement="[UIModel]20" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Id="23" Name="[string]dataBitStream" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Value="{DataItemBinding Id=17}" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-                <p.DefaultElementValue>0</p.DefaultElementValue>
-                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="20" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Name="[string]Child" ValueType="[Type]Int8" Width="[float]69" />
-            </ArrayViewer>
-            <ArrayViewer ArrayElement="[UIModel]47" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Id="50" IsFixedSize="[bool]False" Name="[string]packet" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Value="{DataItemBinding Id=44}" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-                <p.DefaultElementValue>0</p.DefaultElementValue>
-                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="47" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Name="[string]Child" ValueType="[Type]Int8" Width="[float]54" />
-            </ArrayViewer>
-        </FrontPanelUnplacedItems>
+        <FrontPanelUnplacedItems Id="11" />
         <BlockDiagram Id="12">
             <DataAccessor Bounds="465 285 40 15" DataItem="17" Id="22" Label="24">
                 <Terminal DataType="Int8[]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
@@ -109,7 +100,18 @@
             <TextNode AttachedTo="49" Bounds="710 265 36 16" Id="51" Text="packet" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="52" Joints="N(32:outArray) N(49:Value)" xmlns="http://www.ni.com/PlatformFramework" />
         </BlockDiagram>
-        <CPFrontPanel Height="[float]1600" Id="13" Width="[float]2000" />
+        <CPFrontPanel Height="[float]1600" Id="13" Width="[float]2000">
+            <ArrayViewer ArrayElement="[UIModel]20" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]540" Id="23" Label="[UIModel]53" Left="[float]397" Orientation="[SMOrientation]Vertical" Rows="[int]22" Top="[float]96" Value="{DataItemBinding Id=17}" Width="[float]129" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                <p.DefaultElementValue>0</p.DefaultElementValue>
+                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="20" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Name="[string]Child" ValueType="[Type]Int8" Width="[float]69" />
+            </ArrayViewer>
+            <Label Id="53" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]23" Left="[float]397" Locked="[bool]True" Text="[string]dataBitStream" Top="[float]73" />
+            <ArrayViewer ArrayElement="[UIModel]47" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]564" Id="50" IsFixedSize="[bool]False" Label="[UIModel]54" Left="[float]655" Orientation="[SMOrientation]Vertical" Rows="[int]23" Top="[float]96" Value="{DataItemBinding Id=44}" Width="[float]114" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                <p.DefaultElementValue>0</p.DefaultElementValue>
+                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="47" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]53" Name="[string]Child" Top="[float]79" Value="[sbyte]0" ValueType="[Type]Int8" Width="[float]54" />
+            </ArrayViewer>
+            <Label Id="54" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]50" Left="[float]655" Locked="[bool]True" Text="[string]packet" Top="[float]73" />
+        </CPFrontPanel>
         <DataItem CallDirection="Input" CallIndex="0" DataType="Int8[]" Id="17" Name="dataBitStream" />
         <DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="0" DataType="Int8[]" Id="44" Name="packet" />
     </VirtualInstrument>
