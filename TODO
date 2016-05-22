@@ -6,7 +6,9 @@ Stian: link budget, choice of soundsampling, packetsize, decoding of bitstream
 need to know: 
 Recieved power Pr/N0 or C/N0
 BER
-transferrate(datarate in kbs^-1
+transferrate(datarate in kbs^-1) for link budget
+antenna noise temperature
+
 
 
 Stian: Input
@@ -14,11 +16,6 @@ Baptiste:Bandpass Modulation
 Børge: Pulse Modulation
 
 
-*Link budget
--Loss and gain for transmitted and recieved signal
--Noises
--Verifications in the design, to link with theory
--Frii's formula
 
 *Error correction coding
 
@@ -26,10 +23,10 @@ Børge: Pulse Modulation
 *Latex project overview
 
 *packetsize
-Total size pr packet: 1072 (1104)
+Total size pr packet: 1136
 40 guard bits in each end
 32sync bits
-960 message bits
+1024 message bits
 (32 packetnumber bits)
 
 *Specifications:
