@@ -29,6 +29,7 @@
                         <ProjectDataItem AssociatedItemIdentifier="668" Id="667" />
                         <ProjectDataItem AssociatedItemIdentifier="680" Id="679" />
                         <ProjectDataItem AssociatedItemIdentifier="695" Id="694" />
+                        <ProjectDataItem AssociatedItemIdentifier="701" Id="700" />
                     </ProjectFolderDataItem>
                     <ProjectFolderDataItem AssociatedItemIdentifier="17" FolderName="Transmitter" Id="17">
                         <ProjectDataItem AssociatedItemIdentifier="66" Id="65" />
@@ -115,7 +116,7 @@
             </ProjectExplorer>
         </DefinitionReference>
         <DefinitionReference Bindings="Envoy,DefinitionReference,EmbeddedReference,NationalInstruments.SystemDesigner.SystemDiagram.Moc,NationalInstruments.SystemDesigner.SystemDiagram.SystemDiagramDefinition" DocumentTypeIdentifier="NationalInstruments.SystemDesigner.SystemDiagram.SystemDiagramDefinition" Id="3" Name="SystemDiagram">
-            <SystemDiagram ProcessMappings="23:29, 24:33, 68:69, 225:226, 682:683, 108:109, 178:179, 374:375, 230:231, 237:238, 243:244, 254:255, 259:260, 296:297, 697:698, 440:441, 446:447, 451:452, 505:506, 515:516, 529:530, 532:533, 537:538, 542:543, 545:546, 548:549, 551:552, 563:564, 572:573, 589:590, 592:593, 595:596, 600:601, 616:617, 621:622, 627:628, 639:640, 661:662, 670:671" SystemDiagramVersion="56" xmlns="http://www.ni.com/SystemDesigner/SystemDiagram">
+            <SystemDiagram ProcessMappings="23:29, 24:33, 68:69, 225:226, 682:683, 108:109, 178:179, 374:375, 230:231, 237:238, 243:244, 254:255, 259:260, 296:297, 697:698, 440:441, 446:447, 451:452, 505:506, 515:516, 529:530, 532:533, 537:538, 542:543, 545:546, 548:549, 551:552, 563:564, 572:573, 589:590, 592:593, 595:596, 600:601, 616:617, 621:622, 627:628, 639:640, 661:662, 670:671, 703:704" SystemDiagramVersion="56" xmlns="http://www.ni.com/SystemDesigner/SystemDiagram">
                 <SystemDiagramRootDiagram Id="15">
                     <DesktopChassis Bounds="107 50 425 516" HasLayoutManager="True" Id="29" ResourceViewHeight="25" ResourceViewWidth="49" SystemModelContent="23" xmlns="http://www.ni.com/SystemDesigner/Desktop/SystemDiagram">
                         <DocumentModelChassisBackplaneDiagram Bounds="12 30 401 47" Id="30" xmlns="http://www.ni.com/SystemDesigner/SystemDiagram" />
@@ -124,7 +125,7 @@
                                 <BoardHomepageDiagram Bounds="0 90 336 98" CanScroll="False" CategoryViewName="CategoriesResourceTypeView" ColumnMargin="5" Id="34" LeftMargin="5" RowMargin="8">
                                     <Category Bounds="5 10 82 89" CardViewDiagram="36" CategoryName="Source Code" GridViewDiagram="38" Id="35" />
                                 </BoardHomepageDiagram>
-                                <BoardDiagram Bounds="0 90 336 1682" CategoryName="Source Code" Id="36" ScrollVerticalOffset="10">
+                                <BoardDiagram Bounds="0 90 336 1770" CategoryName="Source Code" Id="36" ScrollVerticalOffset="10">
                                     <SoftwareCard Bounds="11 10 163 89" CategoryView="CategoriesResourceTypeView" Collapsed="False" Facade="CardFacade" Id="69" SystemModelContent="68" Target=":Project:PC:Tx_main\.gvi" Template="List" />
                                     <SoftwareCard Bounds="173 10 163 89" CategoryView="CategoriesResourceTypeView" Collapsed="False" Facade="CardFacade" Id="109" SystemModelContent="108" Target=":Project:PC:modulation_block\.gvi" Template="List" />
                                     <SoftwareCard Bounds="11 98 163 89" CategoryView="CategoriesResourceTypeView" Collapsed="False" Facade="CardFacade" Id="179" SystemModelContent="178" Target=":Project:PC:SoundTestbench\.gvi" Template="List" />
@@ -162,6 +163,7 @@
                                     <SoftwareCard Bounds="11 1506 163 89" CategoryView="CategoriesResourceTypeView" Collapsed="False" Facade="CardFacade" Id="671" SystemModelContent="670" Target=":Project:PC:fastDemodBlock\.gvi" Template="List" />
                                     <SoftwareCard Bounds="173 1506 163 89" CategoryView="CategoriesResourceTypeView" Collapsed="False" Facade="CardFacade" Id="683" SystemModelContent="682" Target=":Project:PC:SignalAndNoiseEstimate\.gvi" Template="List" />
                                     <SoftwareCard Bounds="11 1594 163 89" CategoryView="CategoriesResourceTypeView" Collapsed="False" Facade="CardFacade" Id="698" SystemModelContent="697" Target=":Project:PC:SignalAndNoiseCalc\.gvi" Template="List" />
+                                    <SoftwareCard Bounds="173 1594 163 89" CategoryView="CategoriesResourceTypeView" Collapsed="False" Facade="CardFacade" Id="704" SystemModelContent="703" Target=":Project:PC:calcPacketsPerSecond\.gvi" Template="List" />
                                 </BoardDiagram>
                                 <BoardDiagram Bounds="0 90 336 391" CategoryName="Source Code" Id="38" ScrollVerticalOffset="0">
                                     <DocumentModelDataGrid Bounds="6 0 349 391" CardDiagram="36" Docking="Stretch" Id="39" />
@@ -211,9 +213,10 @@
                         <Process Derivatives="T:670" Id="669" Kind="{http://www.ni.com/SystemDesigner/Vi}Process.Vi" Name="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" p7:Process.Bounds="11 1506 163 89" p8:Process.AliasName="fastDemodBlock.gvi" p8:Process.AssociatedIdentifier="668" p8:Process.Qualifiedname=":Project:PC:fastDemodBlock\.gvi" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/SystemDiagram" />
                         <Process Derivatives="T:682" Id="681" Kind="{http://www.ni.com/SystemDesigner/Vi}Process.Vi" Name="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" p7:Process.Bounds="173 1506 163 89" p8:Process.AliasName="SignalAndNoiseEstimate.gvi" p8:Process.AssociatedIdentifier="680" p8:Process.Qualifiedname=":Project:PC:SignalAndNoiseEstimate\.gvi" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/SystemDiagram" />
                         <Process Derivatives="T:697" Id="696" Kind="{http://www.ni.com/SystemDesigner/Vi}Process.Vi" Name="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" p7:Process.Bounds="11 1594 163 89" p8:Process.AliasName="SignalAndNoiseCalc.gvi" p8:Process.AssociatedIdentifier="695" p8:Process.Qualifiedname=":Project:PC:SignalAndNoiseCalc\.gvi" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/SystemDiagram" />
+                        <Process Derivatives="T:703" Id="702" Kind="{http://www.ni.com/SystemDesigner/Vi}Process.Vi" Name="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" p7:Process.Bounds="173 1594 163 89" p8:Process.AliasName="calcPacketsPerSecond.gvi" p8:Process.AssociatedIdentifier="701" p8:Process.Qualifiedname=":Project:PC:calcPacketsPerSecond\.gvi" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/SystemDiagram" />
                     </Tree>
                     <MappingManager Id="7" xmlns="http://www.ni.com/SystemDesigner/SystemModelCore">
-                        <SuperimpositionMapping Id="8" Map="T:21:23, 22:24, 67:68, 224:225, 681:682, 107:108, 177:178, 373:374, 229:230, 236:237, 242:243, 253:254, 258:259, 295:296, 696:697, 439:440, 445:446, 450:451, 504:505, 514:515, 528:529, 531:532, 536:537, 541:542, 544:545, 547:548, 550:551, 562:563, 571:572, 588:589, 591:592, 594:595, 599:600, 615:616, 620:621, 626:627, 638:639, 660:661, 669:670" ReverseMap="T:23:21, 24:22, 68:67, 225:224, 682:681, 108:107, 178:177, 374:373, 230:229, 237:236, 243:242, 254:253, 259:258, 296:295, 697:696, 440:439, 446:445, 451:450, 505:504, 515:514, 529:528, 532:531, 537:536, 542:541, 545:544, 548:547, 551:550, 563:562, 572:571, 589:588, 592:591, 595:594, 600:599, 616:615, 621:620, 627:626, 639:638, 661:660, 670:669" Sources="T:6,20">
+                        <SuperimpositionMapping Id="8" Map="T:21:23, 22:24, 67:68, 224:225, 681:682, 107:108, 177:178, 373:374, 229:230, 236:237, 242:243, 253:254, 258:259, 295:296, 696:697, 439:440, 445:446, 450:451, 504:505, 514:515, 528:529, 531:532, 536:537, 541:542, 544:545, 547:548, 550:551, 562:563, 571:572, 588:589, 591:592, 594:595, 599:600, 615:616, 620:621, 626:627, 638:639, 660:661, 669:670, 702:703" ReverseMap="T:23:21, 24:22, 68:67, 225:224, 682:681, 108:107, 178:177, 374:373, 230:229, 237:236, 243:242, 254:253, 259:258, 296:295, 697:696, 440:439, 446:445, 451:450, 505:504, 515:514, 529:528, 532:531, 537:536, 542:541, 545:544, 548:547, 551:550, 563:562, 572:571, 589:588, 592:591, 595:594, 600:599, 616:615, 621:620, 627:626, 639:638, 661:660, 670:669, 703:702" Sources="T:6,20">
                             <Tree Id="9" Kind="{http://www.ni.com/SystemDesigner/SystemModelCore}Tree" Name="Root Superimposition">
                                 <Process Id="23" Kind="{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Process.Desktop" Name="Desktop" Prototypes="T:21">
                                     <Process Id="24" Kind="{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Process.DesktopHost" Name="DesktopHost" Prototypes="T:22">
@@ -254,6 +257,7 @@
                                         <Process Id="670" Kind="{http://www.ni.com/SystemDesigner/Vi}Process.Vi" Name="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Prototypes="T:669" />
                                         <Process Id="682" Kind="{http://www.ni.com/SystemDesigner/Vi}Process.Vi" Name="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Prototypes="T:681" />
                                         <Process Id="697" Kind="{http://www.ni.com/SystemDesigner/Vi}Process.Vi" Name="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Prototypes="T:696" />
+                                        <Process Id="703" Kind="{http://www.ni.com/SystemDesigner/Vi}Process.Vi" Name="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Prototypes="T:702" />
                                     </Process>
                                 </Process>
                             </Tree>
@@ -528,6 +532,7 @@
                     <SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,SourceFileReference" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Id="668" Name="fastDemodBlock\.gvi" StoragePath="Receiver\fastDemodBlock.gvi" />
                     <SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,SourceFileReference" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Id="680" Name="SignalAndNoiseEstimate\.gvi" StoragePath="Receiver\SignalAndNoiseEstimate.gvi" />
                     <SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,SourceFileReference" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Id="695" Name="SignalAndNoiseCalc\.gvi" StoragePath="Receiver\SignalAndNoiseCalc.gvi" />
+                    <SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,SourceFileReference" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Id="701" Name="calcPacketsPerSecond\.gvi" StoragePath="Receiver\calcPacketsPerSecond.gvi" />
                     <SystemDiagramTarget Name="PC" xmlns="http://www.ni.com/SystemDesigner/SystemDiagram" />
                 </Target>
             </DefinitionReference>
