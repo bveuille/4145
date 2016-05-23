@@ -479,13 +479,13 @@
                         <Wire Id="1638" Joints="N(1626:outArray) N(1636:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
                         <Wire Id="1639" Joints="N(1636:outArray) h(5) v(-25) N(1608:1603)" xmlns="http://www.ni.com/PlatformFramework" />
                     </CaseStructure.Case>
-                    <CaseStructure.Selector Bounds="-4 40 13 15" Docking="Left" Id="1604" Terminals="1601=1623, 1602, 1603" />
+                    <CaseStructure.Selector Bounds="-4 5 13 15" Docking="Left" Id="1604" Terminals="1601=1623, 1602, 1603" />
                     <CaseStructure.Tunnel Bounds="-4 20 13 10" Docking="Left" Id="1606" Terminals="1601=1605, 1602=1607, 1603=1617" />
                     <CaseStructure.Tunnel Bounds="186 20 13 10" Docking="Right" Id="1608" Terminals="1601=1609, 1602=1607, 1603=1639" />
                 </CaseStructure>
                 <Wire Id="1605" Joints="N(397:outArray) N(1606:1601)" xmlns="http://www.ni.com/PlatformFramework" />
                 <Wire Id="1609" Joints="N(1608:1601) N(1126:1121)" xmlns="http://www.ni.com/PlatformFramework" />
-                <Wire Id="1623" Joints="N(1624:329) v(161) h(-15) v(60) N(1604:1601)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="1623" Joints="N(1624:329) v(161) h(1) v(10) h(-6) v(15) N(1604:1601)" xmlns="http://www.ni.com/PlatformFramework" />
                 <WhileLoop.Tunnel Bounds="-4 165 13 10" Docking="Left" Id="330" Terminals="328=434, 329=340" />
                 <WhileLoop.Tunnel Bounds="-4 195 13 10" Docking="Left" Id="331" Terminals="328=437, 329=341" />
                 <WhileLoop.Tunnel Bounds="2138 225 13 10" Docking="Right" Id="332" Terminals="328=438, 329=342" />
@@ -898,71 +898,79 @@
             <ReleaseQueue Bounds="2120 195 40 40" Id="1008" />
             <Wire Id="1009" Joints="N(1007:queue out) N(1008:queue)" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="1015" Joints="N(1014:523) N(1007:queue)" xmlns="http://www.ni.com/PlatformFramework" />
-            <MethodCall Bounds="325 -445 40 40" Id="1152" Target="Read\ from\ Spreadsheet\ File\ \(DBL\)\.gvi">
-                <p.MethodDeclaration>
-                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
-                        <Parameter Id="L0" Desc="file path" />
-                        <Parameter Id="L1" Desc="number of lines" />
-                        <Parameter Id="L2" Desc="start of read offset" />
-                        <Parameter Id="L3" Desc="maximum characters per line" />
-                        <Parameter Id="T0" Desc="format" />
-                        <Parameter Id="B0" Desc="transpose?" />
-                        <Parameter Id="B1" Desc="delimiter" />
-                        <Parameter Id="R0" Desc="all rows" />
-                        <Parameter Id="R1" Desc="first row" />
-                        <Parameter Id="R2" Desc="mark after read" />
-                        <Parameter Id="T1" Desc="new file path" />
-                        <Parameter Id="R3" Desc="end of file?" />
-                    </MethodDeclaration>
-                </p.MethodDeclaration>
-                <Terminal DataType="Path" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
-                <Terminal DataType="Int32" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
-                <Terminal DataType="Int32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
-                <Terminal DataType="Int32" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
-                <Terminal DataType="String" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
-                <Terminal DataType="Boolean" Direction="Input" Hotspot="15 40" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
-                <Terminal DataType="String" Direction="Input" Hotspot="25 40" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
-                <Terminal DataType="Double[,]" Direction="Output" Hotspot="40 5" Id="R0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
-                <Terminal DataType="Double[]" Direction="Output" Hotspot="40 15" Id="R1" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
-                <Terminal DataType="Int32" Direction="Output" Hotspot="40 25" Id="R2" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
-                <Terminal DataType="Path" Direction="Output" Hotspot="25 0" Id="T1" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
-                <Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
-            </MethodCall>
-            <Literal Bounds="280 -470 50 15" DataType="String" Facade="NationalInstruments.MocCommon.Modeling.IStringBehavior" Id="1154" Label="1159" xmlns="http://www.ni.com/MocCommon">
-                <p.Data>%.3f</p.Data>
-                <StringBehavior />
-            </Literal>
-            <Literal Bounds="305 -390 40 15" DataType="String" Facade="NationalInstruments.MocCommon.Modeling.IStringBehavior" Id="1155" Label="1160" xmlns="http://www.ni.com/MocCommon">
-                <p.Data>,</p.Data>
-                <StringBehavior />
-            </Literal>
-            <Wire Id="1157" Joints="N(1155:Out) h(5) N(1152:B1)" xmlns="http://www.ni.com/PlatformFramework" />
-            <TextNode AttachedTo="1154" Bounds="280 -470 0 0" Id="1159" Text="format" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
-            <TextNode AttachedTo="1155" Bounds="305 -390 0 0" Id="1160" Text="delimiter" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
-            <DataAccessor Bounds="265 -445 40 15" DataItem="1140" Id="1142" Label="1144">
-                <Terminal DataType="Path" Direction="Output" Hotspot="40 5" Id="Path" xmlns="http://www.ni.com/PlatformFramework" />
-            </DataAccessor>
-            <TextNode AttachedTo="1142" Bounds="128 -445 132 16" Id="1144" Text="GeneratorMatrixLocation" xmlns="http://www.ni.com/PlatformFramework" />
-            <Wire Id="1166" Joints="N(1142:Path) N(1152:L0)" xmlns="http://www.ni.com/PlatformFramework" />
-            <Wire Id="1167" Joints="N(1154:Out) h(10) N(1152:T0)" xmlns="http://www.ni.com/PlatformFramework" />
-            <Wire Id="1168" Joints="N(1152:R0) h(350) N(1169:328)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="1168" Joints="N(1646:1641) h(331) N(1169:328)" xmlns="http://www.ni.com/PlatformFramework" />
             <DataAccessor Bounds="-510 -485 40 15" DataItem="1131" Id="1133" Label="1135">
                 <Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
             </DataAccessor>
             <TextNode AttachedTo="1133" Bounds="-544 -485 29 16" Id="1135" Text="LDPC" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="1247" Joints="N(261:Value) N(544:523)" xmlns="http://www.ni.com/PlatformFramework" />
-            <Wire Id="1586" Joints="N(1133:Value) h(1200) N(1174:328)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="1586" Joints="N(1133:Value) h(5) v(-50) h(530) B(3) h(665) N(1174:328) B(3) v(55) N(1644:1641)" xmlns="http://www.ni.com/PlatformFramework" />
             <FlushQueue Bounds="1535 -410 40 40" Id="1587" />
             <ReleaseQueue Bounds="1590 -410 40 40" Id="1588" />
             <Wire Id="1593" Joints="N(1592:328) v(-51) N(1587:queue)" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="1594" Joints="N(1595:328) v(-21) N(1587:error in (no error\))" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="1599" Joints="N(1587:queue out) N(1588:queue)" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="1600" Joints="N(1587:error out) N(1588:error in (no error\))" xmlns="http://www.ni.com/PlatformFramework" />
-            <DataAccessor Bounds="430 -370 40 15" DataItem="1618" Id="1620" Label="1622">
+            <DataAccessor Bounds="460 -375 40 15" DataItem="1618" Id="1620" Label="1622">
                 <Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
             </DataAccessor>
-            <TextNode AttachedTo="1620" Bounds="353 -370 72 16" Id="1622" Text="send010101..." xmlns="http://www.ni.com/PlatformFramework" />
-            <Wire Id="1625" Joints="N(1620:Value) h(35) N(1624:328)" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="1620" Bounds="383 -375 72 16" Id="1622" Text="send010101..." xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="1625" Joints="N(1620:Value) h(5) N(1624:328)" xmlns="http://www.ni.com/PlatformFramework" />
+            <CaseStructure Bounds="110 -520 270 155" Default="1642" Id="1641" Selected="1643" UserSelectorBounds="94 0 82 17">
+                <CaseStructure.Case Bounds="5 5 260 145" Id="1642" Pattern="False" />
+                <CaseStructure.Case Bounds="5 5 260 145" Id="1643" Pattern="True">
+                    <MethodCall Bounds="210 70 40 40" Id="1152" Target="Read\ from\ Spreadsheet\ File\ \(DBL\)\.gvi">
+                        <p.MethodDeclaration>
+                            <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                                <Parameter Id="L0" Desc="file path" />
+                                <Parameter Id="L1" Desc="number of lines" />
+                                <Parameter Id="L2" Desc="start of read offset" />
+                                <Parameter Id="L3" Desc="maximum characters per line" />
+                                <Parameter Id="T0" Desc="format" />
+                                <Parameter Id="B0" Desc="transpose?" />
+                                <Parameter Id="B1" Desc="delimiter" />
+                                <Parameter Id="R0" Desc="all rows" />
+                                <Parameter Id="R1" Desc="first row" />
+                                <Parameter Id="R2" Desc="mark after read" />
+                                <Parameter Id="T1" Desc="new file path" />
+                                <Parameter Id="R3" Desc="end of file?" />
+                            </MethodDeclaration>
+                        </p.MethodDeclaration>
+                        <Terminal DataType="Path" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+                        <Terminal DataType="Int32" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+                        <Terminal DataType="Int32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+                        <Terminal DataType="Int32" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+                        <Terminal DataType="String" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
+                        <Terminal DataType="Boolean" Direction="Input" Hotspot="15 40" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
+                        <Terminal DataType="String" Direction="Input" Hotspot="25 40" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
+                        <Terminal DataType="Double[,]" Direction="Output" Hotspot="40 5" Id="R0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                        <Terminal DataType="Double[]" Direction="Output" Hotspot="40 15" Id="R1" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                        <Terminal DataType="Int32" Direction="Output" Hotspot="40 25" Id="R2" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                        <Terminal DataType="Path" Direction="Output" Hotspot="25 0" Id="T1" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                        <Terminal DataType="Boolean" Direction="Output" Hotspot="40 35" Id="R3" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                    </MethodCall>
+                    <Literal Bounds="165 45 50 15" DataType="String" Facade="NationalInstruments.MocCommon.Modeling.IStringBehavior" Id="1154" Label="1159" xmlns="http://www.ni.com/MocCommon">
+                        <p.Data>%.3f</p.Data>
+                        <StringBehavior />
+                    </Literal>
+                    <Literal Bounds="190 125 40 15" DataType="String" Facade="NationalInstruments.MocCommon.Modeling.IStringBehavior" Id="1155" Label="1160" xmlns="http://www.ni.com/MocCommon">
+                        <p.Data>,</p.Data>
+                        <StringBehavior />
+                    </Literal>
+                    <DataAccessor Bounds="150 70 40 15" DataItem="1140" Id="1142" Label="1144">
+                        <Terminal DataType="Path" Direction="Output" Hotspot="40 5" Id="Path" xmlns="http://www.ni.com/PlatformFramework" />
+                    </DataAccessor>
+                    <TextNode AttachedTo="1154" Bounds="165 45 0 0" Id="1159" Text="format" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+                    <TextNode AttachedTo="1155" Bounds="190 125 0 0" Id="1160" Text="delimiter" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+                    <TextNode AttachedTo="1142" Bounds="13 70 132 16" Id="1144" Text="GeneratorMatrixLocation" xmlns="http://www.ni.com/PlatformFramework" />
+                    <Wire Id="1645" Joints="N(1152:R0) N(1646:1643)" xmlns="http://www.ni.com/PlatformFramework" />
+                    <Wire Id="1166" Joints="N(1142:Path) N(1152:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+                    <Wire Id="1167" Joints="N(1154:Out) h(10) N(1152:T0)" xmlns="http://www.ni.com/PlatformFramework" />
+                    <Wire Id="1157" Joints="N(1155:Out) h(5) N(1152:B1)" xmlns="http://www.ni.com/PlatformFramework" />
+                </CaseStructure.Case>
+                <CaseStructure.Selector Bounds="-4 40 13 15" Docking="Left" Id="1644" Terminals="1641=1586, 1642, 1643" />
+                <CaseStructure.Tunnel Bounds="261 75 13 10" DefaultIfUnwired="True" Docking="Right" Id="1646" Terminals="1641=1168, 1642, 1643=1645" />
+            </CaseStructure>
         </BlockDiagram>
         <CPFrontPanel Height="[float]1600" Id="13" Width="[float]2000">
             <Rectangle Fill="[SMSolidColorBrush]#ff8cdfff" Height="[float]286" Id="789" Left="[float]170" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]18.043438" RadiusY="[float]21.3355789" Stroke="[SMSolidColorBrush]#ff000000" StrokeThickness="[float]1" Top="[float]413" Width="[float]1109" xmlns="http://www.ni.com/PlatformFramework" />
