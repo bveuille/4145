@@ -3,8 +3,8 @@
     <SourceModelFeatureSet>
         <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="3.0.0.49154" />
         <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="Editor" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/PlatformFramework" Version="3.0.0.49152" />
-        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="3.0.0.49152" />
         <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="Common Language Components" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/MocCommon" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="3.0.0.49152" />
     </SourceModelFeatureSet>
     <VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
         <Icon Id="2" ListViewIconCrop="0 0 50 50" xmlns="http://www.ni.com/PlatformFramework">
@@ -37,15 +37,7 @@
         </ConnectorPane>
         <MethodDocumentation xmlns="http://www.ni.com/PlatformFramework" />
         <DiagramUnplacedItems Id="10" />
-        <FrontPanelUnplacedItems Id="11">
-            <ArrayViewer ArrayElement="[UIModel]126" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Id="129" Name="[string]packet" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Value="{DataItemBinding Id=123}" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-                <p.DefaultElementValue>0x0</p.DefaultElementValue>
-                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="126" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Name="[string]Child" RadixVisibility="[SMVisibility]Collapsed" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]69" />
-            </ArrayViewer>
-            <NumericText BaseName="[string]Numeric" Height="[float]22" Id="177" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Name="[string]sync" Value="{DataItemBinding Id=174}" ValueType="[Type]Int32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-            <NumericText BaseName="[string]Numeric" Height="[float]22" Id="245" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Name="[string]averageNonNullDeviation" RadixVisibility="[SMVisibility]Collapsed" Value="{DataItemBinding Id=242}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-            <NumericText BaseName="[string]Numeric" Height="[float]22" Id="251" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Name="[string]averageTimeSinceLast" RadixVisibility="[SMVisibility]Collapsed" Value="{DataItemBinding Id=248}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-        </FrontPanelUnplacedItems>
+        <FrontPanelUnplacedItems Id="11" />
         <BlockDiagram Id="12">
             <InitializeArray Bounds="340 180 40 30" Id="20" Terminals="element=50, outArray=51, c0t0v=52" />
             <Literal Bounds="328 180 12 10" DataType="Double" Facade="DockedConstantFacade" Id="21" Label="41" xmlns="http://www.ni.com/MocCommon">
@@ -255,6 +247,17 @@
             <Label Id="115" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]114" Left="[float]540" Locked="[bool]True" Text="[string]errorRate" Top="[float]209" />
             <Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="118" IsReadOnly="[bool]False" Label="[UIModel]119" Left="[float]752" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]97" TrueContent="[string]On" Value="{DataItemBinding Id=107}" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
             <Label Id="119" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]118" Left="[float]752" Locked="[bool]True" Text="[string]reset" Top="[float]74" />
+            <ArrayViewer ArrayElement="[UIModel]126" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="129" Label="[UIModel]254" Left="[float]548" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]309" Value="{DataItemBinding Id=123}" Width="[float]129" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                <p.DefaultElementValue>0x0</p.DefaultElementValue>
+                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="126" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Name="[string]Child" RadixVisibility="[SMVisibility]Collapsed" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]69" />
+            </ArrayViewer>
+            <Label Id="254" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]129" Left="[float]548" Locked="[bool]True" Text="[string]packet" Top="[float]286" />
+            <NumericText BaseName="[string]Numeric" Height="[float]22" Id="177" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]255" Left="[float]700" Top="[float]316" Value="{DataItemBinding Id=174}" ValueType="[Type]Int32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Label Id="255" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]177" Left="[float]700" Locked="[bool]True" Text="[string]sync" Top="[float]293" />
+            <NumericText BaseName="[string]Numeric" Height="[float]22" Id="245" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]256" Left="[float]548" RadixVisibility="[SMVisibility]Collapsed" Top="[float]404" Value="{DataItemBinding Id=242}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Label Id="256" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]245" Left="[float]548" Locked="[bool]True" Text="[string]averageNonNullDeviation" Top="[float]381" />
+            <NumericText BaseName="[string]Numeric" Height="[float]22" Id="251" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]257" Left="[float]724" RadixVisibility="[SMVisibility]Collapsed" Top="[float]404" Value="{DataItemBinding Id=248}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Label Id="257" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]251" Left="[float]724" Locked="[bool]True" Text="[string]averageTimeSinceLast" Top="[float]381" />
         </CPFrontPanel>
         <DataItem AdaptToDiagramType="True" DataType="Int16[]" Id="103" Name="deviationFrom010101..." />
         <DataItem AdaptToDiagramType="True" DataType="UInt64" Id="104" Name="sumDeviationFrom010101...">
