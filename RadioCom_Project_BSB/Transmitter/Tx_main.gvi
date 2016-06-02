@@ -1074,10 +1074,10 @@
             <Text Font="[SMFont]0,18," Id="1091" Left="[float]471" Text="[string]Radio Plots" TextWrapping="[TextWrapping]NoWrap" Top="[float]419" xmlns="http://www.ni.com/PlatformFramework" />
             <Rectangle Fill="[SMSolidColorBrush]#fffff89a" Height="[float]262" Id="1092" Left="[float]170" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]16" RadiusY="[float]16" Stroke="[SMSolidColorBrush]#ff000000" StrokeThickness="[float]1" Top="[float]712" Width="[float]382" xmlns="http://www.ni.com/PlatformFramework" />
             <Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=469}" Height="[float]198" Id="483" Label="[UIModel]491" Left="[float]185" PreferIndexData="[bool]False" RenderMode="[RenderMode]Hardware" SuppressScaleLayout="[bool]False" Top="[float]765" Width="[float]353" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-                <Axis Adjuster="[RangeAdjuster]FitLoosely" Id="484" Label="[string]Time" MajorDivisions="[UIModel]487" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 0.016, System.Double" ValueType="[Type]Double">
+                <Axis Adjuster="[RangeAdjuster]FitLoosely" Id="484" Label="[string]Time" MajorDivisions="[UIModel]487" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 0.022, System.Double" ValueType="[Type]Double">
                     <RangeLabeledDivisions Id="487" LabelPresenter="[string]LVRelativeSeconds:&gt;&gt;0.0#E+0" />
                 </Axis>
-                <Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="485" Label="[string]Amplitude" Orientation="[SMOrientation]Vertical" Range="[IRange]-0.004, 0.004, System.Double" ValueType="[Type]Double" />
+                <Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="485" Label="[string]Amplitude" Orientation="[SMOrientation]Vertical" Range="[IRange]-0.60000000000000009, -0.1, System.Double" ValueType="[Type]Double" />
                 <Plot HorizontalScale="[UIModel]484" Id="486" Label="[string]Plot" VerticalScale="[UIModel]485" />
             </Graph>
             <Label Id="491" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]483" Left="[float]185" Locked="[bool]True" Text="[string]data" Top="[float]742" />
@@ -1119,10 +1119,10 @@
             <p.DefaultValue>0x411E848000000000</p.DefaultValue>
         </DataItem>
         <DataItem DataType="Double" Id="193" Name="f0">
-            <p.DefaultValue>0x41E2410110000000</p.DefaultValue>
+            <p.DefaultValue>0x41E2400CEC000000</p.DefaultValue>
         </DataItem>
         <DataItem DataType="Double" Id="199" Name="Gain">
-            <p.DefaultValue>0x4024000000000000</p.DefaultValue>
+            <p.DefaultValue>0x0</p.DefaultValue>
         </DataItem>
         <DataItem DataType="@1210907365_0" Id="237" Name="modulation type">
             <p.DefaultValue>1</p.DefaultValue>
@@ -1233,10 +1233,10 @@
             <p.DefaultValue>128</p.DefaultValue>
         </DataItem>
         <DataItem DataType="Double" Id="935" Name="multiple">
-            <p.DefaultValue>0x408F400000000000</p.DefaultValue>
+            <p.DefaultValue>0x4059000000000000</p.DefaultValue>
         </DataItem>
         <DataItem DataType="Double" Id="946" Name="correction">
-            <p.DefaultValue>0x3F947AE147AE147B</p.DefaultValue>
+            <p.DefaultValue>0x3FD999999999999A</p.DefaultValue>
         </DataItem>
         <DataItem DataType="Int32" Id="965" Name="bitsPerSample">
             <p.DefaultValue>8</p.DefaultValue>
